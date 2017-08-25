@@ -2865,6 +2865,17 @@ ul.staggered-list li {
   padding-top: 20px;
   background-color: #ee6e73;
 }
+.sticky-page-footer {
+        bottom: 0;
+        float: right;
+        height: 30px;
+        left: 0;
+        margin-top: auto;
+        overflow: hidden;
+        position: absolute;
+        width: 100%;
+ 
+}
 
 .page-footer .footer-copyright {
   overflow: hidden;
