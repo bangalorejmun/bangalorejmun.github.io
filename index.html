@@ -24,12 +24,15 @@
     <nav>
   <div class="nav-wrapper grey darken-3">
     <a href="http://oakridge.in/" class="brand-logo">Oakridge</a>
+     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
     <ul class="right hide-on-med-and-down ">
       <li><a href="index.html">Home</a></li>
 		 <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Committees<i class="material-icons right">arrow_drop_down</i></a></li>
     <li><a href="/Conference/">Conference</a></li>
-      <!-- Dropdown Trigger -->
-
+    </ul>
+    <ul class="side-nav" id="mobile-demo">
+      <li><a href="index.html">Home</a></li>
+    <li><a href="/Conference/">Conference</a></li>
     </ul>
   </div>
 </nav>
@@ -139,8 +142,8 @@
     </div>
 
 
-
-      <div class="row"><div class="divider"></div></div>
+     <div class="container">
+    <div class="section">
       <div class="row">
 		<div class="col s6"><div class="video-container"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.31333819796!2d77.74977931521092!3d12.887562220202788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae0d539b9bf9ef%3A0x8173c2437f9bc14d!2sOakridge+International+School!5e0!3m2!1sen!2sin!4v1503659601937" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div></div>
 		<div class="col s6">
@@ -188,8 +191,12 @@
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
 	<script>
+	$(document).ready(function(){
+	  $(".button-collapse").sideNav();
+	});
     $(document).ready(function(){
       $('.parallax').parallax();
+        
     });
 </script>
   </body>
