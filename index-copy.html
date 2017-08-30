@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<html>
  <head>
-   <title>Bangalore Jmun</title>
       <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
@@ -22,13 +20,6 @@
     <li class="grey darken-3"><a href="/Committees/SC" class="white-text">UN Security Council</a></li>
     <li class="grey darken-3"><a href="/Committees/WHO" class="white-text">World Health Organization</a></li>
     </ul>
-    <ul id='dropdown2' class='dropdown-content'>
-     <li class=" "><a href="/Committees/DISEC" class="black-text">DISEC</a></li>
-    <li class=" "><a href="/Committees/ECOSOC/" class="black-text">ECOSOC</a></li>
-    <li class=" "><a href="/Committees/HRC" class="black-text">UN Human Rights Council</a></li>
-    <li class=" "><a href="/Committees/SC" class="black-text">UN Security Council</a></li>
-    <li class=" "><a href="/Committees/WHO" class="black-text">World Health Organization</a></li>
-    </ul>
   <div class="navbar-fixed">
     <nav>
   <div class="nav-wrapper grey darken-3">
@@ -44,10 +35,10 @@
   </div>
      <ul class="side-nav" id="mobile-demo">
       <li><a href="index.html">Home</a></li>
-       <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Committees<i class="material-icons right">arrow_drop_down</i></a></li>
+       <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Committees<i class="material-icons right">arrow_drop_down</i></a></li>
     <li><a href="/Conference/">Conference</a></li>
     </ul>
- <script>  $(".button-collapse").sideNav();</script>
+
 
 
   <div id="index-banner" class="parallax-container">
@@ -195,6 +186,9 @@
   </footer>
 
 	<script>
+	$(document).ready(function(){
+	  $(".button-collapse").sideNav();
+	});
     $(document).ready(function(){
       $('.parallax').parallax();
         
