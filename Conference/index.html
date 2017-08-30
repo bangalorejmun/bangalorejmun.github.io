@@ -1,22 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Oakridge Bangalore JMUN</title>
+<html>
+ <head>
+   <title>Conference</title>
+   <base href = "../../">
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
-  <!-- CSS  -->
-  <base href = "../">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-</head>
-<body>
- <!--  Scripts-->
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="js/materialize.js"></script>
-<script src="js/init.js"></script>
-<!-- Dropdown Structure -->
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+      
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
  <ul id='dropdown1' class='dropdown-content'>
      <li class="grey darken-3"><a href="/Committees/DISEC" class="white-text">DISEC</a></li>
     <li class="grey darken-3"><a href="/Committees/ECOSOC/" class="white-text">ECOSOC</a></li>
@@ -24,20 +22,32 @@
     <li class="grey darken-3"><a href="/Committees/SC" class="white-text">UN Security Council</a></li>
     <li class="grey darken-3"><a href="/Committees/WHO" class="white-text">World Health Organization</a></li>
     </ul>
+    <ul id='dropdown2' class='dropdown-content'>
+     <li class=" "><a href="/Committees/DISEC" class="black-text">DISEC</a></li>
+    <li class=" "><a href="/Committees/ECOSOC/" class="black-text">ECOSOC</a></li>
+    <li class=" "><a href="/Committees/HRC" class="black-text">UN Human Rights Council</a></li>
+    <li class=" "><a href="/Committees/SC" class="black-text">UN Security Council</a></li>
+    <li class=" "><a href="/Committees/WHO" class="black-text">World Health Organization</a></li>
+    </ul>
   <div class="navbar-fixed">
     <nav>
   <div class="nav-wrapper grey darken-3">
     <a href="http://oakridge.in/" class="brand-logo">Oakridge</a>
+     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
     <ul class="right hide-on-med-and-down ">
       <li><a href="index.html">Home</a></li>
 		 <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Committees<i class="material-icons right">arrow_drop_down</i></a></li>
     <li><a href="/Conference/">Conference</a></li>
-      <!-- Dropdown Trigger -->
-
     </ul>
   </div>
 </nav>
-</div>
+  </div>
+     <ul class="side-nav" id="mobile-demo">
+      <li><a href="index.html">Home</a></li>
+       <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Committees<i class="material-icons right">arrow_drop_down</i></a></li>
+    <li><a href="/Conference/">Conference</a></li>
+    </ul>
+ <script>  $(".button-collapse").sideNav();</script>
 <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
@@ -62,7 +72,7 @@
       <div class="divider"></div>
       <div class="row">
         <div class="col s6 white-text"><h4 class="white-text">Registration</h4>
-        <p class="flow-text white-text">The price of registration for Idividuals is ₹1000 and price of registration for School Delegation ₹2500</p>
+        <p class="flow-text white-text">The price of registration for Idividuals is 1000INR and price of registration for School Delegation 2500INR</p>
         <p class="flow-text white-text">Registration will be only online</p>
         <p class="flow-text white-text">Payment will be accepted online or onspot</p></div>
         <div class="col s6"><h4 class="white-text right-align">Dress Code</h4>
@@ -95,8 +105,6 @@
           <h5 class="white-text">Information</h5>
           <ul>
             <li><a class="white-text" href="#!">Venue: Oakridge International School, Bengaluru</a></li>
-            <li><a class="white-text" href="#!">Price for Individuals: ₹1000</a></li>
-            <li><a class="white-text" href="#!">Price for the School Delegation: ₹2500</a></li>
           </ul>
         </div>
         <div class="col l4 s12">
