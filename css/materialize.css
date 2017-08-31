@@ -4,6 +4,10 @@
  * Copyright 2014-2015 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
+
+.carousel .carousel-item {
+width:300px !important;}
+
 .materialize-red {
   background-color: #e51c23 !important;
 }
