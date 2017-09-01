@@ -10,47 +10,57 @@
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
-      
+
     <body>
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
- <ul id='dropdown1' class='dropdown-content'>
-     <li class="grey darken-3"><a href="/Committees/DISEC" class="white-text">DISEC</a></li>
-    <li class="grey darken-3"><a href="/Committees/ECOSOC/" class="white-text">ECOSOC</a></li>
-    <li class="grey darken-3"><a href="/Committees/HRC" class="white-text">UN Human Rights Council</a></li>
-    <li class="grey darken-3"><a href="/Committees/SC" class="white-text">UN Security Council</a></li>
-    <li class="grey darken-3"><a href="/Committees/WHO" class="white-text">World Health Organization</a></li>
-    </ul>
-    <ul id='dropdown2' class='dropdown-content'>
-     <li class=" "><a href="/Committees/DISEC" class="black-text">DISEC</a></li>
-    <li class=" "><a href="/Committees/ECOSOC/" class="black-text">ECOSOC</a></li>
-    <li class=" "><a href="/Committees/HRC" class="black-text">UN Human Rights Council</a></li>
-    <li class=" "><a href="/Committees/SC" class="black-text">UN Security Council</a></li>
-    <li class=" "><a href="/Committees/WHO" class="black-text">World Health Organization</a></li>
-    </ul>
-  <div class="navbar-fixed">
-    <nav>
-  <div class="nav-wrapper grey darken-3">
-    <a href="http://oakridge.in/" class="brand-logo">Bangalore JMUN</a>
-    <ul class="right hide-on-med-and-down ">
-      <li><a href="index.html">Home</a></li>
-		 <li><a class="dropdown-button" href="#" data-activates="dropdown1">Committees<i class="material-icons right">arrow_drop_down</i></a></li>
-      <li><a href="/Conference/">Conference</a></li>
-   <li><a class="btn-large grey lighten-1" href="/Registration/"> Registration </a></li>
-      <!-- Dropdown Trigger -->
-
-    </ul>
-  </div>
-</nav>
-  </div>
-     <ul class="side-nav" id="mobile-demo">
-      <li><a href="index.html">Home</a></li>
-       <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Committees<i class="material-icons right">arrow_drop_down</i></a></li>
-    <li><a href="/Conference/">Conference</a></li>
-    <li><a class="btn-large grey lighten-1" href="/Registration/"> Registration </a></li>
-    </ul>
- <script>  $(".button-collapse").sideNav();</script>
+      <ul id='dropdown1' class='dropdown-content'>
+          <li class="grey darken-3"><a href="/Committees/DISEC" class="white-text">DISEC</a></li>
+         <li class="grey darken-3"><a href="/Committees/ECOSOC/" class="white-text">ECOSOC</a></li>
+         <li class="grey darken-3"><a href="/Committees/HRC" class="white-text">UN Human Rights Council</a></li>
+         <li class="grey darken-3"><a href="/Committees/SC" class="white-text">UN Security Council</a></li>
+         <li class="grey darken-3"><a href="/Committees/WHO" class="white-text">World Health Organization</a></li>
+         </ul>
+         <ul id='dropdown2' class='dropdown-content'>
+          <li class=" "><a href="/Committees/DISEC" class="black-text">DISEC</a></li>
+         <li class=" "><a href="/Committees/ECOSOC/" class="black-text">ECOSOC</a></li>
+         <li class=" "><a href="/Committees/HRC" class="black-text">UN Human Rights Council</a></li>
+         <li class=" "><a href="/Committees/SC" class="black-text">UN Security Council</a></li>
+         <li class=" "><a href="/Committees/WHO" class="black-text">World Health Organization</a></li>
+         </ul>
+          <ul id='dropdown3' class='dropdown-content'>
+         <li class="grey darken-3"><a href="#modal1" class="white-text">How to Register?</a></li>
+        <li class="grey darken-3"><a href="" class="white-text">Payment</a></li>
+        <li class="grey darken-3"><a class="btn-large grey lighten-2 black-text left-align" href="https://docs.google.com/forms/d/e/1FAIpQLSf27u9rKKihQXensMo_xB2WwwHOq9vdYDZp4_J5p9nC6aq9qg/viewform">Register</a></li>
+        </ul>
+            <ul id='dropdown4' class='dropdown-content'>
+     <li class=""><a href="#modal1" class="black-text">How to Register?</a></li>
+     <li class=""><a href="" class="black-text">Payment</a></li>
+     <li class=""><a class="btn-flat grey lighten-2 black-text left-align" href="https://docs.google.com/forms/d/e/1FAIpQLSf27u9rKKihQXensMo_xB2WwwHOq9vdYDZp4_J5p9nC6aq9qg/viewform">Register</a></li>
+     </ul>
+       <div class="navbar-fixed">
+         <nav>
+       <div class="nav-wrapper grey darken-3">
+         <a href="http://oakridge.in/" class="brand-logo"><img src ="Images/logo.png"></a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+         <ul class="right hide-on-med-and-down ">
+           <li><a href="index.html">Home</a></li>
+     		 <li><a class="dropdown-button" href="#" data-activates="dropdown1">Committees<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a href="/Conference/">Conference</a></li>
+          <li><a class="dropdown-button" href="#!" data-activates="dropdown3">Registration<i class="material-icons right">arrow_drop_down</i></a></li>
+           <!-- Dropdown Trigger -->
+         </ul>
+       </div>
+     </nav>
+       </div>
+          <ul class="side-nav" id="mobile-demo">
+           <li><a href="index.html">Home</a></li>
+            <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Committees<i class="material-icons right">arrow_drop_down</i></a></li>
+         <li><a href="/Conference/">Conference</a></li>
+         <li><a class="dropdown-button" href="#!" data-activates="dropdown4">Registration<i class="material-icons right">arrow_drop_down</i></a></li>
+         </ul>
+      <script>  $(".button-collapse").sideNav();</script>
 
 <div id="index-banner" class="parallax-container">
   <div class="section no-pad-bot">
@@ -65,7 +75,7 @@
     <div class="section grey lighten-2">
          <div class="row">
         <div class="col s6">
-     <div class="card grey darken-4 z-depth-5">
+     <div align="justify" class="card grey darken-4 z-depth-5">
        <div class="card-content white-text">
          <span class="card-title flow-text"><h5>Agenda: Role of Education in Combating Exploitation</h5></span>
 
