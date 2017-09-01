@@ -16,6 +16,18 @@
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
 
+
+  <!-- Modal Structure -->
+  <div id="modalRegister" class="modal">
+    <div class="modal-content">
+      <h4>How to Register?</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+  
 <!-- Dropdown Structure -->
 
  <ul id='dropdown1' class='dropdown-content'>
@@ -33,7 +45,7 @@
     <li class=" "><a href="/Committees/WHO" class="black-text">World Health Organization</a></li>
     </ul>
      <ul id='dropdown3' class='dropdown-content'>
-     <li class="grey darken-3"><a href="#modal1" class="white-text">How to Register?</a></li>
+     <li class="grey darken-3"><a href="#modalRegister" class="white-text">How to Register?</a></li>
     <li class="grey darken-3"><a href="" class="white-text">Payment</a></li>
     <li class="grey darken-3"><a class="btn-large grey lighten-2 black-text left-align" href="https://docs.google.com/forms/d/13wiRzYer2Pq6NSnISinhc9Z7Xz0qmgarN23f_FVJ8TU/edit">Register!</a></li>
     </ul>
@@ -202,6 +214,10 @@
   </footer>
 
 	<script>
+	  $(document).ready(function(){
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+  });
 	$(document).ready(function(){
 	 $(".dropdown-button").dropdown();
 	});
