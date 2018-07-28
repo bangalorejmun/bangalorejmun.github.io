@@ -1,30 +1,46 @@
 <html>
- <head>
-   <title>Conference</title>
-    <base href = "../">
-      <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <!-- Global Site Tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106611677-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments)};
-  gtag('js', new Date());
+<head>
+  <title>Conference</title>
+  <base href="../">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
 
-  gtag('config', 'UA-106611677-1');
-</script>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106611677-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-    </head>
+    function gtag() { dataLayer.push(arguments) };
+    gtag('js', new Date());
 
-   <body>
-      <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
+    gtag('config', 'UA-106611677-1');
+  </script>
+  <style type="text/css">
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1 0 auto;
+        }
+       .primary-parallax-container {
+             height: 100vh;
+        }
+  </style>
+
+</head>
+
+<body>
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
 
 
 
@@ -49,23 +65,25 @@
   </div>
 
 
-<!-- Dropdown Structure -->
+  <!-- Dropdown Structure -->
 
- <ul id='dropdown1' class='dropdown-content'>
-     <li class="black darken-3"><a href="/Committees/DISEC" class="white-text">DISEC</a></li>
-    <li class="black darken-3"><a href="/Committees/ECOSOC/" class="white-text">ECOSOC</a></li>
-    <li class="black darken-3"><a href="/Committees/HRC" class="white-text">UN Human Rights Council</a></li>
+  <ul id='dropdown1' class='dropdown-content'>
+    <li class="black darken-3"><a href="/Committees/DISEC" class="white-text">DISEC</a></li>
+    <li class="black darken-3"><a href="/Committees/ECOSOC/" class="white-text">ECF</a></li>
+    <li class="black darken-3"><a href="/Committees/HRC" class="white-text">FAO</a></li>
     <li class="black darken-3"><a href="/Committees/SC" class="white-text">UN Security Council</a></li>
     <li class="black darken-3"><a href="/Committees/WHO" class="white-text">World Health Organization</a></li>
-    </ul>
-    <ul id='dropdown2' class='dropdown-content'>
-     <li class=" "><a href="/Committees/DISEC" class="black-text">DISEC</a></li>
-    <li class=" "><a href="/Committees/ECOSOC/" class="black-text">ECOSOC</a></li>
-    <li class=" "><a href="/Committees/HRC" class="black-text">UN Human Rights Council</a></li>
+    <li class="black darken-3"><a href="/Committees/SOCHUM" class="white-text">SOCHUM</a></li>
+  </ul>
+  <ul id='dropdown2' class='dropdown-content'>
+    <li class=" "><a href="/Committees/DISEC" class="black-text">DISEC</a></li>
+    <li class=" "><a href="/Committees/ECOSOC/" class="black-text">ECF</a></li>
+    <li class=" "><a href="/Committees/HRC" class="black-text">FAO</a></li>
     <li class=" "><a href="/Committees/SC" class="black-text">UN Security Council</a></li>
     <li class=" "><a href="/Committees/WHO" class="black-text">World Health Organization</a></li>
-    </ul>
-    <!-- 
+    <li class=" "><a href="/Committees/SOCHUM" class="black-text">SOCHUM</a></li>
+  </ul>
+  <!-- 
      <ul id='dropdown3' class='dropdown-content'>
      <li class="black darken-3"><a href="#modalRegister" class="white-text">How to Register?</a></li>
     <li class="black darken-3"><a href="http://oakridge.in/studentlife/program/inspired-leaders-academy/bangalore-jmun" class="white-text">Payment</a></li>
@@ -80,40 +98,43 @@
     </ul> -->
   <div class="navbar-fixed">
     <nav>
-  <div class="nav-wrapper grey darken-3">
-    <a href="http://oakridge.in/" class="brand-logo bold"><img src ="Images/logo.png" style="height: 65px;"></a>
-     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-    <ul class="right hide-on-med-and-down ">
-      <li><a href="index.html">Home</a></li>
-		 <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Committees<i class="material-icons right">arrow_drop_down</i></a></li>
-		 <li><a href="/Conference/">Conference</a></li>
-		<!-- <li><a class="dropdown-button" href="#!" data-activates="dropdown3">Registration<i class="material-icons right">arrow_drop_down</i></a></li> -->
-    </ul>
+      <div class="nav-wrapper white darken-3"> <a href="http://oakridge.in/" class="brand-logo bold"><img src ="https://cdn.discordapp.com/attachments/470650596148510730/472039845318098964/JMUN_logo_1.jpg" class="circle" style="height: 65px;"></a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down ">
+          <li><a class="black-text" href="index.html">Home</a></li>
+          <li><a class="dropdown-button black-text" href="#!" data-activates="dropdown1">Committees<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a class="black-text" href="/Conference/">Conference</a></li>
+          <!-- <li><a class="dropdown-button" href="#!" data-activates="dropdown3">Registration<i class="material-icons right">arrow_drop_down</i></a></li> -->
+        </ul>
+      </div>
+    </nav>
   </div>
-</nav>
-  </div>
-     <ul class="side-nav" id="mobile-demo">
-      <li><a href="index.html">Home</a></li>
-       <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Committees<i class="material-icons right">arrow_drop_down</i></a></li>
+  <ul class="side-nav" id="mobile-demo">
+    <li><a href="index.html">Home</a></li>
+    <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Committees<i class="material-icons right">arrow_drop_down</i></a></li>
     <li><a href="/Conference/">Conference</a></li>
-  <!--  <li><a class="dropdown-button" href="#!" data-activates="dropdown4">Registration<i class="material-icons right">arrow_drop_down</i></a></li> -->
-    </ul>
- <script>  $(".button-collapse").sideNav();</script>
+    <!--  <li><a class="dropdown-button" href="#!" data-activates="dropdown4">Registration<i class="material-icons right">arrow_drop_down</i></a></li> -->
+  </ul>
+  <script>
+    $(".button-collapse").sideNav();
+  </script>
 
-<div id="index-banner" class="parallax-container">
+  <div id="index-banner" class="primary-parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
-       <div class="row"></div>
-       <div class="col s6 offset-s3"> <h1 class="header center white-text">Conference Details</h1></div>
-       <h4 class="center col s12 white-text text-darken-4">October 13th - 14th</h4>
+        <div class="row"></div>
+        <div class="col s6 offset-s3">
+          <h1 class="header center white-text"></h1>
+        </div>
+        <h4 class="center col s12 white-text text-darken-4"></h4>
 
 
       </div>
     </div>
-    <div class="parallax"><img src="Images/Un.jpg" alt="Unsplashed background img 1"></div>
+    <div class="parallax"><img class="responsive-img" src="Images/conference3.png" alt="Unsplashed background img 1"></div>
   </div>
 
-    <div class="divider black"></div>
+  <!-- <div class="divider black"></div>
     <div class="section grey lighten-2">
       <center><h3 class="black-text">Secretariat</h3></center>
       <div class="carousel">
@@ -127,8 +148,8 @@
     <a class="carousel-item " ><img src="Images/Secretariat/21167443_113693832699538_5739759117774627196_o.jpg"><h6 class="black-text"><center>Yoshita Reddy<br>International Press</center></h6></a>
     <a class="carousel-item " ><img src="Images/Secretariat/21246224_113699456032309_8042119732847230093_o.jpg"><h6 class="black-text"><center>Priyansha Jha<br>USG of Logistics</center></h6></a>
     <a class="carousel-item " ><img src="Images/Secretariat/Sehrish_Final-min.jpg"><h6 class="black-text"><center>Sehrish Ahmed<br>USG of Communications</center></h6></a>
-    <a class="carousel-item " ><img src="Images/Secretariat/Vikram_Final-min.jpg"><h6 class="black-text"><center>Vikram Mishra<br>USG of Technology</center></h6></a>
-
+    <a class="carousel-item " ><img src="Images/Secretariat/Vikram_Final-min.jpg"><h6 class="black-text"><center>Vikram Mishra<br>USG of Technology</center></h6></a> -->
+  <!--
 
       </div>
       <div class="row"> 
@@ -150,8 +171,8 @@
       <iframe width="560" height="315" src="https://www.youtube.com/embed/b8FilqDGXUE?rel=0" frameborder="0" allowfullscreen></iframe>
       </div>
     </div>
-    </div>     </div>
-<!-- 
+    </div>     </div> -->
+  <!-- 
     <div class="row">
     <div class="col s8 offset-s2">
     <div class="divider black"></div>
@@ -174,13 +195,14 @@
       </div>
     </div>
      </div> -->
-      <div class="row">
+  <div class="row">
     <div class="col s8 offset-s2">
-    <div class="divider black"></div>
-    </div></div>
+      <div class="divider black"></div>
+    </div>
+  </div>
 
 
-<!-- 
+  <!-- 
       <div class="container">
     <div class="section grey lighten-2">
       <div class="row">
@@ -212,7 +234,7 @@
     </div>
   </div>
       </div> -->
-<div class="container">
+  <!-- <div class="container">
     <div class="section grey lighten-2">
       <div class="row">
         <div class="col s12 m6">
@@ -237,48 +259,55 @@
     </div>
   </div>
       </div>
+-->
 
-
-</div></div>
- <footer class="page-footer grey darken-3">
+  </div>
+  </div>
+  <footer class="page-footer black darken-3">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
           <h5 class="white-text">Contact Details</h5>
           <p class="grey-text text-lighten-4">Send any queries over to <a href="mailto:bangalorejmun@oakridge.in" target="_blank"> bangalorejmun@oakridge.in</a> </p>
-          <p class="grey-text text-lighten-4">Teacher Advisor: <a href="tel:8971857769" target="_blank">+91 8971857769 (Ms. Debjani)</a>  </p>
-          <p class="grey-text text-lighten-4">Secretary General: <a href="tel:9108274028" target="_blank">+91 9108274028 (Abhinav)</a>  </p>
+          <!-- <p class="grey-text text-lighten-4">Teacher Advisor: <a href="tel:8971857769" target="_blank">+91 8971857769 (Ms. Debjani)</a>  </p>
+          <p class="grey-text text-lighten-4">Secretary General: <a href="tel:9108274028" target="_blank">+91 9108274028 (Abhinav)</a>  </p> -->
 
         </div>
-        </div>
       </div>
+    </div>
     <div class="footer-copyright">
       <div class="container">
         <div class="row">
           <div class="col s4">
             <a class="grey-text text-lighten-4 left" href="">  <i class="material-icons">copyright</i> 2017 Bangalore Junior Mun</a>
           </div>
-          <div class="col s4 offset-s4"><> by <a href="https://github.com/Nexus987"  target="_blank">Nexus</a>, <a href="https://github.com/HyperCosmac" target="_blank">HyperCosmac</a> and <a href="https://github.com/CryogenicPlanet" target="_blank">CryogenicPlanet</a></div>
+          <div class="col s4 offset-s4">
+            <> by <a href="https://github.com/Nexus987" target="_blank">Nexus</a>, <a href="https://github.com/gaurangbharti1" target="_blank">GBHacker23</a> and <a href="https://github.com/BK-Modding/" target="_blank">BK-Modding</a></div>
         </div>
-       </div>
+      </div>
     </div>
   </footer>
   <script>
-  $(document).ready(function(){
-  // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
-  $('.modal').modal();
-});
-    $(document).ready(function(){
+    $(document).ready(function() {
+      // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+      $('.modal').modal();
+    });
+    $(document).ready(function() {
       $('.slider').slider();
     });
-    $(document).ready(function(){
+    $(document).ready(function() {
       $('.parallax').parallax();
     });
-    $(document).ready(function(){
-      $('.carousel').carousel({indicators: true,duration : 1});
+    $(document).ready(function() {
+      $('.carousel').carousel({ indicators: true, duration: 1 });
     });
-
-</script>
+    $(document).ready(function() {
+      $(".dropdown-button").dropdown({
+        coverTrigger: false
+      });
+    });
+  </script>
   </div>
-  </body>
-  </html>
+</body>
+
+</html>
