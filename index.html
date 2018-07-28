@@ -1,70 +1,88 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Bangalore Jmun</title>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
 
     <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106611677-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments)};
+
+        function gtag() { dataLayer.push(arguments) };
         gtag('js', new Date());
 
         gtag('config', 'UA-106611677-1');
     </script>
+    <style type="text/css">
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1 0 auto;
+        }
+        .primary-parallax-container {
+             height: 100vh;
+        }
+    </style>
 </head>
 
 <body>
-<!--Import jQuery before materialize.js-->
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="js/materialize.min.js"></script>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
 
 
 
-<!-- Modal Structure -->
-<div id="modalRegister" class="modal">
-    <div class="modal-content">
-        <h4>How to Register?</h4>
-        <p>Step 1: Pay through the link provided under the registration tab.</p>
-        <p>Step 2: Note the transaction ID, it will be used to fill the form.</p>
-        <p>Step 3: Open the registration form and fill in the relevant details along with the transaction ID.</p>
-        <p>Step 4: Await authentication from the school.</p>
-        <p>Step 5: Now that the school has registered itself, the individual delegates can register by using the individual application form.</p>
-        <h4>Fee Structure</h4>
-        <p>INR 2500 for the school's registration fee.</p>
-        <p>INR 1000 for each individual delegate's registration fee.</p>
-        <h4>Payment Details</h4>
-        <p> The registration fee is inclusive of the following:</p>
-        <p>Conference Fee - Including delegate Kit</p>
-        <p>Meals - Lunch, Snacks, tea and coffee on all the days of the conference</p>
-        <p>Preparation - Access to pre-conference training, background guides, and preparation guides</p>
+    <!-- Modal Structure -->
+    <div id="modalRegister" class="modal">
+        <div class="modal-content">
+            <h4>How to Register?</h4>
+            <p>Step 1: Pay through the link provided under the registration tab.</p>
+            <p>Step 2: Note the transaction ID, it will be used to fill the form.</p>
+            <p>Step 3: Open the registration form and fill in the relevant details along with the transaction ID.</p>
+            <p>Step 4: Await authentication from the school.</p>
+            <p>Step 5: Now that the school has registered itself, the individual delegates can register by using the individual application form.</p>
+            <h4>Fee Structure</h4>
+            <p>INR 2500 for the school's registration fee.</p>
+            <p>INR 1000 for each individual delegate's registration fee.</p>
+            <h4>Payment Details</h4>
+            <p> The registration fee is inclusive of the following:</p>
+            <p>Conference Fee - Including delegate Kit</p>
+            <p>Meals - Lunch, Snacks, tea and coffee on all the days of the conference</p>
+            <p>Preparation - Access to pre-conference training, background guides, and preparation guides</p>
+        </div>
     </div>
-</div>
 
 
-<!-- Dropdown Structure -->
+    <!-- Dropdown Structure -->
 
-<ul id='dropdown1' class='dropdown-content'>
-    <li class="black darken-3"><a href="/Committees/DISEC" class="white-text">DISEC</a></li>
-    <li class="black darken-3"><a href="/Committees/ECOSOC/" class="white-text">ECOSOC</a></li>
-    <li class="black darken-3"><a href="/Committees/HRC" class="white-text">UN Human Rights Council</a></li>
-    <li class="black darken-3"><a href="/Committees/SC" class="white-text">UN Security Council</a></li>
-    <li class="black darken-3"><a href="/Committees/WHO" class="white-text">World Health Organization</a></li>
-</ul>
-<ul id='dropdown2' class='dropdown-content'>
-    <li class=" "><a href="/Committees/DISEC" class="black-text">DISEC</a></li>
-    <li class=" "><a href="/Committees/ECOSOC/" class="black-text">ECOSOC</a></li>
-    <li class=" "><a href="/Committees/HRC" class="black-text">UN Human Rights Council</a></li>
-    <li class=" "><a href="/Committees/SC" class="black-text">UN Security Council</a></li>
-    <li class=" "><a href="/Committees/WHO" class="black-text">World Health Organization</a></li>
-</ul>
-<!--
+    <ul id='dropdown1' class='dropdown-content'>
+        <li class="black darken-3"><a href="/Committees/DISEC" class="white-text">DISEC</a></li>
+        <li class="black darken-3"><a href="/Committees/ECOSOC/" class="white-text">ECF</a></li>
+        <li class="black darken-3"><a href="/Committees/HRC" class="white-text">FAO</a></li>
+        <li class="black darken-3"><a href="/Committees/SC" class="white-text">UN Security Council</a></li>
+        <li class="black darken-3"><a href="/Committees/WHO" class="white-text">World Health Organization</a></li>
+        <li class="black darken-3"><a href="/Committees/SOCHUM" class="white-text">SOCHUM</a></li>
+    </ul>
+    <ul id='dropdown2' class='dropdown-content'>
+        <li class=" "><a href="/Committees/DISEC" class="black-text">DISEC</a></li>
+        <li class=" "><a href="/Committees/ECOSOC/" class="black-text">ECF</a></li>
+        <li class=" "><a href="/Committees/HRC" class="black-text">FAO</a></li>
+        <li class=" "><a href="/Committees/SC" class="black-text">UN Security Council</a></li>
+        <li class=" "><a href="/Committees/WHO" class="black-text">World Health Organization</a></li>
+        <li class=" "><a href="/Committees/SOCHUM" class="black-text">SOCHUM</a></li>
+    </ul>
+    <!--
  <ul id='dropdown3' class='dropdown-content'>
  <li class="black darken-3"><a href="#modalRegister" class="white-text">How to Register?</a></li>
 <li class="black darken-3"><a href="http://oakridge.in/studentlife/program/inspired-leaders-academy/bangalore-jmun" class="white-text">Payment</a></li>
@@ -77,74 +95,78 @@
 <li class=""><a class="btn-flat grey lighten-2 black-text left-align" href="https://docs.google.com/forms/d/e/1FAIpQLSf27u9rKKihQXensMo_xB2WwwHOq9vdYDZp4_J5p9nC6aq9qg/viewform">School Registration</a></li>
 <li class=""><a class="btn-flat grey lighten-2 black-text left-align" href="https://goo.gl/forms/hHfWVGCoMBGN8hY42">Individual Registration</a></li>
 </ul> -->
-<div class="navbar-fixed">
-    <nav>
-        <div class="nav-wrapper white black-text">
-            <a href="http://oakridge.in/" class="brand-logo bold"><img src ="https://cdn.discordapp.com/attachments/470650596148510730/472039845318098964/JMUN_logo_1.jpg" class="circle" style="height: 65px;"></a>
-            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="index.html" class="black-text">Home</a></li>
-                <li><a class="dropdown-button black-text" href="#!" data-activates="dropdown1">Committees<i class="material-icons right">arrow_drop_down</i></a></li>
-                <li><a href="/Conference/" class="black-text">Conference</a></li>
-                <!-- <li><a class="dropdown-button" href="#!" data-activates="dropdown3">Registration<i class="material-icons right">arrow_drop_down</i></a></li> -->
-            </ul>
-        </div>
-    </nav>
-</div>
-<ul class="side-nav" id="mobile-demo">
-    <li><a href="index.html">Home</a></li>
-    <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Committees<i class="material-icons right">arrow_drop_down</i></a></li>
-    <li><a href="/Conference/">Conference</a></li>
-    <!--  <li><a class="dropdown-button" href="#!" data-activates="dropdown4">Registration<i class="material-icons right">arrow_drop_down</i></a></li> -->
-</ul>
-<script>  $(".button-collapse").sideNav();</script>
-
-
-<div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-        <div class="container">
-            <div class="row center">
-                <h1 class="header col s12 white-text">Bangalore JMUN 2017</h4>
-                    <h4 class="header col s12 white-text text-darken-4">October 13th - 14th</h4>
-                    <h5 class="header col s12 white-text text-darken-4">This event has ended</h5>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper white black-text">
+                <a href="http://oakridge.in/" class="brand-logo bold"><img src ="https://cdn.discordapp.com/attachments/470650596148510730/472039845318098964/JMUN_logo_1.jpg" class="circle" style="height: 65px;"></a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html" class="black-text">Home</a></li>
+                    <li><a class="dropdown-button black-text" href="#!" data-activates="dropdown1">Committees<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a href="/Conference/" class="black-text">Conference</a></li>
+                    <!-- <li><a class="dropdown-button" href="#!" data-activates="dropdown3">Registration<i class="material-icons right">arrow_drop_down</i></a></li> -->
+                </ul>
             </div>
+        </nav>
+    </div>
+    <ul class="side-nav" id="mobile-demo">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Committees<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a href="/Conference/">Conference</a></li>
+        <!--  <li><a class="dropdown-button" href="#!" data-activates="dropdown4">Registration<i class="material-icons right">arrow_drop_down</i></a></li> -->
+    </ul>
+    <script>
+        $(".button-collapse").sideNav();
+    </script>       
+
+
+    <div id="index-banner" class="primary-parallax-container">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="row center">
+                    <h1 class="header col s12 white-text">
+                        </h4>
+                        <h4 class="header col s12 white-text text-darken-4"></h4>
+                        <h5 class="header col s12 white-text text-darken-4"></h5>
+                </div>
+            </div>
+        </div>
+        <div class="parallax"><img class="responsive-img" src="/Images/Home-Image1.png" alt="Unsplashed background img 1"></div>
+    </div>
+    <div class="container">
+        <div class="section">
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center red-text text-darken-4"><i class="material-icons">flash_on</i></h2>
+                        <h5 class="center">What is JMUN?</h5>
+
+                        <p align="justify" class="light">Junior Model United Nations is a platform for students from 6th to 8th grade to engage in substantive debate through a simulation of the United Nations.</p>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center red-text text-darken-4"><i class="material-icons">group</i></h2>
+                        <h5 class="center">Delegation</h5>
+
+                        <p align="justify" class="light">With over 200 delegates, the third edition of this conference is set to be the largest Junior MUN in Bangalore.</p>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center red-text text-darken-4"><i class="material-icons">settings</i></h2>
+                        <h5 class="center">6 Committees</h5>
+
+                        <p align="justify" class="light">DISEC, WHO, UNSC, FAO, EFC and SOCHUM. A multitude of committees are present, each with their own varying agendas tackling global issues.</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
-    <div class="parallax"><img src="https://cdn.discordapp.com/attachments/470650596148510730/472058123197087744/http3A2F2Fcdn.png" alt="Unsplashed background img 1" ></div>
-</div>
-<div class="container">
-    <div class="section">
-        <div class="row">
-            <div class="col s12 m4">
-                <div class="icon-block">
-                    <h2 class="center red-text text-darken-4"><i class="material-icons">flash_on</i></h2>
-                    <h5 class="center">What is JMUN?</h5>
-
-                    <p align="justify" class="light">Junior Model United Nations is a platform for students from 6th to 8th grade to engage in substantive debate through a simulation of the United Nations.</p>
-                </div>
-            </div>
-
-            <div class="col s12 m4">
-                <div class="icon-block">
-                    <h2 class="center red-text text-darken-4"><i class="material-icons">group</i></h2>
-                    <h5 class="center">Delegation</h5>
-
-                    <p align="justify" class="light">With over 200 delegates, the second edition of this conference is set to be the largest Junior MUN in Bangalore.</p>
-                </div>
-            </div>
-
-            <div class="col s12 m4">
-                <div class="icon-block">
-                    <h2 class="center red-text text-darken-4"><i class="material-icons">settings</i></h2>
-                    <h5 class="center">5 Committees</h5>
-
-                    <p align="justify" class="light">DISEC, WHO, UNHRC, UNSC and ECOSOC. A multitude of committees are present, each with their own varying agendas tackling global issues.</p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>
+    <!-- 
 <div class="section">
     <div class="row">
         <div class="col s4 offset-s2">
@@ -159,95 +181,127 @@
         </div>
     </div>
 </div>
-<div class="parallax-container">
+-->
+    <div class="parallax-container">
 
-    <div class="parallax"><img src="Images/Mic.jpg">
-    </div>
-</div>
-<div class="container">
-    <div class="section">
-        <div class="row">
-            <div class="col s6 center"><h3> Committees</h3></div>
-            <div class="col s12">
-                <ul class="collapsible popout" data-collapsible="accordion">
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">flags</i>DISEC - Click Here For More Information</div>
-                        <div class="collapsible-body"><div class="row"><span>DISEC</span></div><div class="row"><span class="flow-text">Agenda: Global Co-operation in Regards To Nuclear Proliferation</span></div><div class="row"><a href="/Committees/DISEC"  class="waves-effect waves-teal btn-large red">Learn More</a></div></div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">flags</i>ECOSOC - Click Here For More Information</div>
-                        <div class="collapsible-body"><div class="row"><span>ECOSOC</span></div><div class="row"><span class="flow-text">Agenda: Unsustainable Consumption of Non-Renewable Resources</span></div><div class="row"><a href="/Committees/ECOSOC"  class="waves-effect waves-teal btn-large red">Learn More</a></div></div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">flags</i>HRC - Click Here For More Information</div>
-                        <div class="collapsible-body"><div class="row"><span>UNHRC</span></div><div class="row"><span class="flow-text">Agenda: Role of Education in Combating Exploitation</span></div><div class="row"><a href="/Committees/HRC"  class="waves-effect waves-teal btn-large red">Learn More</a></div></div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">flags</i>SC - Click Here For More Information</div>
-                        <div class="collapsible-body"><div class="row"><span>UNSC</span></div><div class="row"><span class="flow-text">Agenda: The Threat Posed By The Korean Crisis</span></div><div class="row"><a href="/Committees/SC"  class="waves-effect waves-teal btn-large red">Learn More</a></div></div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">flags</i>WHO - Click Here For More Information</div>
-                        <div class="collapsible-body"><div class="row"><span>WHO</span></div><div class="row"><span class="flow-text">Agenda: Implications of a Potential Water Crisis</span></div><div class="row"><a href="/Committees/WHO"  class="waves-effect waves-teal btn-large red">Learn More</a></div></div>
-                    </li>
-                </ul>
-            </div>
-
+        <div class="parallax"><img src="Images/Mic2.jpg">
         </div>
     </div>
-</div>
-
-<div class="parallax-container">
-    <div class="parallax"><img src="Images/School_Photo.jpg"></div>
-</div>
-
-
-<div class="container">
-    <div class="section">
-        <div class="row">
-            <div class="col s6"><div class="video-container"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.31333819796!2d77.74977931521092!3d12.887562220202788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae0d539b9bf9ef%3A0x8173c2437f9bc14d!2sOakridge+International+School!5e0!3m2!1sen!2sin!4v1503659601937" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div></div>
-            <div class="col s6">
-                <h4>Venue:</h4>
-                <p class="flow-text">The Bangalore JMUN will be held at the Oakridge International Bangalore Campus.</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<footer class="page-footer grey darken-3">
     <div class="container">
-        <div class="row">
-            <div class="col l6 s12">
-                <h5 class="white-text">Contact Details</h5>
-                <p class="grey-text text-lighten-4">Send any queries over to <a href="mailto:bangalorejmun@oakridge.in" target="_blank"> bangalorejmun@oakridge.in</a> </p>
-                <p class="grey-text text-lighten-4">Teacher Advisor: <a href="tel:8971857769" target="_blank">+91 8971857769 (Ms. Debjani)</a>  </p>
-                <p class="grey-text text-lighten-4">Secretary General: <a href="tel:9108274028" target="_blank">+91 9108274028 (Abhinav)</a>  </p>        </div>
+        <div class="section">
+            <div class="row">
+                <div class="col s6 left-align" style="position: relative; left: 17px;">
+                    <h3 class="thin italic">Committees</h3>
+                </div>
+                <div class="col s12">
+                    <ul class="collapsible popout" data-collapsible="accordion">
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">flags</i> Disarmament and International Security Council</div>
+                            <div class="collapsible-body">
+                                <div class="row"></div>
+                                <div class="row"><span class="flow-text">Evaluating the implications of militarizing international borders.</span></div>
+                                <div class="row"><a href="/Committees/DISEC" class="waves-effect waves-teal btn-large blue darken-1">Learn More</a></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">flags</i>Economic and Financial Committee</div>
+                            <div class="collapsible-body">
+                                <div class="row"></div>
+                                <div class="row"><span class="flow-text">Protecting free trade in light of recent protectionary measures by economic superpowers.</span></div>
+                                <div class="row"><a href="/Committees/ECOSOC" class="waves-effect waves-teal btn-large blue darken-1">Learn More</a></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">flags</i>Food and Agricultural Organization</div>
+                            <div class="collapsible-body">
+                                <div class="row"></div>
+                                <div class="row"><span class="flow-text"> Ensuring food security for an growing global population.</span></div>
+                                <div class="row"><a href="/Committees/HRC" class="waves-effect waves-teal btn-large blue darken-1">Learn More</a></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">flags</i>Security Council</div>
+                            <div class="collapsible-body">
+                                <div class="row"></div>
+                                <div class="row"><span class="flow-text">Addressing the use of misinformation and censorship in the pursuit of political goals.</span></div>
+                                <div class="row"><a href="/Committees/SC" class="waves-effect waves-teal btn-large blue darken-1">Learn More</a></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">flags</i>World Health Organization</div>
+                            <div class="collapsible-body">
+                                <div class="row"></div>
+                                <div class="row"><span class="flow-text">Combating the spread of communicable diseases Across international borders.</span></div>
+                                <div class="row"><a href="/Committees/WHO" class="waves-effect waves-teal btn-large blue darken-1">Learn More</a></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">flags</i>Social, Humanitarian and Cultural Committee</div>
+                            <div class="collapsible-body">
+                                <div class="row"><span></span></div>
+                                <div class="row"><span class="flow-text">Evaluating the ethics of imposing migration controls on the increasing refugee and migrant populations.</span></div>
+                                <div class="row"><a href="/Committees/SOCHUM" class="waves-effect waves-teal btn-large blue darken-1">Learn More</a></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
         </div>
     </div>
-    <div class="footer-copyright">
+
+    <div class="parallax-container">
+        <div class="parallax"><img src="Images/School_Photo.jpg"></div>
+    </div>
+
+
+    <div class="container">
+        <div class="section">
+            <div class="row">
+                <div class="col s6">
+                    <div class="video-container"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.31333819796!2d77.74977931521092!3d12.887562220202788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae0d539b9bf9ef%3A0x8173c2437f9bc14d!2sOakridge+International+School!5e0!3m2!1sen!2sin!4v1503659601937"
+                            width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+                </div>
+                <div class="col s6">
+                    <h4>Venue:</h4>
+                    <p class="flow-text">The Bangalore JMUN will be held at the Oakridge International Bangalore Campus.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer black">
         <div class="container">
             <div class="row">
-                <div class="col s4">
-                    <a class="grey-text text-lighten-4 left" href="">  <i class="material-icons">copyright</i> 2017 Bangalore Junior Mun</a>
+                <div class="col s12">
+                    <h5 class="white-text">Contact Details</h5>
+                    <p class="grey-text text-lighten-4">Send any queries over to <a href="mailto:bangalorejmun@oakridge.in" target="_blank"> bangalorejmun@oakridge.in</a> </p>
+                    <!--<p class="grey-text text-lighten-4">Teacher Advisor: <a href="tel:8971857769" target="_blank">+91 8971857769 (Ms. Debjani)</a>  </p>
+                        <p class="grey-text text-lighten-4">Secretary General: <a href="tel:9108274028" target="_blank">+91 9108274028 (Abhinav)</a>  </p>        </div> -->
                 </div>
-                <div class="col s4 offset-s4"><> by <a href="https://github.com/Nexus987"  target="_blank">Nexus</a>, <a href="https://github.com/HyperCosmac" target="_blank">HyperCosmac</a> and <a href="https://github.com/CryogenicPlanet" target="_blank">CryogenicPlanet</a></div>
+            </div>
+            <div class="row">
+                <div class="footer-copyright">
+                    <div class="col s7">
+                        <a class="grey-text text-lighten-4" href=""><i class="material-icons">copyright</i>2018 Bangalore Junior Mun</a>
+                    </div>
+                    <div class="col s5">
+                        Developed by <a href="https://github.com/Nexus987" target="_blank">Nexus</a>, <a href="https://github.com/gaurangbharti1" target="_blank">GBHacker23</a> and <a href="https://github.com/BK-Modding/" target="_blank">BK-Modding</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
-<script>
-    $(document).ready(function(){
-        // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
-        $('.modal').modal();
-    });
-    $(document).ready(function(){
-        $(".dropdown-button").dropdown();
-    });
-    $(document).ready(function(){
-        $('.parallax').parallax();
-
-    });
-</script>
+    <script>
+        $(document).ready(function() {
+            $('.parallax').parallax();
+            $(".dropdown-button").dropdown({
+                coverTrigger: false
+            });
+            $('.modal').modal();
+        });
+    </script>
 </body>
+
 </html>
