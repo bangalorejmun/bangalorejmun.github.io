@@ -26,9 +26,11 @@
             min-height: 100vh;
             flex-direction: column;
         }
-
         main {
             flex: 1 0 auto;
+        }
+        .parallax-container {
+            height:  -100vw;
         }
     </style>
 </head>
@@ -93,7 +95,8 @@
     <div class="navbar-fixed">
         <nav>
             <div class="nav-wrapper white">
-                <a href="http://oakridge.in/" class="brand-logo bold"> <a href="http://oakridge.in/" class="brand-logo bold"><img src ="https://cdn.discordapp.com/attachments/470650596148510730/472039845318098964/JMUN_logo_1.jpg" class="circle" style="height: 65px;"></a><!-- <img src ="Images/logo.png" style="height: 65px;"> --> </a>
+                <a href="http://oakridge.in/" class="brand-logo bold"> <a href="http://oakridge.in/" class="brand-logo bold"><img src ="https://cdn.discordapp.com/attachments/470650596148510730/472039845318098964/JMUN_logo_1.jpg" class="circle" style="height: 65px;"></a>
+                <!-- <img src ="Images/logo.png" style="height: 65px;"> --></a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down ">
                     <li><a class="black-text" href="index.html">Home</a></li>
@@ -114,22 +117,22 @@
         $(".button-collapse").sideNav();
     </script>
 
-    <div style="height:32%;" id="index-banner" class="parallax-container">
-        <div class="section no-pad-bot">
-            <div class="container">
-                <h1 class="header center white-text thin italic">Disarmament and International Security Council</h1>
-                
+    <div id="index-banner" class="parallax-container">
+        <div class="container">
+            <div class="parallax">
+                <img src="Images/DISEC-og.jpg" alt="Unsplashed background img 1">
+                <div style="background-color: black; position: relative; top: 82%; height: 15%; opacity: 0.5;">
+                    <h4 style="position: relative; left: 60%; font-family: Segoe UI; font-weight: lighter;" class="white-text">Disarmament and Security Council</h4>
+                </div>
             </div>
-            <div class="parallax"><img src="Images/Jet.jpg" alt="Unsplashed background img 1"></div>
         </div>
-
     </div>
-    <div class="section grey lighten-2">
+    <div class="section white">
         <div class="row">
             <div class="col s6">
                 <div align="justify" class="card grey darken-4 z-depth-5">
                     <div class="card-content white-text">
-                        <span class="card-title flow-text"><h5>Evaluating the implications of militarizing international borders</h5></span>
+                        <span class="card-title flow-text"><h5><em>Evaluating the implications of militarizing international borders</em></h5></span>
                         <br>
                         <p class="flow-text">Coming soon</p>
                     </div>
