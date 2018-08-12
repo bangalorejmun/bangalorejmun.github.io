@@ -95,6 +95,202 @@
     <div class="navbar-fixed">
         <nav>
             <div class="nav-wrapper white darken-3">
+                <a href="index.html" class="brand-logo bold"><img src ="Images/logo-new.jpg" class="circle" style="height: 65px;"></a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a class="black-text" href="index.html">Home</a></li>
+                    <li><a class="dropdown-button black-text" href="#!" data-activates="dropdown1">Committees<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a class="black-text" href="/Conference/">Conference</a></li>
+                    <!-- <li><a class="dropdown-button" href="#!" data-activates="dropdown3">Registration<i class="material-icons right">arrow_drop_down</i></a></li> -->
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <ul class="side-nav" id="mobile-demo">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Committees<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a href="/Conference/">Conference</a></li>
+        <!--  <li><a class="dropdown-button" href="#!" data-activates="dropdown4">Registration<i class="material-icons right">arrow_drop_down</i></a></li> -->
+    </ul>
+    <script>
+        $(".button-collapse").sideNav();
+    </script>
+
+    <div id="index-banner" class="parallax-container">
+        <div class="container">
+            <div class="parallax">
+                <img src="Images/SOCHUM-OG.jpg" alt="Unsplashed background img 1">
+                <div style="background-color: black; position: relative; top: 82%; height: 15%; opacity: 0.7;">
+                    <h3 style="font-family: Segoe UI;" class="white-text right-align">Social Cultural and Humanitarian Affairs</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section white">
+        <div class="row">
+            <div class="col s6">
+                <div align="justify" class="card white z-depth-5">
+                    <div class="card-content black-text">
+                        <span class="card-title flow-text"><h4 style="font-family: Segoe UI; font-weight: lighter;">Agenda: Evaluating the Ethics of Imposing Migration Controls on the Increasing Refugee and Migrant Populations</h4></span>
+                        <br>
+                    </div>
+                    <div class="card-action">
+                        <h5 style = "font-family: Segoe UI; font-weight: normal;">The Social, Cultural and Humanitarian Committee ( SOCHUM ) is the third committee of the general assembly with an agenda relating to a broad range of social, humanitarian affairs and human rights issues that affect people all over the world. Topics discussed include the advancement of women, the protection of children, the treatment of refugees among others. <br><br> 
+ 
+This year, at Bangalore JMUN 2018, delegates will be tasked with the pressing issue of the ethics of imposing migration controls on the increasing refugee and migrant populations. SOCHUM welcomes all those who are up for heated debate, have the ability to move a room with just their words and possess a passion for righting the wrongs
+</em></h5>
+                        <!--<a class="btn-flat indigo darken-3 white-text" href="https://docs.google.com/document/d/1t6pfAXwGaYNvlkLJ4hsHXDivfHP6Tkw2E8MosYHs3fg/edit">Background Guide</a>-->
+                        <!--<a class="btn-flat indigo darken-3 white-text" href="https://docs.google.com/spreadsheets/d/1IwsSmtPnYpGsmQqrPkX9zy4XIsVj7FP3eiG63sjAl24/edit?usp=sharing">Country Allocations</a>-->
+                        <!--<a class="btn-flat indigo darken-3 white-text" href="https://drive.google.com/drive/folders/0Bw0gqJdqCw_UTklPa1dyMWpHX2c?usp=sharing">Training material</a>-->
+                    </div>
+                </div>
+            </div>
+            <div class="center col s2 offset-s1 flow-text ">
+                <img src="https://i.imgur.com/C8GwQRc.jpg" alt="" class="circle responsive-img"> Co-Chair-
+                <br>Anamol CH
+            </div>
+            <div class="center col s2 offset-s1  flow-text">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Default_profile_picture_%28male%29_on_Facebook.jpg" alt="" class="circle responsive-img"> Co-Chair-<br>Shikha Bhattacharjee
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer black">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <h5 class="white-text">Contact Details</h5>
+                    <p class="grey-text text-lighten-4">Send any queries over to <a href="mailto:bangalorejmun@oakridge.in" target="_blank"> bangalorejmun@oakridge.in</a> </p>
+                    <!--<p class="grey-text text-lighten-4">Teacher Advisor: <a href="tel:8971857769" target="_blank">+91 8971857769 (Ms. Debjani)</a>  </p>
+                        <p class="grey-text text-lighten-4">Secretary General: <a href="tel:9108274028" target="_blank">+91 9108274028 (Abhinav)</a>  </p>        </div> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="footer-copyright">
+                    <div class="col s7">
+                        <a class="grey-text text-lighten-4" href=""><i class="material-icons">copyright</i>2018 Bangalore Junior MUN</a>
+                    </div>
+                    <div class="col s5">
+                        Developed by <a href="https://github.com/Nexus987" target="_blank">Nexus</a>, <a href="https://github.com/gaurangbharti1" target="_blank">GBHacker23</a> and <a href="https://github.com/BK-Modding/" target="_blank">BK-Modding</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        $(document).ready(function() {
+            // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+            $('.modal').modal();
+        });
+        $(document).ready(function() {
+            $(".dropdown-button").dropdown({
+                coverTrigger: false
+            });
+        });
+        $(document).ready(function() {
+            $('.parallax').parallax();
+
+        });
+    </script>
+</body>
+
+</html>
+<html>
+
+<head>
+    <title>SOCHUM</title>
+    <base href="../../">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=0.5" />
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106611677-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() { dataLayer.push(arguments) };
+        gtag('js', new Date());
+
+        gtag('config', 'UA-106611677-1');
+    </script>
+    <style type="text/css">
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+
+
+    <!-- Modal Structure -->
+    <div id="modalRegister" class="modal">
+        <div class="modal-content">
+            <h4>How to Register?</h4>
+            <p>Step 1: Pay through the link provided under the registration tab.</p>
+            <p>Step 2: Note the transaction ID, it will be used to fill the form.</p>
+            <p>Step 3: Open the registration form and fill in the relevant details along with the transaction ID.</p>
+            <p>Step 4: Await authentication from the school.</p>
+            <p>Step 5: Now that the school has registered itself, the individual delegates can register by using the individual application form.</p>
+            <h4>Fee Structure</h4>
+            <p>INR 2500 for the school's registration fee.</p>
+            <p>INR 1000 for each individual delegate's registration fee.</p>
+            <h4>Payment Details</h4>
+            <p> The registration fee is inclusive of the following:</p>
+            <p>Conference Fee - Including delegate Kit</p>
+            <p>Meals - Lunch, Snacks, tea and coffee on all the days of the conference</p>
+            <p>Preparation - Access to pre-conference training, background guides, and preparation guides</p>
+        </div>
+    </div>
+
+
+    <!-- Dropdown Structure -->
+
+    <ul id='dropdown1' class='dropdown-content'>
+        <li class="black darken-3"><a href="/Committees/DISEC" class="white-text">DISEC</a></li>
+        <li class="black darken-3"><a href="/Committees/ECOFIN/" class="white-text">ECOFIN</a></li>
+        <li class="black darken-3"><a href="/Committees/HRC" class="white-text">FAO</a></li>
+        <li class="black darken-3"><a href="/Committees/SC" class="white-text">UN Security Council</a></li>
+        <li class="black darken-3"><a href="/Committees/WHO" class="white-text">World Health Organization</a></li>
+        <li class="black darken-3"><a href="/Committees/SOCHUM" class="white-text">SOCHUM</a></li>
+    </ul>
+    <ul id='dropdown2' class='dropdown-content'>
+        <li class=" "><a href="/Committees/DISEC" class="black-text">DISEC</a></li>
+        <li class=" "><a href="/Committees/ECOFIN/" class="black-text">ECOFIN</a></li>
+        <li class=" "><a href="/Committees/HRC" class="black-text">FAO</a></li>
+        <li class=" "><a href="/Committees/SC" class="black-text">UN Security Council</a></li>
+        <li class=" "><a href="/Committees/WHO" class="black-text">World Health Organization</a></li>
+        <li class=" "><a href="/Committees/SOCHUM" class="black-text">SOCHUM</a></li>
+    </ul>
+    <!--
+ <ul id='dropdown3' class='dropdown-content'>
+ <li class="black darken-3"><a href="#modalRegister" class="white-text">How to Register?</a></li>
+<li class="black darken-3"><a href="http://oakridge.in/studentlife/program/inspired-leaders-academy/bangalore-jmun" class="white-text">Payment</a></li>
+<li class="black darken-3"><a href="https://docs.google.com/forms/d/e/1FAIpQLSf27u9rKKihQXensMo_xB2WwwHOq9vdYDZp4_J5p9nC6aq9qg/viewform" class="white-text">School Registration</a></li>
+<li class="black darken-3"><a href="https://goo.gl/forms/hHfWVGCoMBGN8hY42" class="white-text">Individual Registration</a></li>
+</ul>
+     <ul id='dropdown4' class='dropdown-content'>
+ <li class=""><a href="#modalRegister" class="black-text">How to Register?</a></li>
+<li class=""><a href="http://oakridge.in/studentlife/program/inspired-leaders-academy/bangalore-jmun" class="black-text">Payment</a></li>
+<li class=""><a class="btn-flat grey lighten-2 black-text left-align" href="https://docs.google.com/forms/d/e/1FAIpQLSf27u9rKKihQXensMo_xB2WwwHOq9vdYDZp4_J5p9nC6aq9qg/viewform">School Registration</a></li>
+<li class=""><a class="btn-flat grey lighten-2 black-text left-align" href="https://goo.gl/forms/hHfWVGCoMBGN8hY42">Individual Registration</a></li>
+</ul> -->
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper white darken-3">
                 <a href="http://oakridge.in/" class="brand-logo bold"><img src ="Images/logo-new.jpg" class="circle" style="height: 65px;"></a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
