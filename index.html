@@ -68,6 +68,13 @@
             height: 850px;
         }
     </style>
+
+  <div class="fixed-action-btn direction-top active" style="bottom: 45px; right: 24px;">
+          <a id = "noticeicon"id="mail" class="btn btn-floating btn-large cyan waves-effect waves-light pulse" onmouseover="this.classList.add('pulse')" onmouseout="this.classList.remove('pulse')" href="#modalNOTICE">
+            <i class="material-icons">mail</i>
+          </a>
+        </div>
+
 </head>
 
 <body>
@@ -83,6 +90,17 @@
 
         </div>
     </div>
+
+    <div id="modalNOTICE" class="modal">
+        <div class="modal-content">
+            <center>
+                <h3>Notice Board</h3>
+                <b><i>Watch this space for notices</i></b>
+            </center>
+
+        </div>
+    </div>
+
 
     <div id="modalFAQ" class="modal">
         <div class="modal-content">
@@ -151,17 +169,14 @@
         <li class="black darken-3"><a href="/Committees/SOCHUM" class="white-text">UNEP</a></li>
     </ul>
     <ul id='dropdown2' class='dropdown-content'>
-        <li class=" "><a href="/Committees/DISEC" class="black-text">DISEC</a></li>
-        <li class=" "><a href="/Committees/ECOFIN/" class="black-text">ECOSOC</a></li>
-        <li class=" "><a href="/Committees/HRC" class="black-text">UNHRC</a></li>
-        <li class=" "><a href="/Committees/SC" class="black-text">UNSC</a></li>
-        <li class=" "><a href="/Committees/WHO" class="black-text">WHO</a></li>
-        <li class=" "><a href="/Committees/SOCHUM" class="black-text">UNEP</a></li>
+        <li class="black darken-3"><a href="/Conference/" class="white-text">About</a></li>
+        <li class="black darken-3"><a href="/Secretariat/" class="white-text">Secretariat</a></li>
+        <li class="black darken-3"><a href="https://docs.google.com/document/d/1svmetTksvRyQJJZIoNYyALMPPw7pw9QCZmKP36a9nK4/edit?usp=sharing" class="white-text">Schedule</a></li>
+
+
     </ul>
 
     <ul id='dropdown3' class='dropdown-content'>
-        <li class='black darken-3'><a href="#modalFAQ" class="white-text">FAQs</a></li>
-        <li class="black darken-3"><a href="https://docs.google.com/document/d/1svmetTksvRyQJJZIoNYyALMPPw7pw9QCZmKP36a9nK4/edit?usp=sharing" class="white-text">Schedule</a></li>
         <li class="black darken-3"><a href="#modalRegister" class="white-text">How to Register?</a></li>
         <li class="black darken-3"><a href="#modalPayment" class="white-text">Payment Details</a></li>
         <li class="black darken-3"><a href="https://forms.gle/Pcqdr6j33zEyymZbA" class="white-text">External School Registration</a></li>
@@ -181,6 +196,7 @@
         <li><a href="index.html">Home</a></li>
         <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Committees<i class="material-icons right">arrow_drop_down</i></a></li>
         <li><a href="/Conference/">Conference</a></li>
+        <li><a href="#modalFAQ">FAQs</a></li>
         <!--  <li><a class="dropdown-button" href="#!" data-activates="dropdown4">Registration<i class="material-icons right">arrow_drop_down</i></a></li> -->
     </ul>
     <script>
@@ -201,8 +217,9 @@
                     <ul class="right hide-on-med-and-down">
                         <li><a id="homeBtn" href="index.html" class="white-text">Home</a></li>
                         <li><a id="committeesBtn" class="dropdown-button white-text" href="#!" data-activates="dropdown1">Committees<i class="material-icons right">arrow_drop_down</i></a></li>
-                        <li><a id="conferenceBtn" href="/Conference/" class="white-text">Conference</a></li>
+                        <li><a id="committeesBtn" class="dropdown-button white-text" href="#!" data-activates="dropdown2">Conference<i class="material-icons right">arrow_drop_down</i></a></li>
                         <li><a id="registrationBtn" class="dropdown-button white-text" href="#!" data-activates="dropdown3">Registration<i class="material-icons right">arrow_drop_down</i></a></li>
+                        <li><a href="#modalFAQ" class = "white-text">FAQs</a></li>
                     </ul>
                 </div>
             </nav>
@@ -552,9 +569,23 @@ Tanvi Gorthi (Secretary-General), Vaishnavi Vasishta (Director-General), and Asm
         setTimeout(function () {
           $('#bigbtn1')[0].classList.remove("pulse")
           $('#bigbtn2')[0].classList.remove("pulse")
+          $('#noticeicon')[0].classList.remove("pulse")
         }, 5000);
         var deadline = 'September 20 2019 08:00:00 GMT+0530';
         initializeClock('clockdiv', deadline);
+
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.tap-target');
+            var instances = M.TapTarget.init(elems, options);
+          });
+
+          //jQuery
+
+          $(document).ready(function(){
+            $('.tap-target').tapTarget();
+          });
+
     </script>
 </body>
 
