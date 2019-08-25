@@ -1,5 +1,20 @@
 <html>
+<!--
 
+Roles:
+1. Secretary General - Vaishnavi Vasishta
+2. Director General - Asmita Kiran
+3. USGs of Conference Management- Simran Vaidya and Keya Gupta
+4. USG of Communications- Sehrish Ahmed
+5. USG of Finance- Sashwath Swaminathan
+6. Heads of International Press- Nithin Chalavadi and Siddhanth Venkatesh
+7. USG of Technology- Muhsin Mohamed
+        -  Heads of Audiovisuals: Gaurang Bharthi and Satvik Reddy
+8. Organizing Committee
+        - Tanvi Gorthi, Esha SK and Aishwarya Mahendran
+
+
+ -->
 <head>
   <title>Secretariat</title>
   <base href="../">
@@ -41,6 +56,86 @@
     main {
       flex: 1 0 auto;
     }
+    .marquee {
+      display:flex;
+      flex-wrap: nowrap;
+      width:300%
+    }
+    .marquee-container {
+      margin-top:20px
+    }
+    .marquee-container .item {
+      background-color:white;
+      min-height:400px;
+      min-width:400px;
+      height:auto;
+      width:auto;
+      padding:30px;
+      padding-right:40px
+      margin: 5px 10px;
+      transition:0.6s;
+      display:inline-block;
+      margin-bottom:30px;
+    }
+    .marquee-container .item img {
+      width:300px;
+    }
+    .marquee-container .item:hover {
+      background-color: grey;
+      margin-bottom: 40px;
+      color:white;
+      border-radius:15px;
+    }
+    .marquee-container .item:hover img {
+      box-shadow:7px 14px 4px black;
+    }
+    .marquee-container {
+ height: 500px;
+ overflow: hidden;
+ position: relative;
+}
+.marquee-container .marquee {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%);
+ transform:translateX(100%);
+ /* Apply animation to this element */
+ -moz-animation: example1 18s linear infinite;
+ -webkit-animation: example1 18s linear infinite;
+ animation: example1 18s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes example1 {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-450%); }
+}
+@-webkit-keyframes example1 {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-450%); }
+}
+@keyframes example1 {
+ 0%   {
+ -moz-transform: translateX(100%); /* Firefox bug fix */
+ -webkit-transform: translateX(100%); /* Firefox bug fix */
+ transform: translateX(100%);
+ }
+ 100% {
+ -moz-transform: translateX(-450%); /* Firefox bug fix */
+ -webkit-transform: translateX(-450%); /* Firefox bug fix */
+ transform: translateX(-450%);
+ }
+}
+/* .marquee-container .marquee:hover {
+ -moz-animation-play-state: paused;
+ -webkit-animation-play-state: paused;
+ animation-play-state: paused;
+ } */
   </style>
 
 </head>
@@ -324,9 +419,117 @@
                 <h6 class="black-text">Organizing Committee<br>Aishwarya Mahendran</h6></a>
     </div>
 </div> -->
+<div class="marquee-container">
+  <div class="marquee">
+    <div class="item">
+      <center>
+        <img height="300px" src="Images/SEC/Vaishnavi.jpeg" alt="">
+        <h5>Vaishnavi Vasishta</h5>
+        <h6>Secretary General</h6>
+      </center>
+    </div>
+    <div class="item">
+      <center>
+        <img height="300px" src="Images/SEC/Asmita.jpeg" alt="">
+        <h5>Asmita Kiran</h5>
+        <h6>Director General</h6>
+      </center>
+    </div>
+    <div class="item">
+      <center>
+        <img height="300px" src="Images/SEC/Simran.jpeg" alt="">
+        <h5>Simran Vaidya</h5>
+        <h6>USG of Conference Management</h6>
+      </center>
+    </div>
+    <div class="item">
+      <center>
+        <img height="300px"src="Images/SEC/Keya.jpeg" alt="">
+        <h5>Keya Gupta</h5>
+        <h6>USG of Conference Management</h6>
+      </center>
+    </div>
+    <div class="item">
+      <center>
+        <img height="300px" src="Images/SEC/Sehrish.jpeg" alt="">
+        <h5>Sehrish Ahmed</h5>
+        <h6>USG of Communcations</h6>
+      </center>
+    </div>
+    <div class="item">
+      <center>
+        <img height="300px" src="Images/SEC/Sashwath.jpeg" alt="">
+        <h5>Sashwath Swaminathan</h5>
+        <h6>USG of Finance</h6>
+      </center>
+    </div>
+    <div class="item">
+      <center>
+        <img height="300px" src="Images/SEC/Nithin.jpeg" alt="">
+        <h5>Nithin Chalavadi</h5>
+        <h6>Head of International press</h6>
+      </center>
+    </div>
+    <div class="item">
+      <center>
+        <img height="300px" src="Images/SEC/Siddanth.jpeg" alt="">
+        <h5>Siddhanth Venkatesh</h5>
+        <h6>Head of International press</h6>
+      </center>
+    </div>
+    <div class="item">
+      <center>
+        <img height="300px" src="Images/SEC/Muhsin.jpeg" alt="">
+        <h5>Muhsin Mohamed</h5>
+        <h6>USG of Technology</h6>
+      </center>
+    </div>
+    <div class="item">
+      <center>
+        <img height="300px" src="Images/SEC/Gaurang.jpeg" alt="">
+        <h5>Gaurang Bharti</h5>
+        <h6>Head of Audiovisuals</h6>
+      </center>
+    </div>
+    <div class="item">
+      <center>
+        <img height="300px" src="Images/SEC/Satvik.jpeg" alt="">
+        <h5>Satvik Reddy</h5>
+        <h6>Head of Audiovisuals</h6>
+      </center>
+    </div>
+    <div class="item">
+      <center>
+        <img height="300px" src="Images/SEC/Tanvi.jpeg" alt="">
+        <h5>Tanvi Gorthi</h5>
+        <h6>Organizing committee</h6>
+      </center>
+    </div>
+    <div class="item">
+      <center>
+        <img height="300px" src="Images/SEC/Esha.jpeg" alt="">
+        <h5>Esha SK</h5>
+        <h6>Organizing committee</h6>
+      </center>
+    </div>
+    <div class="item">
+      <center>
+        <img height="300px" src="Images/SEC/Aishwarya.jpeg" alt="">
+        <h5>Aishwarya Mahendran</h5>
+        <h6>Organizing committee</h6>
+      </center>
+    </div>
 
-
-<h1><i>Coming soon</i></h1>
+  </div>
+</div>
+<div class = "container">
+    <div class = "row">
+      The Secretariat is responsible for the organisation and smooth running of an MUN conference. At Oakridge, our JMUN Secretariat is entirely made up of students who manage everything from day one up till the day of the conference, starting right from inviting schools for the JMUN, managing registrations and allocations, creating the website to negotiating with vendors for materials like placards and pens.
+<br />
+<br>
+  The Secretariat is headed by the Secretary General whose role is to ensure that all the various components of the JMUN are on schedule. Under the Secretary General are the USGs ( under Secretary General) who are responsible for their various departments - finance, communications and logistics. Working together, the Secretariat is what makes any MUN conference a successful one.
+    </div>
+</div>
   <footer class="page-footer black">
       <div class="container">
           <div class="row">
@@ -359,6 +562,21 @@
   </footer>
   <script>
     $(document).ready(function() {
+      $('.marquee .item').on("mouseover",() => {
+        console.log($(this))
+        $(".marquee").css({
+          "-moz-animation-play-state": "paused",
+          "-webkit-animation-play-state": "paused",
+          "animation-play-state": "paused"
+        })
+      })
+      $('.marquee').on("mouseout",() => {
+        $(".marquee").css({
+          "-moz-animation-play-state": "running",
+          "-webkit-animation-play-state": "running",
+          "animation-play-state": "running"
+        })
+      })
       // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
       $('.modal').modal();
       $('.slider').slider();
