@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ECOSOC</title>
+    <base href="../../">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel='shortcut icon' type='image/x-icon' href="Images/logo-new.jpg" />
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" /><link type="text/css" rel="stylesheet" href="css/main.css" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=0.5" />
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106611677-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() { dataLayer.push(arguments) };
+        gtag('js', new Date());
+
+        gtag('config', 'UA-106611677-1');
+    </script>
+    <style type="text/css">
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+
+
+    <!-- Modal Structure -->
+    <div id="modalSchedule" class="modal">
+        <div class="modal-content">
+            <h2>Schedule</h2>
+
+        </div>
+    </div>
+
+    <div id="modalFAQ" class="modal">
+        <div class="modal-content">
+            <h3>JMUN FAQs</h3>
+            <b>How do I know that my registration was successful?</b> <br><br>
+        You will receive a confirmation either by September 30th or October 3rd, depending on how early you register. If you do not receive your confirmation by either of these dates, please contact us at<a href="mailto:bangalorejmun@oakridge.in" target="_blank"> bangalorejmun@oakridge.in</a> . <br><br>
+        <b>What is the dress code?</b> <br><br>
+        The dress code is formal business attire. For males, we recommend a button down, a pair of trousers and a nice tie. Blazers or jackets are suggested, but not required. For females, we recommend appropriate blouses, or button downs. Trousers and skirts are both acceptable. Formal dresses are also accepted. <br><br>
+        <b>What is the technology policy?</b><br><br>
+        Attendance at this year's Bangalore JMUN requires delegates to have a suitable electronic device through which Microsoft Teams can be used, preferrably a laptop or tablet, due to the virtual setting and nature of the event. The Microsoft Teams app must be dowloaded prior to the conference. <br><br>
+        <b>What is a position paper?</b><br><br>
+        Position papers are documents from each delegate summarizing his or her country’s views on each committee topic. Further requirements for position papers are laid out in each committee's background guide. Positional papers are optional for delegates this year but are recommeded for the advanced committee delegates. <br><br>
+        <b>When is the position paper due?</b><br><br>
+        All position papers are to be sent to the official email ID by the 7th of October. The email ID is bangalorejmun@oakridge.in and the subject should be ‘CommitteeAcronym_Country_PositionPaper’. <br><br>
+        Ex: ‘WHO_USA_PositionPaper’<br>
+        ‘UNSC_India_PositionPaper’<br><br>
+            <b>What is the International Press?</b><br><br>
+        An IP, or International Press, is pressed with the requirements of formulating and conducting interviews on various delegates, discussing key topics with the delegates, interacting frequently with the delegates, presenting the common events taking place in the various committees, and most importantly, create a report of the a detailed account of the events that took place in each committee, based on the input provided by the IP personnel who send the IP heads a detailed account of the proceedings in their particular committee. A formal diction and appropriate register will be maintained while proceeding with writing the report or merging the various information procured from the different personnel handling the collection of information from each committee. <br><br>
+        </div>
+    </div>
+
+    <div id="modalRegister" class="modal">
+        <div class="modal-content">
+            <h4>If you are an External Delegate:</h4>
+            <p>
+                <b>Registration Fee: INR 500/-</b> per delegate inclusive of pre-conference training, ceremony access, and Teams account.
+            </p>
+            <p><b>Step 1:</b> Fill out the "School Registration Form" under the Registration tab</p>
+            <p><b>Step 2:</b> Pay the Registration Fee using the Net-Banking details provided. Payment Details are provided under the Registration tab.</p>
+            <p><b>Step 3:</b> Await authentication from School. Allocation details will be sent once authentication is complete</p>
+            <br>
+            <h4>If you are an Oakridge Delegate:</h4>
+            <p>
+                <b>Registration Fee: INR 500/-</b> per delegate inclusive of pre-conference training, ceremony access, and Teams account.
+            </p>
+            <p><b>Step 1:</b> Fill out the "Oakridge Registration Form" under the Registration tab</p>
+            <p><b>Step 2:</b> Pay the Registration Fee using the net banking details provided or by making a payment at the Accounts Department. Further details are provided under the Registration tab.</p>
+            <p><b>Step 3:</b> Await authentication from the School. Allocation details will be sent once authentication is complete</p>
+        </div>
+    </div>
+
+    <div id="modalPayment" class="modal">
+        <div class="modal-content">
+            <h4>Payment Details</h4>
+            <p>Account Name: Orange Educational Society</p>
+            <p>Account no : 915010062389280</p>
+            <p>Bank : AXIS BANK</p>
+            <p>Branch : Sarjapura road, Bangalore- 560102</p>
+            <p>IFSC CODE: UTIB0001888,</p>
+            <p>SWIFT CODE : AXISINBB194</p>
+            <p>A/C Type: Savings Account</p>
+        </div>
+    </div>
+
+
+    <!-- Dropdown Structure -->
+
+    <!-- Dropdown Structure- ENABLE ONCE ALL OF THE SUBPAGES ARE READY -->
+
+<ul id='dropdown1' class='dropdown-content'>
+    <li class="black darken-3"><a href="Committees\ECOSOC\index.html" class="white-text">ECOSOC</a></li>
+    <li class="black darken-3"><a href="Committees\HRC\index.html" class="white-text">UNHRC</a></li>
+    <li class="black darken-3"><a href="Committees\SC\index.html" class="white-text">UNSC</a></li>
+    <li class="black darken-3"><a href="Committees\WHO\index.html" class="white-text">WHO</a></li>
+  </ul>
+  <ul id='dropdown2' class='dropdown-content'>
+    <li class="black darken-3"><a href="Conference/index.html" class="white-text">About</a></li>
+    <li class="black darken-3"><a href="Secretariat/index.html" class="white-text">Secretariat</a></li>
+    <li class="black darken-3"><a href="https://drive.google.com/file/d/1lIAxUWGqobZazhPNCon3TRwskdTrzT5t/view?usp=sharing" class="white-text">Schedule</a></li>
+  
+  </ul>
+  
+  <ul id='dropdown3' class='dropdown-content'>
+    <li class="black darken-3"><a href="#modalRegister" class="white-text">How to Register?</a></li>
+    <li class="black darken-3"><a href="#modalPayment" class="white-text">Payment Details</a></li>
+    <li class="black darken-3"><a href="https://forms.gle/27Fu5WTCUFcNA7vJ6" class="white-text">Oakridge Registration</a></li>
+    <li class="black darken-3"><a href="https://forms.gle/p5wY21u6qs1LjgFt8" class="white-text">External Registration</a></li>
+  
+  </ul>
+  
+  <ul class="side-nav" id="mobile-demo">
+    <li><a href="index.html">Home</a></li>
+    <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Committees<i class="material-icons right">arrow_drop_down</i></a></li>
+    <li><a href="Conference/index.html">Conference</a></li>
+    <li><a href="#modalFAQ">FAQs</a></li>
+  
+    <li><a class="dropdown-button" href="#!" data-activates="dropdown4">Registration<i class="material-icons right">arrow_drop_down</i></a></li>
+  
+  </ul>
+  
+  </ul>
+  
+  <ul id='dropdown3' class='dropdown-content'>
+    <li class="black darken-3"><a href="#modalRegister" class="white-text">How to Register?</a></li>
+    <li class="black darken-3"><a href="#modalPayment" class="white-text">Payment Details</a></li>
+    <li class="black darken-3"><a href="https://forms.gle/27Fu5WTCUFcNA7vJ6" class="white-text">Oakridge Registration</a></li>
+    <li class="black darken-3"><a href="https://forms.gle/p5wY21u6qs1LjgFt8" class="white-text">External Registration</a></li>
+  
+  </ul>
+  
+  <ul class="side-nav" id="mobile-demo">
+      <li><a href="index.html">Home</a></li>
+      <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Committees<i class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a href="Conference/index.html">Conference</a></li>
+      <li><a href="#modalFAQ">FAQs</a></li>
+      <!--  <li><a class="dropdown-button" href="#!" data-activates="dropdown4">Registration<i class="material-icons right">arrow_drop_down</i></a></li> -->
+  </ul>
+    <script>
+        $(".button-collapse").sideNav();
+    </script>
+
+
+
+        <div class="navbar-fixed" style="font-family: 'Montserrat'; font-weight: bold;">
+            <nav>
+                <div class="nav-wrapper white darken-3">
+                    <a href="index.html" class="brand-logo bold"><img src ="Images/logo-new.jpg" class="circle" style="height: 65px;"></a>
+                    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons white">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a id="homeBtn" href="index.html" class="black-text">Home</a></li>
+                        <li><a id="committeesBtn" class="dropdown-button black-text" href="#!" data-activates="dropdown1">Committees<i class="material-icons right">arrow_drop_down</i></a></li>
+                        <li><a id="committeesBtn" class="dropdown-button black-text" href="#!" data-activates="dropdown2">Conference<i class="material-icons right">arrow_drop_down</i></a></li>
+                        <li><a id="registrationBtn" class="dropdown-button black-text" href="#!" data-activates="dropdown3">Registration<i class="material-icons right">arrow_drop_down</i></a></li>
+                        <li><a href="#modalFAQ" class = "black-text">FAQs</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+
+    <div id="index-banner" class="parallax-container">
+        <div class="container">
+            <div class="parallax">
+                <img src="Images/ecofin_bg.jpg" alt="Unsplashed background img 1">
+                <div style="background-color: black; position: relative; top: 82%; height: 15%; opacity: 0.8;">
+                    <h3 class="white-text center-align">Economic and Social Council</h3>
+                    <p>
+                        The Economic and Social Council (ECOSOC) is one of the six main organs of the United Nations. Established in 1945, this council focuses on three aspects of sustainable development: economic, social and environmental. ECOSOC encourages agreement on policies and actions that make fundamental links across all three aspects.
+                    </p>
+                    <p>
+                        This year, delegates will be engaging in exciting debate in order to discuss the connections between inclusive economic growth and its ability to eradicate poverty.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section white">
+        <div class="row">
+            <div class="col s6">
+                <div class="card white z-depth-5">
+                    <div class="card-content black-text">
+                        <span class="card-title flow-text"><h4 style="font-weight: lighter;">Agenda: The economic impact of COVID on income disparity.</h4></span>
+                        <br>
+                    </div>
+                    <div class="card-action">
+                    </p>
+
+                        <h5 style="font-family: Segoe UI; font-weight: normal;">The Economic and Social Council is the United Nation's central forum for furthering discussion about policy recommendations for international economic and social issues. It aims to create consensuses, formulate innovative ideas, and further the tenets of sustainable development through debate and collaboration. It focuses on creating policies that create positive, tangible changes in people's real lives. 
+                        </h5>
+                        <!-- REMOVE THIS COMMENT WHEN THE BACKGROUND GUIDE IS AVAILABLE!!! <b class="big">Background guide for UNSC is available <a href="https://docs.google.com/document/d/1kic0xJ0WdvtHc57dLludsTj3fS8tbWdplWfoE2ZcMIg/edit?usp=sharing" target="_blank">Here</a></b>
+                        -->
+                         <a class="btn-flat blue darken-4 white-text" href="https://drive.google.com/file/d/1sjLBW4jSbpNliwLpfn77grOy1cgZy-ah/view?usp=sharing" target="_blank">Background Guide</a>
+                    <!--<a class="btn-flat blue darken-4 white-text" href="https://docs.google.com/spreadsheets/d/1djfJjUqG8NbdlzS4ECXo8tuCls0ESM3G6g9wZRBdgLQ/edit?usp=sharing">Country Allocations</a>
+                    <a class="btn-flat blue darken-4 white-text" href="https://drive.google.com/drive/folders/0Bw0gqJdqCw_UTklPa1dyMWpHX2c?usp=sharing">Training material</a> -->
+                    </div>
+                </div>
+            </div>
+            <!--EB Names and Pictures -->
+            <div class="col s6">
+                <div class="card white z-depth-5">
+                    <div class="center col s2 offset-s2 flow-text ">
+                        <img src="Images/EB/Tanvi_ECOSOC_CC.jpeg" alt="" class="circle responsive-img"> Co-Chair
+                        <br>Tanvi Gorthi
+                    </div>
+
+                    <div class="center col s2 offset-s2 flow-text ">
+                        <img src="Images/EB/Vignesh_ECOSOC_CC.jpeg" alt="" class="circle responsive-img">Co-Chair
+                        <br>Vignesh Somjit
+                    </div>
+                    
+                    <div class="center col s2 offset-s2 flow-text ">
+                        <img src="Images/EB/Ronav_ECOSOC_M.jpeg" alt="" class="circle responsive-img">Moderator
+                        <br>Ronav Som Kiran
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s6">
+                <div align="justify" class="card white z-depth-5">
+                    <div class="card-content black-text">
+                        <span class="card-title flow-text"><h4 style="font-weight: lighter;">Meet your EB</h4></span>
+                        <br>
+                    </div>
+                    <div class="card-action">
+                    </p>
+                    <h5 style="font-weight: lighter;">Tanvi Gorthi, Co-Chair</h5>
+                        <p>Tanvi has over four years of MUN experience, both as a delegate and as an Executive Board member. She loves public speaking, has a zeal for economics, and is excited to be your chair in committee this year! </p>
+                    <h5 style="font-weight: lighter;">Vignesh Somjit, Co-Chair</h5>
+                        <p>Vignesh is an avid reader of economics and believes that it offers a comprehensive framework through which important global issues can be understood and addressed.</p>
+                    <h5 style="font-weight: lighter;">Ronav Som Kiran, Moderator</h5>
+                        <p>Ronav has had a 4 year MUN experience. This is his first time in the executive board and would like to make the most of it by helping teach you guys how to be good MUNers. He is also an avid reader and would love to see your ideas about the agenda at hand.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <footer class="page-footer black ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col s12 ">
+                    <h5 class="white-text ">Contact Details</h5>
+                    <p class="grey-text text-lighten-4 ">Send any queries over to <a href="mailto:bangalorejmun@oakridge.in " target="_blank "> bangalorejmun@oakridge.in</a> </p>
+                    <!--<p class="grey-text text-lighten-4 ">Teacher Advisor: <a href="tel:8971857769 " target="_blank ">+91 8971857769 (Ms. Debjani)</a>  </p>
+                        <p class="grey-text text-lighten-4 ">Secretary General: <a href="tel:9108274028 " target="_blank ">+91 9108274028 (Abhinav)</a>  </p>        </div> -->
+                </div>
+            </div>
+            <div class="row ">
+                <div class="footer-copyright ">
+                    <div class="col s7 ">
+                        <a class="grey-text text-lighten-4 " href=" "><i class="material-icons ">copyright</i>2019 Bangalore Junior MUN</a>
+                    </div>
+                    <div class="col s5 ">
+                        Developed by <a href="https://github.com/Nexus987 " target="_blank ">Nexus</a>, <a href="https://github.com/gaurangbharti1 " target="_blank ">GBHacker23</a> and <a href="https://github.com/BK-Modding/ " target="_blank ">BK-Modding</a>
+                    </div>
+                    <div class="col s5">
+                        Renovated for 2019 by <a href="https://github.com/muhsin7" target="_blank">Muhsin7</a>, <a href="https://github.com/Teminix" target="_blank">Teminix</a> and <a href="https://github.com/Chanmanstanflan" target="_blank">Chanmanstanflan</a>
+                    </div>
+                <div class="col s5">
+                    Renovated for 2020 by <a href="https://github.com/iAarush" target="_blank">iAarush</a>, <a href="https://github.com/PrasidhV" target="_blank">PrasidhV</a> and <a href="https://github.com/Shubaan7" target="_blank">Shubaan007</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        $(document).ready(function() {
+            // the "href " attribute of the modal trigger must specify the modal ID that wants to be triggered
+            $('.modal').modal();
+        });
+        $(document).ready(function() {
+            $(".dropdown-button ").dropdown({
+                coverTrigger: false
+            });
+        });
+        $(document).ready(function() {
+            $('.parallax').parallax();
+
+        });
+    </script>
+</body>
+
+</html>

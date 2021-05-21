@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bangalore JMUN</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel='shortcut icon' type='image/x-icon' href="Images/logo-new.jpg" />
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" /><link type="text/css" rel="stylesheet" href="css/main.css" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=0.5" />
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106611677-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() { dataLayer.push(arguments) };
+        gtag('js', new Date());
+
+        gtag('config', 'UA-106611677-1');
+    </script>
+    <style type="text/css">
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        #nav-wrapper {
+          background-color: rgb(0,0,1)
+        }
+
+        main {
+            flex: 1 0 auto;
+        }
+
+        #clockdiv {
+            font-family: sans-serif;
+            color: white;
+            display: inline-block;
+            font-weight: 100;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        #clockdiv>div {
+            padding: 10px;
+            border-radius: 3px;
+            background: white;
+            display: inline-block;
+        }
+
+        #clockdiv div>span {
+            padding: 15px;
+            border-radius: 3px;
+            background: #5b92e5;
+            display: inline-block;
+        }
+
+        .smalltext {
+            color: black;
+            padding-top: 5px;
+            font-size: 16px;
+        }
+
+        .parallax-container {
+            height: 850px;
+        }
+        a[def]{
+          color:white;
+          transition:0.75s;
+          border-bottom:2px solid rgba(0,0,0,0);
+        }
+        a[def]:hover {
+          border-bottom:2px solid white;
+          /* text-decoration: underline */
+        }
+    </style>
+
+  <div class="fixed-action-btn direction-top active" style="bottom: 45px; right: 24px;">
+          <a id = "noticeicon"id="mail" class="btn btn-floating btn-large cyan waves-effect waves-light pulse" onmouseover="this.classList.add('pulse')" onmouseout="this.classList.remove('pulse')" href="#modalNOTICE">
+            <i class="material-icons">mail</i>
+          </a>
+        </div>
+
+</head>
+
+<body>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+
+    <!-- Modal Structure -->
+    <div id="modalSchedule" class="modal">
+        <div class="modal-content">
+            <h2>Schedule</h2>
+
+        </div>
+    </div>
+
+
+<!-- NOTICE FORMAT:
+
+        <div class="row">
+            <div class="col s12 m6">
+              <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                  <span class="card-title">{notice heading}</span>
+                  {notice content}
+                </div>
+              </div>
+              <div style="text-align:right;">
+                    {date published}
+              </div>
+            </div>
+          </div>
+
+ -->
+    <div id="modalNOTICE" class="modal">
+        <div class="modal-content">
+            <center>
+                <h3>Notice Board</h3>
+                <b><i>Watch this space for notices</i></b>
+            </center>
+            <div class="row">
+                <div class="col s12 m6">
+                  <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                      <span class="card-title">Upcoming Delegate Training!</span>
+                      <p>External Delegates- <b>7th October</b></p>
+                      <br />
+                      <p>Oakridge Delegates- <b>30th September</b></p>
+                      <div style="text-align:right; font-size: 75%;">
+                            26/09/2020
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col s12 m6">
+                    <div class="card blue-grey darken-1">
+                      <div class="card-content white-text">
+                        <span class="card-title">Allocation release date</span>
+                        <p>All Delegates- <b>30th September</b>, if payment is confirmed by 28th September</p>
+                        <div style="text-align:right; font-size: 75%;">
+                              26/09/2020
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="row">
+                    <div class="card blue-grey darken-1">
+                        <div class="card-content white-text">
+                        <span class="card-title">Background guide release date</span>
+                        <p>30th September</p>
+                        <div style="text-align:right; font-size: 75%;">
+                                26/09/2020
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card blue-grey darken-1">
+                        <div class="card-content white-text">
+                        <span class="card-title">Background guides are out early!</span>
+                        <p>Please check your committee pages to access the PDF!</p>
+                        <div style="text-align:right; font-size: 75%;">
+                                29/09/2020
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6">
+                      <div class="card blue-grey darken-1">
+                        <div class="card-content white-text">
+                          <span class="card-title">Allocations released!</span>
+                          <p>Allocations have been released! Please click the button on the front page of the website to find yours!</p>
+                          <p>Note: Allocations will happen on an ongoing basis for registrations after the 29th of September. Please give the Secretariat 24 hours to assign a country and committee to you.</p>
+                          <div style="text-align:right; font-size: 75%;">
+                                30/09/2020
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col s12 m6">
+                        <div class="card blue-grey darken-1">
+                          <div class="card-content white-text">
+                            <span class="card-title">Registrations closed.</span>
+                            <p>Registrations are now closed for all delegates. Please reach out to us via email in case of any queries or concerns.</p>
+                            <div style="text-align:right; font-size: 75%;">
+                                  03/10/2020
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+        </div>
+    </div>
+<!-- Test comment -->
+<!-- FAQ Modal -->
+    <div id="modalFAQ" class="modal">
+        <div class="modal-content">
+            <h3>JMUN FAQs</h3>
+            <b>How do I know that my registration was successful?</b> <br><br>
+        You will receive a confirmation either by September 30th or October 3rd, depending on how early you register. If you do not receive your confirmation by either of these dates, please contact us at<a href="mailto:bangalorejmun@oakridge.in" target="_blank"> bangalorejmun@oakridge.in</a> . <br><br>
+        <b>What is the dress code?</b> <br><br>
+        The dress code is formal business attire. For males, we recommend a button down, a pair of trousers and a nice tie. Blazers or jackets are suggested, but not required. For females, we recommend appropriate blouses, or button downs. Trousers and skirts are both acceptable. Formal dresses are also accepted. <br><br>
+        <b>What is the technology policy?</b><br><br>
+        Attendance at this year's Bangalore JMUN requires delegates to have a suitable electronic device through which Microsoft Teams can be used, preferrably a laptop or tablet, due to the virtual setting and nature of the event. The Microsoft Teams app must be dowloaded prior to the conference. <br><br>
+        <b>What is a position paper?</b><br><br>
+        Position papers are documents from each delegate summarizing his or her country’s views on each committee topic. Further requirements for position papers are laid out in each committee's background guide. Positional papers are optional for delegates this year but are recommeded for the advanced committee delegates. <br><br>
+        <b>When is the position paper due?</b><br><br>
+        All position papers are to be sent to the official email ID by the 7th of October. The email ID is bangalorejmun@oakridge.in and the subject should be ‘CommitteeAcronym_Country_PositionPaper’. <br><br>
+        Ex: ‘WHO_USA_PositionPaper’<br>
+        ‘UNSC_India_PositionPaper’<br><br>
+            <b>What is the International Press?</b><br><br>
+        An IP, or International Press, is pressed with the requirements of formulating and conducting interviews on various delegates, discussing key topics with the delegates, interacting frequently with the delegates, presenting the common events taking place in the various committees, and most importantly, create a report of the a detailed account of the events that took place in each committee, based on the input provided by the IP personnel who send the IP heads a detailed account of the proceedings in their particular committee. A formal diction and appropriate register will be maintained while proceeding with writing the report or merging the various information procured from the different personnel handling the collection of information from each committee. <br><br>
+        </div>
+    </div>
+<!-- Registration and Payment Modals below. Update when you have the new deets ready. --> 
+    <div id="modalRegister" class="modal">
+        <div class="modal-content">
+            <h4>If you are an External Delegate:</h4>
+            <p>
+                <b>Registration Fee: INR 500/-</b> per delegate inclusive of pre-conference training, ceremony access, and Teams account.
+            </p>
+            <p><b>Step 1:</b> Fill out the "School Registration Form" under the Registration tab</p>
+            <p><b>Step 2:</b> Pay the Registration Fee using the Net-Banking details provided. Payment Details are provided under the Registration tab.</p>
+            <p><b>Step 3:</b> Await authentication from School. Allocation details will be sent once authentication is complete</p>
+            <br>
+            <h4>If you are an Oakridge Delegate:</h4>
+            <p>
+                <b>Registration Fee: INR 500/-</b> per delegate inclusive of pre-conference training, ceremony access, and Teams account.
+            </p>
+            <p><b>Step 1:</b> Fill out the "Oakridge Registration Form" under the Registration tab</p>
+            <p><b>Step 2:</b> Pay the Registration Fee using the net banking details provided or by making a payment at the Accounts Department. Further details are provided under the Registration tab.</p>
+            <p><b>Step 3:</b> Await authentication from the School. Allocation details will be sent once authentication is complete</p>
+        </div>
+    </div>
+
+    <div id="modalPayment" class="modal">
+        <div class="modal-content">
+            <h4>Payment Details</h4>
+            <p>Account Name: Orange Educational Society</p>
+            <p>Account no : 915010062389280</p>
+            <p>Bank : AXIS BANK</p>
+            <p>Branch : Sarjapura road, Bangalore- 560102</p>
+            <p>IFSC CODE: UTIB0001888,</p>
+            <p>SWIFT CODE : AXISINBB194</p>
+            <p>A/C Type: Savings Account</p>
+        </div>
+    </div>
+
+
+    <div id="modalPPT" class="modal" width="960" height="569">
+        <div class="modal-content">
+            <center>
+              <h4>Delegate Training PPT</h4>
+              <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQmSmvSVO96rbGMEEmMZZs6OrCHldPOusoJp0mrfMepb2t9y8qz2EbIlcI8SWcnu5zipFinRdj4ljwJ/embed?start=false&loop=false&delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        </div>
+            </center>
+    </div>
+
+    <!-- Dropdown Structure- ENABLE ONCE ALL OF THE SUBPAGES ARE READY -->
+
+<ul id='dropdown1' class='dropdown-content'>
+    <li class="black darken-3"><a href="Committees\ECOSOC\index.html" class="white-text">ECOSOC</a></li>
+    <li class="black darken-3"><a href="Committees\HRC\index.html" class="white-text">UNHRC</a></li>
+    <li class="black darken-3"><a href="Committees\SC\index.html" class="white-text">UNSC</a></li>
+    <li class="black darken-3"><a href="Committees\WHO\index.html" class="white-text">WHO</a></li>
+  </ul>
+  <ul id='dropdown2' class='dropdown-content'>
+    <li class="black darken-3"><a href="Conference/index.html" class="white-text">About</a></li>
+    <li class="black darken-3"><a href="Secretariat/index.html" class="white-text">Secretariat</a></li>
+    <li class="black darken-3"><a href="https://drive.google.com/file/d/1lIAxUWGqobZazhPNCon3TRwskdTrzT5t/view?usp=sharing" class="white-text">Schedule</a></li>
+  
+  </ul>
+  
+  <ul id='dropdown3' class='dropdown-content'>
+    <li class="black darken-3"><a href="#modalRegister" class="white-text">How to Register?</a></li>
+    <li class="black darken-3"><a href="#modalPayment" class="white-text">Payment Details</a></li>
+    <li class="black darken-3"><a href="https://forms.gle/27Fu5WTCUFcNA7vJ6" class="white-text">Oakridge Registration</a></li>
+    <li class="black darken-3"><a href="https://forms.gle/p5wY21u6qs1LjgFt8" class="white-text">External Registration</a></li>
+  
+  </ul>
+  
+  <ul class="side-nav" id="mobile-demo">
+    <li><a href="index.html">Home</a></li>
+    <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Committees<i class="material-icons right">arrow_drop_down</i></a></li>
+    <li><a href="Conference/index.html">Conference</a></li>
+    <li><a href="#modalFAQ">FAQs</a></li>
+  
+    <li><a class="dropdown-button" href="#!" data-activates="dropdown4">Registration<i class="material-icons right">arrow_drop_down</i></a></li>
+  
+  </ul>
+  
+  </ul>
+  
+  <ul id='dropdown3' class='dropdown-content'>
+    <li class="black darken-3"><a href="#modalRegister" class="white-text">How to Register?</a></li>
+    <li class="black darken-3"><a href="#modalPayment" class="white-text">Payment Details</a></li>
+    <li class="black darken-3"><a href="https://forms.gle/27Fu5WTCUFcNA7vJ6" class="white-text">Oakridge Registration</a></li>
+    <li class="black darken-3"><a href="https://forms.gle/p5wY21u6qs1LjgFt8" class="white-text">External Registration</a></li>
+  
+  </ul>
+  
+  <ul class="side-nav" id="mobile-demo">
+      <li><a href="index.html">Home</a></li>
+      <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Committees<i class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a href="Conference/index.html">Conference</a></li>
+      <li><a href="#modalFAQ">FAQs</a></li>
+      <!--  <li><a class="dropdown-button" href="#!" data-activates="dropdown4">Registration<i class="material-icons right">arrow_drop_down</i></a></li> -->
+  </ul>
+    <script>
+        $(".button-collapse").sideNav();
+    </script>
+
+
+<!-- Header Image- Re-enable after Ananya sends you the 2020 background! -->
+    <div id="index-banner" class="parallax-container" style="background: url('Images/header2020.png') no-repeat center center fixed;
+                 -webkit-background-size: cover;
+                 -moz-background-size: cover;
+                 -o-background-size: cover;
+                 background-size: cover;">
+        <div class="navbar-fixed" style="font-family: 'Montserrat'; font-weight: bold;">
+            <nav id="nav" class="transparent">
+                <div id="nav-wrapper" class="nav-wrapper white-text">
+                    <a href="index.html" class="brand-logo bold"><img src ="Images/logo-new.jpg" class="circle" style="height: 65px;"></a>
+                    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons white">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a id="homeBtn" href="index.html" class="white-text">Home</a></li>
+                        <li><a id="committeesBtn" class="dropdown-button white-text" href="#!" data-activates="dropdown1">Committees<i class="material-icons right">arrow_drop_down</i></a></li>
+                        <li><a id="committeesBtn" class="dropdown-button white-text" href="#!" data-activates="dropdown2">Conference<i class="material-icons right">arrow_drop_down</i></a></li>
+                        <li><a id="registrationBtn" class="dropdown-button white-text" href="#!" data-activates="dropdown3">Registration<i class="material-icons right">arrow_drop_down</i></a></li>
+                        <li><a href="#modalFAQ" class = "white-text">FAQs</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container" style="position: relative; top: 22vh;">
+            <div class="row">
+                <div class="col s12">
+                    <img width="100%" height="120%" src="Images/hometextbg_light.png">
+                </div>
+            </div>
+
+            <!-- <div class="row">
+                <div class="col s12">
+                    <p class="flow-text white-text right-align" style="font-family: Segoe UI; font-weight: light;">Oakridge International School</p>
+                </div>
+            </div> -->
+
+            <!--   <div class="parallax">
+                <img src="Images/homebgtest.jpg" class="responsive-img" alt="Unsplashed background img 1">
+            </div> -->
+        </div>
+    </div>
+
+    <!--
+<div class="section">
+    <div class="row">
+        <div class="col s4 offset-s2">
+            <div class="video-container">
+                <iframe  width="560" height="315" src="https://www.youtube.com/embed/Nsc5OxnHy9s?rel=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="col s4 offset">
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/b8FilqDGXUE?rel=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+-->
+
+<br /><br />
+<h1 style="text-align: center;">Conference starts in:</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 center-align">
+                <div id="clockdiv">
+                    <div>
+                        <span class="days light-blue darken-4">00</span>
+                        <div class="smalltext">Days</div>
+                    </div>
+                    <div>
+                        <span class="hours light-blue darken-4">00</span>
+                        <div class="smalltext">Hours</div>
+                    </div>
+                    <div>
+                        <span class="minutes light-blue darken-4">00</span>
+                        <div class="smalltext">Minutes</div>
+                    </div>
+                    <div>
+                        <span class="seconds light-blue darken-4">00</span>
+                        <div class="smalltext">Seconds</div> 
+                    </div>
+                </div>
+            </div>
+
+            <center>
+              <i>Registrations are now closed.</i>
+              <a href="https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting_YTVhMmIzMjAtNTU5Mi00MTVmLTkyODktMjMxMjkwYzc0ZTQz%40thread.v2%2F0%3Fcontext%3D%257B%2522Tid%2522%3A%25221d3d1782-204d-450a-8d6c-5d379a89372b%2522%2C%2522Oid%2522%3A%252235f7bd4e-ff91-46cb-8ed8-d6b287795cee%2522%2C%2522IsBroadcas&type=meetup-join&deeplinkId=ffcdd5e7-f63b-4406-998a-525671ac3f60&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true">Cosing ceremony</a>
+                </body>
+            </center>
+
+        </div>
+<br /><br />
+
+
+<!--
+**POSITION PAPER DUE DATE**
+        <div class="section content">
+            <div class="row">
+                <div class="col s12">
+                    <p class="flow-text" align='center' style="font-family: Arial;">Redefining MUN</p>
+                    <p style="font-family: Segoe UI;" class="flow-text">
+
+                        <b>Position Papers are due on the 25th. More details in Background Guides and FAQ.<br><br>
+                        More information availabe under the "Registration" tab.</b><br><br>
+                        <b>Training Session Presentation Available <a href="https://docs.google.com/presentation/d/1HXlHzzP0IgXsoQMcQtTM1Oz6WEyH5d__qsQM4hCPuiI/edit#slide=id.p">Href</a>
+                        </b><br><br>
+                        As the first Junior Model UN conference, Bangalore JMUN has striven to redefine Model United Nations in Bangalore. For the past three years, we have continuously improved the quality of our debate, expanded the scope of our committees, and offered delegates
+                        a more holistic conference experience.
+                        <br>
+                        <br> This year, Bangalore Junior Model United Nations has committed to providing a seamless conference-to-audience connection through our Facebook Page livestreams, improved conference experience, and a more engaging experience
+                        for all delegates.
+                        <br>
+                        <br>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+-->
+
+<!-- **LETTER FROM SEC GEN**-->
+
+    <div class="divider"></div>
+      <div class="container">
+        <div class="section">
+            <div class="row">
+                <div class="col s12">
+                    <h1 style="text-align: center;">Letter from the Secretary General</h1>
+                <p style="text-align: center;">Dear Delegates,
+                <br><br>
+
+	    It gives me immense pleasure to welcome you to the first-ever online Bangalore Junior Model United Nations Conference at Oakridge International School on the 9th and 10th of October. <br><br>
+As your Secretary-General this year, I would like to extend a very warm welcome to all of the new delegates joining us this year, and a very special welcome to all of the delegates returning to the JMUN. My team and I have worked extremely hard over the past month to ensure that you have a safe, enjoyable, and memorable event. With the theme, "Advancing Human Rights during a Pandemic," we hope to inspire fruitful and detailed debate that will allow you to solve some of the world's biggets and most pressing problems. New or old, I hope that the 5th edition of the Bangalore JMUN will be an important milestone in your MUN journey. More information on the JMUN, rules of procedure, and MUN training material is available on the front page of the website and additional details can be found on the conference page. 
+Please do not hesitate to contact us if you have any queries or concerns at <a href="mailto:bangalorejmun@oakridge.in" target="_blank"> bangalorejmun@oakridge.in</a>. I look forward to seeing you all there!<br><br>
+Sincerely, <br>
+Aarush Mehrotra <br>
+Secretary-General, Bangalore JMUN 2020</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="divider"></div>
+<div class="container">
+    <div class="row">
+      <br /><br />
+      <center>
+        <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRr3PouVorwTRziviPWaPF_g2s41_6cKTtB0gNMxkVkIAMbqfEMAK7WWoJ77QSEO63GydPh27MChirb/pubhtml?gid=0&single=true"><div class="btn btn-large waves-light waves-effect">
+          Allocations are out now- Find out which country you represent!
+        </div></a>
+      </center>
+      <br />
+    </div>
+  </div>
+<div class="divider"></div>  
+<div class="container">
+    <div class="row">
+      <br /><br />
+      <center>
+        <a href="https://drive.google.com/file/d/1lCGsQwhgZxr7ntLKB5tOgNFY5xyhGSrQ/view?usp=sharing" target="_blank"><div class="btn btn-large waves-light waves-effect">
+          View the recording used in the 2020 delegate training!
+        </div></a>
+      </center>
+      <br />
+    </div>
+</div>
+<div class="divider"></div>  
+<div class="container">
+  <div class="row">
+    <h1 style="text-align: center;">2020 Bangalore JMUN Newsletter!</h1>
+  </div>
+  <div class = "row">
+    <center>
+      <div id="pdf">
+        <embed src="newsletter.pdf" type="application/pdf" width="500px" height="700px"/>
+        <!-- <script src="/js/pdfobject.js"></script>
+        <script>PDFObject.embed("/pdf/sample-3pp.pdf", "#example1");</script> -->
+      </div>
+    </center>
+    <!-- <center><iframe src="http://docs.google.com/gview?url=https://bangalorejmun.com/newsletter.pdf&embedded=true" style="height: 900px; width: 500px;" frameborder="0"></iframe></center> -->
+    <!-- https://drive.google.com/file/d/0B_v0mvO7UabvWEpnWmhVdFUyLUJoN0ZDOHVSSzB4RlN3NWtZ/view?usp=sharing -->
+  </div>
+</div>
+<div class="divider"></div>
+<div class="container">
+  <div class="row">
+    <br /><br />
+    <center>
+      <a href="#modalPPT"><div class="btn btn-large waves-light waves-effect">
+        View the PPT used in the 2020 delegate training!
+      </div></a>
+    </center>
+    <br />
+  </div>
+</div>
+
+<div class="divider"></div>
+<div class="container">
+    <div class="row">
+            <h1 style="text-align: center;">Register now!</h1>
+    </div>
+<!--Registration form links-->
+    <div class="row">
+        <center>
+            <a  id="bigbtn1" class="btn-large pulse" onmouseover="this.classList.add('pulse')" onmouseout="this.classList.remove('pulse')"href = "https://forms.gle/27Fu5WTCUFcNA7vJ6" style="text-align: center;">Oakridge Students Registration</a>
+            <br /><br />
+            <a id="bigbtn2" onmouseover="this.classList.add('pulse')" onmouseout="this.classList.remove('pulse')" class="btn-large pulse" href = "https://forms.gle/c2NZoPM1xzUzauzJ9" style="text-align: center;">External School Delegation Registration</a>
+            <br />
+        </center>
+    </div>
+</div>
+
+    <div class="divider"></div>
+<!--2020 Committees-->
+<div class="container">
+    <div class="section">
+        <div class="row">
+                <h1 style="text-align: center;">Committees</h1>
+            <div class="col s12">
+                <ul class="collapsible popout" data-collapsible="accordion">
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">flags</i>World Health Organization</div>
+                        <div class="collapsible-body">
+                            <div class="row"></div>
+                            <div class="row"><span class="flow-text">Sanitization and equitable vaccine distribution for COVID.</span></div>
+                            <div class="row"><a href="Committees/WHO/index.html" class="waves-effect waves-teal btn-large blue darken-1">Learn More</a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">flags</i>Economic and Social Council</div>
+                        <div class="collapsible-body">
+                            <div class="row"></div>
+                            <div class="row"><span class="flow-text">The economic impact of COVID on income disparity.</span></div>
+                            <div class="row"><a href="Committees/ECOSOC/index.html" class="waves-effect waves-teal btn-large blue darken-1">Learn More</a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">flags</i>United Nations Security Council</div>
+                        <div class="collapsible-body">
+                            <div class="row"></div>
+                            <div class="row"><span class="flow-text">Reevaluating the laws of biological warfare.</span></div>
+                            <div class="row"><a href="Committees/SC/index.html" class="waves-effect waves-teal btn-large blue darken-1">Learn More</a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">flags</i>United Nations Human Rights Council</div>
+                        <div class="collapsible-body">
+                            <div class="row"></div>
+                            <div class="row"><span class="flow-text">Reimagining migration in the times of COVID.</span></div>
+                            <div class="row"><a href="Committees/HRC/index.html" class="waves-effect waves-teal btn-large blue darken-1">Learn More</a></div>
+                        </div>
+                    </li>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+    <div class="divider"></div>
+    <div class="divider"></div>
+
+
+    <div class="parallax-container" style="height: 500px; overflow: hidden;">
+          <div class="parallax"><img src="Images/School_Photo.jpg"></div>
+        </div>
+
+    <div class="container">
+        <div class="section">
+            <div class="row">
+                <!--Google Maps embed
+                <div class="col s6">
+                    <div class="video-container"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.31333819796!2d77.74977931521092!3d12.887562220202788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae0d539b9bf9ef%3A0x8173c2437f9bc14d!2sOakridge+International+School!5e0!3m2!1sen!2sin!4v1503659601937"
+                            width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+                </div>
+                -->
+                <div class="col s6">
+                    <h3>Venue</h3>
+                    <p class="flow-text">The 2020 edition of the Bangalore JMUN will be held virtually over Microsoft Teams.</p>
+                    <img src="Images/TeamsLogo.png" alt="Teams logo"jpg” width="200" height="100">
+<p jpg” ALIGN=”right” class="flow-text">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer black">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <h5 class="white-text">Contact Details</h5>
+                    <p class="grey-text text-lighten-4">Send any queries over to <a href="mailto:bangalorejmun@oakridge.in" target="_blank"> bangalorejmun@oakridge.in</a> </p>
+                    <!--<p class="grey-text text-lighten-4">Teacher Advisor: <a href="tel:8971857769" target="_blank">+91 8971857769 (Ms. Debjani)</a>  </p>
+                        <p class="grey-text text-lighten-4">Secretary General: <a href="tel:9108274028" target="_blank">+91 9108274028 (Abhinav)</a>  </p>        </div> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <p class="grey-text text-lighten-4"><a href="http://www.oakridge.in/">Oakridge Website</a></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="footer-copyright">
+                    <div class="col s7">
+                        <a class="grey-text text-lighten-4" href=""><i class="material-icons">copyright</i>2020 Bangalore Junior MUN</a>
+                    </div>
+                    <div class="col s5">
+                        Developed by <a href="https://github.com/Nexus987" target="_blank">Nexus</a>, <a href="https://github.com/gaurangbharti1" target="_blank">GBHacker23</a> and <a href="https://github.com/BK-Modding/" target="_blank">BK-Modding</a>
+                    </div>
+                    <div class="col s5">
+                        Renovated for 2019 by <a href="https://github.com/muhsin7" target="_blank">Muhsin7</a>, <a href="https://github.com/Teminix" target="_blank">Teminix</a> and <a href="https://github.com/Chanmanstanflan" target="_blank">Chanmanstanflan</a>
+                    </div>
+                    <div class="col s5">
+                        Renovated for 2020 by <a href="https://github.com/iAarush" target="_blank">iAarush</a>, <a href="https://github.com/PrasidhV" target="_blank">PrasidhV</a> and <a href="https://github.com/Shubaan7" target="_blank">Shubaan007</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $(document).ready(function() {
+            $('.parallax').parallax();
+            $(".dropdown-button").dropdown({
+                coverTrigger: false
+            });
+            $('.modal').modal();
+        });
+
+        function TransparentNav() {
+            document.getElementById("nav").classList.add("transparent");
+
+            document.getElementById("nav-wrapper").classList.remove("white");
+            document.getElementById("nav-wrapper").classList.add("white-text");
+            document.getElementById("nav-wrapper").classList.remove("black-text");
+
+            document.getElementById("homeBtn").classList.remove("black-text");
+            document.getElementById("homeBtn").classList.add("white-text");
+
+            document.getElementById("committeesBtn").classList.remove("black-text");
+            document.getElementById("committeesBtn").classList.add("white-text");
+
+            document.getElementById("conferenceBtn").classList.remove("black-text");
+            document.getElementById("conferenceBtn").classList.add("white-text");
+
+            document.getElementById("registrationBtn").classList.remove("black-text");
+            document.getElementById("registrationBtn").classList.add("white-text");
+        }
+
+        function WhiteNav() {
+            document.getElementById("nav").classList.remove("transparent");
+
+            document.getElementById("nav-wrapper").classList.add("white");
+            document.getElementById("nav-wrapper").classList.add("black-text");
+            document.getElementById("nav-wrapper").classList.remove("white-text");
+
+            document.getElementById("homeBtn").classList.remove("white-text");
+            document.getElementById("homeBtn").classList.add("black-text");
+
+            document.getElementById("committeesBtn").classList.remove("white-text");
+            document.getElementById("committeesBtn").classList.add("black-text");
+
+            document.getElementById("conferenceBtn").classList.remove("white-text");
+            document.getElementById("conferenceBtn").classList.add("black-text");
+
+            document.getElementById("registrationBtn").classList.remove("white-text");
+            document.getElementById("registrationBtn").classList.add("black-text");
+        }
+
+        var options = [
+            { selector: '.parallax-container', offset: 200, downScrollCallback: TransparentNav, upScrollCallback: TransparentNav },
+            { selector: '.content', offset: 200, downScrollCallback: WhiteNav, upScrollCallback: TransparentNav },
+        ];
+        Materialize.scrollFireEnhanced(options);
+
+        function getTimeRemaining(endtime) {
+            var t = Date.parse(endtime) - Date.parse(new Date());
+             var seconds = Math.floor((t / 1000) % 60);
+             var minutes = Math.floor((t / 1000 / 60) % 60);
+             var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+             var days = Math.floor(t / (1000 * 60 * 60 * 24));
+             return {
+                 'total': t,
+                 'days': days,
+                 'hours': hours,
+                 'minutes': minutes,
+                 'seconds': seconds
+             };
+         }
+        
+         function initializeClock(id, endtime) {
+             var clock = document.getElementById(id);
+             var daysSpan = clock.querySelector('.days');
+             var hoursSpan = clock.querySelector('.hours');
+             var minutesSpan = clock.querySelector('.minutes');
+             var secondsSpan = clock.querySelector('.seconds');
+        
+             function updateClock() {
+                 var t = getTimeRemaining(endtime);
+        
+                 daysSpan.innerHTML = t.days;
+                 hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+                 minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+                 secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+        
+                 if (t.total <= 0) {
+                     clearInterval(timeinterval);
+                 }
+             }
+        
+             updateClock();
+             var timeinterval = setInterval(updateClock, 1000);
+         }
+         setTimeout(function () {
+           $('#bigbtn1')[0].classList.remove("pulse")
+           $('#bigbtn2')[0].classList.remove("pulse")
+           $('#noticeicon')[0].classList.remove("pulse")
+         }, 5000);
+         var deadline = 'October 9 2020 09:00:00 GMT+0530';
+         initializeClock('clockdiv', deadline);
+        
+        
+         document.addEventListener('DOMContentLoaded', function() {
+             var elems = document.querySelectorAll('.tap-target');
+             var instances = M.TapTarget.init(elems, options);
+           });
+
+          jQuery
+
+
+
+          $(document).ready(function(){
+            $('.tap-target').tapTarget();
+          });
+
+    </script>
+</body>
+
+</html>
