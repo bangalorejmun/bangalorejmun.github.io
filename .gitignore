@@ -1,1 +1,5 @@
 tests/*
+
+# OS Generated Files (MacOS)
+**/.DS_Store
+**/._*
