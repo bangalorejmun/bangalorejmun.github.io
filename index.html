@@ -598,7 +598,7 @@ Secretary-General, Bangalore JMUN 2020</p>
                 -->
                 <div class="col s6">
                     <h3>Venue</h3>
-                    <p class="flow-text">The 2020 edition of the Bangalore JMUN will be held virtually over Microsoft Teams.</p>
+                    <p class="flow-text">The 2021 edition of the Bangalore JMUN will be held virtually over Microsoft Teams.</p>
                     <img src="Images/TeamsLogo.png" alt="Teams logo"jpg” width="200" height="100">
 <p jpg” ALIGN=”right” class="flow-text">
                 </div>
@@ -624,7 +624,7 @@ Secretary-General, Bangalore JMUN 2020</p>
             <div class="row">
                 <div class="footer-copyright">
                     <div class="col s7">
-                        <a class="grey-text text-lighten-4" href=""><i class="material-icons">copyright</i>2020 Bangalore Junior MUN</a>
+                        <a class="grey-text text-lighten-4" href=""><i class="material-icons">copyright</i>2021 Bangalore Junior MUN</a>
                     </div>
                     <div class="col s5">
                         Developed by <a href="https://github.com/Nexus987" target="_blank">Nexus</a>, <a href="https://github.com/gaurangbharti1" target="_blank">GBHacker23</a> and <a href="https://github.com/BK-Modding/" target="_blank">BK-Modding</a>
@@ -697,10 +697,16 @@ Secretary-General, Bangalore JMUN 2020</p>
 
         function getTimeRemaining(endtime) {
             var t = Date.parse(endtime) - Date.parse(new Date());
-             var seconds = Math.floor((t / 1000) % 60);
-             var minutes = Math.floor((t / 1000 / 60) % 60);
-             var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-             var days = Math.floor(t / (1000 * 60 * 60 * 24));
+
+             if (t <= 0) {
+                 var t = seconds = minutes = hours = days = 0;
+             } else {
+                var seconds = Math.floor((t / 1000) % 60);
+                var minutes = Math.floor((t / 1000 / 60) % 60);
+                var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+                var days = Math.floor(t / (1000 * 60 * 60 * 24));
+             }
+
              return {
                  'total': t,
                  'days': days,
@@ -738,7 +744,7 @@ Secretary-General, Bangalore JMUN 2020</p>
            $('#bigbtn2')[0].classList.remove("pulse")
            $('#noticeicon')[0].classList.remove("pulse")
          }, 5000);
-         var deadline = 'October 9 2020 09:00:00 GMT+0530';
+         var deadline = 'October 8 2021 09:00:00 GMT+0530';
          initializeClock('clockdiv', deadline);
         
         
