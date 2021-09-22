@@ -61,100 +61,161 @@
 </head>
 
 <body>
-  <!-- noscript for google tag manager -->
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KCBMD8B" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-
-
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
-
-
+  <script type="text/javascript" src="js/materialize.js"></script>
 
   <!-- Modal Structure -->
+  <div id="modalSchedule" class="modal">
+      <div class="modal-content">
+          <h2>Schedule</h2>
 
-  <!-- <div id="modalSchedule" class="modal">
-        <div class="modal-content">
-            <h2>Schedule</h2> -->
-  </div>
+      </div>
   </div>
 
+
+  <!-- NOTICE FORMAT:
+
+      <div class="row">
+          <div class="col s12 m6">
+            <div class="card blue-grey darken-1">
+              <div class="card-content white-text">
+                <span class="card-title">{notice heading}</span>
+                {notice content}
+              </div>
+            </div>
+            <div style="text-align:right;">
+                  {date published}
+            </div>
+          </div>
+        </div>
+
+-->
+  <div id="modalNOTICE" class="modal">
+      <div class="modal-content">
+          <center>
+              <h3>Notice Board</h3>
+              <b><i>Watch this space for notices</i></b>
+          </center>
+          <div style="height: 12px;"></div>
+          <div class="row">
+              <div class="col s12 m6">
+                  <div class="card blue-grey darken-1">
+                      <div class="card-content white-text">
+                          <span class="card-title">Registrations Open!</span>
+                          <p>Refistrations are now open for External and Oakridge delegates!</p>
+                          <div style="text-align:right; font-size: 75%;">
+                              21/09/2021
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col s12 m6">
+                  <div class="card blue-grey darken-1">
+                      <div class="card-content white-text">
+                          <span class="card-title">Sorry for the Inconvenience!</span>
+                          <p>Some of the links are currently not working. We'll fix them as soon as possible.</p>
+                          <div style="text-align:right; font-size: 75%;">
+                              23/09/2021
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </div>
+  <!-- Test comment -->
+  <!-- FAQ Modal -->
   <div id="modalFAQ" class="modal">
-    <div class="modal-content">
-      <h3>JMUN FAQs</h3>
-      <b>How do I know that my registration was successful?</b> <br><br>
-      You will receive a confirmation either by September 30th or October 3rd, depending on how early you register. If
-      you do not receive your confirmation by either of these dates, please contact us at<a
-        href="mailto:bangalorejmun@oakridge.in" target="_blank"> bangalorejmun@oakridge.in</a> . <br><br>
-      <b>What is the dress code?</b> <br><br>
-      The dress code is formal business attire. For males, we recommend a button down, a pair of trousers and a nice
-      tie. Blazers or jackets are suggested, but not required. For females, we recommend appropriate blouses, or button
-      downs. Trousers and skirts are both acceptable. Formal dresses are also accepted. <br><br>
-      <b>What is the technology policy?</b><br><br>
-      Attendance at this year's Bangalore JMUN requires delegates to have a suitable electronic device through which
-      Microsoft Teams can be used, preferrably a laptop or tablet, due to the virtual setting and nature of the event.
-      The Microsoft Teams app must be dowloaded prior to the conference. <br><br>
-      <b>What is a position paper?</b><br><br>
-      Position papers are documents from each delegate summarizing his or her country’s views on each committee topic.
-      Further requirements for position papers are laid out in each committee's background guide. Positional papers are
-      optional for delegates this year but are recommeded for the advanced committee delegates. <br><br>
-      <b>When is the position paper due?</b><br><br>
-      All position papers are to be sent to the official email ID by the 7th of October. The email ID is
-      bangalorejmun@oakridge.in and the subject should be ‘CommitteeAcronym_Country_PositionPaper’. <br><br>
-      Ex: ‘WHO_USA_PositionPaper’<br>
-      ‘UNSC_India_PositionPaper’<br><br>
-      <b>What is the International Press?</b><br><br>
-      An IP, or International Press, is pressed with the requirements of formulating and conducting interviews on
-      various delegates, discussing key topics with the delegates, interacting frequently with the delegates, presenting
-      the common events taking place in the various committees, and most importantly, create a report of the a detailed
-      account of the events that took place in each committee, based on the input provided by the IP personnel who send
-      the IP heads a detailed account of the proceedings in their particular committee. A formal diction and appropriate
-      register will be maintained while proceeding with writing the report or merging the various information procured
-      from the different personnel handling the collection of information from each committee. <br><br>
-    </div>
+      <div class="modal-content">
+          <h3>JMUN FAQs</h3>
+          <b>How do I know that my registration was successful?</b> <br><br>
+          You will receive a confirmation either by September 30th or October 3rd, depending on how early you
+          register. If you do not receive your confirmation by either of these dates, please contact us at<a
+              href="mailto:bangalorejmun@oakridge.in" target="_blank"> bangalorejmun@oakridge.in</a> . <br><br>
+          <b>What is the dress code?</b> <br><br>
+          The dress code is formal business attire. For males, we recommend a button down, a pair of trousers and a
+          nice tie. Blazers or jackets are suggested, but not required. For females, we recommend appropriate blouses,
+          or button downs. Trousers and skirts are both acceptable. Formal dresses are also accepted. <br><br>
+          <b>What is the technology policy?</b><br><br>
+          Attendance at this year's Bangalore JMUN requires delegates to have a suitable electronic device through
+          which Microsoft Teams can be used, preferrably a laptop or tablet, due to the virtual setting and nature of
+          the event. The Microsoft Teams app must be dowloaded prior to the conference. <br><br>
+          <b>What is a position paper?</b><br><br>
+          Position papers are documents from each delegate summarizing his or her country’s views on each committee
+          topic. Further requirements for position papers are laid out in each committee's background guide.
+          Positional papers are optional for delegates this year but are recommeded for the advanced committee
+          delegates. <br><br>
+          <b>When is the position paper due?</b><br><br>
+          All position papers are to be sent to the official email ID by the 7th of October. The email ID is
+          bangalorejmun@oakridge.in and the subject should be ‘CommitteeAcronym_Country_PositionPaper’. <br><br>
+          Ex: ‘WHO_USA_PositionPaper’<br>
+          ‘UNSC_India_PositionPaper’<br><br>
+          <b>What is the International Press?</b><br><br>
+          An IP, or International Press, is pressed with the requirements of formulating and conducting interviews on
+          various delegates, discussing key topics with the delegates, interacting frequently with the delegates,
+          presenting the common events taking place in the various committees, and most importantly, create a report
+          of the a detailed account of the events that took place in each committee, based on the input provided by
+          the IP personnel who send the IP heads a detailed account of the proceedings in their particular committee.
+          A formal diction and appropriate register will be maintained while proceeding with writing the report or
+          merging the various information procured from the different personnel handling the collection of information
+          from each committee. <br><br>
+      </div>
   </div>
 
+  <!-- Registration and Payment Modals below -->
   <div id="modalRegister" class="modal">
-    <div class="modal-content">
-      <h4>If you are an External Delegate:</h4>
-      <p>
-        <b>Registration Fee: INR 500/-</b> per delegate inclusive of pre-conference training, ceremony access, and Teams
-        account.
-      </p>
-      <p><b>Step 1:</b> Fill out the "School Registration Form" under the Registration tab</p>
-      <p><b>Step 2:</b> Pay the Registration Fee using the Net-Banking details provided. Payment Details are provided
-        under the Registration tab.</p>
-      <p><b>Step 3:</b> Await authentication from School. Allocation details will be sent once authentication is
-        complete</p>
-      <br>
-      <h4>If you are an Oakridge Delegate:</h4>
-      <p>
-        <b>Registration Fee: INR 500/-</b> per delegate inclusive of pre-conference training, ceremony access, and Teams
-        account.
-      </p>
-      <p><b>Step 1:</b> Fill out the "Oakridge Registration Form" under the Registration tab</p>
-      <p><b>Step 2:</b> Pay the Registration Fee using the net banking details provided or by making a payment at the
-        Accounts Department. Further details are provided under the Registration tab.</p>
-      <p><b>Step 3:</b> Await authentication from the School. Allocation details will be sent once authentication is
-        complete</p>
-    </div>
-  </div>
-  <div id="modalPayment" class="modal">
-    <div class="modal-content">
-      <h4>Payment Details</h4>
-      <p>Account Name: Orange Educational Society</p>
-      <p>Account no : 915010062389280</p>
-      <p>Bank : AXIS BANK</p>
-      <p>Branch : Sarjapura road, Bangalore- 560102</p>
-      <p>IFSC CODE: UTIB0001888,</p>
-      <p>SWIFT CODE : AXISINBB194</p>
-      <p>A/C Type: Savings Account</p>
-    </div>
+      <div class="modal-content">
+          <h4>If you are an External Delegate:</h4>
+          <p>
+              <b>Registration Fee: INR 350/-</b> per delegate inclusive of pre-conference training, ceremony access,
+              and Teams account.
+          </p>
+          <p><b>Step 1:</b> Fill out the "School Registration Form" under the Registration tab</p>
+          <p><b>Step 2:</b> Pay the Registration Fee using the Net-Banking details provided. Payment Details are
+              provided under the Registration tab.</p>
+          <p><b>Step 3:</b> Await authentication from School. Allocation details will be sent once authentication is
+              complete</p>
+          <br>
+          <h4>If you are an Oakridge Delegate:</h4>
+          <p>
+              <b>Registration Fee: INR 350/-</b> per delegate inclusive of pre-conference training, ceremony access,
+              and Teams account.
+          </p>
+          <p><b>Step 1:</b> Fill out the "Oakridge Registration Form" under the Registration tab</p>
+          <p><b>Step 2:</b> Pay the Registration Fee using the net banking details provided or by making a payment at
+              the Accounts Department. Further details are provided under the Registration tab.</p>
+          <p><b>Step 3:</b> Await authentication from the School. Allocation details will be sent once authentication
+              is complete</p>
+      </div>
   </div>
 
+  <div id="modalPayment" class="modal">
+      <div class="modal-content">
+          <h4>Payment Details</h4>
+          <p>Account Name: Orange Educational Society</p>
+          <p>Account no : 915010062389280</p>
+          <p>Bank : AXIS BANK</p>
+          <p>Branch : Sarjapura road, Bangalore- 560102</p>
+          <p>IFSC CODE: UTIB0001888,</p>
+          <p>SWIFT CODE : AXISINBB194</p>
+          <p>A/C Type: Savings Account</p>
+      </div>
+  </div>
+
+
+  <div id="modalPPT" class="modal" width="960" height="569">
+      <div class="modal-content">
+          <center>
+              <h4>Delegate Training PPT</h4>
+              <iframe
+                  src="https://docs.google.com/presentation/d/e/2PACX-1vQmSmvSVO96rbGMEEmMZZs6OrCHldPOusoJp0mrfMepb2t9y8qz2EbIlcI8SWcnu5zipFinRdj4ljwJ/embed?start=false&loop=false&delayms=60000"
+                  frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true"
+                  webkitallowfullscreen="true"></iframe>
+      </div>
+      </center>
+  </div>
 
   <!-- Dropdown Structure- ENABLE ONCE ALL OF THE SUBPAGES ARE READY -->
 
