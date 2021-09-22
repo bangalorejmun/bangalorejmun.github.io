@@ -1,6 +1,6 @@
 <p align="center">
 
-  <h3 align="center">Oakridge Bangalore JMUN Website</h3>
+  <h1 align="center">Oakridge Bangalore JMUN Website</h1>
 
   <p align="center">
     Website for the Junior Model United Nations (JMUN) which is a MUN for 6-8th graders hosted by Oakridge International School, Bangalore.
