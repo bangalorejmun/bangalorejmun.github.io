@@ -1,28 +1,19 @@
 <html>
 
 <head>
-  <title>Conference</title>
+  <title>Conference | Bangalore JMUN</title>
   <base href="../">
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-  <link rel='shortcut icon' type='image/x-icon' href="Images/favicon.jpg" />
+  <link rel="shortcut icon" href="favicon.ico" />
   <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" /><link type="text/css" rel="stylesheet" href="css/main.css" />
-
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/main.css" />
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=0.5" />
-
-  <!-- js script for google tag manager -->
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-KCBMD8B');</script>
-  <!-- End Google Tag Manager -->
-
-
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106611677-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -38,159 +29,217 @@
       flex-direction: column;
     }
 
+    #nav-wrapper {
+      background-color: rgb(0, 0, 1)
+    }
+
     main {
       flex: 1 0 auto;
     }
-  </style>
 
+    .smalltext {
+      color: black;
+      padding-top: 5px;
+      font-size: 16px;
+    }
+
+    .parallax-container {
+      height: 850px;
+    }
+
+    a[def] {
+      color: white;
+      transition: 0.75s;
+      border-bottom: 2px solid rgba(0, 0, 0, 0);
+    }
+
+    a[def]:hover {
+      border-bottom: 2px solid white;
+      /* text-decoration: underline */
+    }
+  </style>
 </head>
 
 <body>
-    <!-- noscript for google tag manager -->
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KCBMD8B"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+  <!-- noscript for google tag manager -->
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KCBMD8B" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
 
-    <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
 
 
 
-<!-- Modal Structure -->
+  <!-- Modal Structure -->
 
- <!-- <div id="modalSchedule" class="modal">
+  <!-- <div id="modalSchedule" class="modal">
         <div class="modal-content">
             <h2>Schedule</h2> -->
-          </div>
-        </div>
-    
-        <div id="modalFAQ" class="modal">
-          <div class="modal-content">
-              <h3>JMUN FAQs</h3>
-              <b>How do I know that my registration was successful?</b> <br><br>
-          You will receive a confirmation either by September 30th or October 3rd, depending on how early you register. If you do not receive your confirmation by either of these dates, please contact us at<a href="mailto:bangalorejmun@oakridge.in" target="_blank"> bangalorejmun@oakridge.in</a> . <br><br>
-          <b>What is the dress code?</b> <br><br>
-          The dress code is formal business attire. For males, we recommend a button down, a pair of trousers and a nice tie. Blazers or jackets are suggested, but not required. For females, we recommend appropriate blouses, or button downs. Trousers and skirts are both acceptable. Formal dresses are also accepted. <br><br>
-          <b>What is the technology policy?</b><br><br>
-          Attendance at this year's Bangalore JMUN requires delegates to have a suitable electronic device through which Microsoft Teams can be used, preferrably a laptop or tablet, due to the virtual setting and nature of the event. The Microsoft Teams app must be dowloaded prior to the conference. <br><br>
-          <b>What is a position paper?</b><br><br>
-          Position papers are documents from each delegate summarizing his or her country’s views on each committee topic. Further requirements for position papers are laid out in each committee's background guide. Positional papers are optional for delegates this year but are recommeded for the advanced committee delegates. <br><br>
-          <b>When is the position paper due?</b><br><br>
-          All position papers are to be sent to the official email ID by the 7th of October. The email ID is bangalorejmun@oakridge.in and the subject should be ‘CommitteeAcronym_Country_PositionPaper’. <br><br>
-          Ex: ‘WHO_USA_PositionPaper’<br>
-          ‘UNSC_India_PositionPaper’<br><br>
-              <b>What is the International Press?</b><br><br>
-          An IP, or International Press, is pressed with the requirements of formulating and conducting interviews on various delegates, discussing key topics with the delegates, interacting frequently with the delegates, presenting the common events taking place in the various committees, and most importantly, create a report of the a detailed account of the events that took place in each committee, based on the input provided by the IP personnel who send the IP heads a detailed account of the proceedings in their particular committee. A formal diction and appropriate register will be maintained while proceeding with writing the report or merging the various information procured from the different personnel handling the collection of information from each committee. <br><br>
-          </div>
-      </div>
-    
-        <div id="modalRegister" class="modal">
-          <div class="modal-content">
-              <h4>If you are an External Delegate:</h4>
-              <p>
-                  <b>Registration Fee: INR 500/-</b> per delegate inclusive of pre-conference training, ceremony access, and Teams account.
-              </p>
-              <p><b>Step 1:</b> Fill out the "School Registration Form" under the Registration tab</p>
-              <p><b>Step 2:</b> Pay the Registration Fee using the Net-Banking details provided. Payment Details are provided under the Registration tab.</p>
-              <p><b>Step 3:</b> Await authentication from School. Allocation details will be sent once authentication is complete</p>
-              <br>
-              <h4>If you are an Oakridge Delegate:</h4>
-              <p>
-                  <b>Registration Fee: INR 500/-</b> per delegate inclusive of pre-conference training, ceremony access, and Teams account.
-              </p>
-              <p><b>Step 1:</b> Fill out the "Oakridge Registration Form" under the Registration tab</p>
-              <p><b>Step 2:</b> Pay the Registration Fee using the net banking details provided or by making a payment at the Accounts Department. Further details are provided under the Registration tab.</p>
-              <p><b>Step 3:</b> Await authentication from the School. Allocation details will be sent once authentication is complete</p>
-          </div>
-      </div>
-      <div id="modalPayment" class="modal">
-        <div class="modal-content">
-            <h4>Payment Details</h4>
-            <p>Account Name: Orange Educational Society</p>
-            <p>Account no : 915010062389280</p>
-            <p>Bank : AXIS BANK</p>
-            <p>Branch : Sarjapura road, Bangalore- 560102</p>
-            <p>IFSC CODE: UTIB0001888,</p>
-            <p>SWIFT CODE : AXISINBB194</p>
-            <p>A/C Type: Savings Account</p>
-        </div>
+  </div>
+  </div>
+
+  <div id="modalFAQ" class="modal">
+    <div class="modal-content">
+      <h3>JMUN FAQs</h3>
+      <b>How do I know that my registration was successful?</b> <br><br>
+      You will receive a confirmation either by September 30th or October 3rd, depending on how early you register. If
+      you do not receive your confirmation by either of these dates, please contact us at<a
+        href="mailto:bangalorejmun@oakridge.in" target="_blank"> bangalorejmun@oakridge.in</a> . <br><br>
+      <b>What is the dress code?</b> <br><br>
+      The dress code is formal business attire. For males, we recommend a button down, a pair of trousers and a nice
+      tie. Blazers or jackets are suggested, but not required. For females, we recommend appropriate blouses, or button
+      downs. Trousers and skirts are both acceptable. Formal dresses are also accepted. <br><br>
+      <b>What is the technology policy?</b><br><br>
+      Attendance at this year's Bangalore JMUN requires delegates to have a suitable electronic device through which
+      Microsoft Teams can be used, preferrably a laptop or tablet, due to the virtual setting and nature of the event.
+      The Microsoft Teams app must be dowloaded prior to the conference. <br><br>
+      <b>What is a position paper?</b><br><br>
+      Position papers are documents from each delegate summarizing his or her country’s views on each committee topic.
+      Further requirements for position papers are laid out in each committee's background guide. Positional papers are
+      optional for delegates this year but are recommeded for the advanced committee delegates. <br><br>
+      <b>When is the position paper due?</b><br><br>
+      All position papers are to be sent to the official email ID by the 7th of October. The email ID is
+      bangalorejmun@oakridge.in and the subject should be ‘CommitteeAcronym_Country_PositionPaper’. <br><br>
+      Ex: ‘WHO_USA_PositionPaper’<br>
+      ‘UNSC_India_PositionPaper’<br><br>
+      <b>What is the International Press?</b><br><br>
+      An IP, or International Press, is pressed with the requirements of formulating and conducting interviews on
+      various delegates, discussing key topics with the delegates, interacting frequently with the delegates, presenting
+      the common events taking place in the various committees, and most importantly, create a report of the a detailed
+      account of the events that took place in each committee, based on the input provided by the IP personnel who send
+      the IP heads a detailed account of the proceedings in their particular committee. A formal diction and appropriate
+      register will be maintained while proceeding with writing the report or merging the various information procured
+      from the different personnel handling the collection of information from each committee. <br><br>
     </div>
+  </div>
+
+  <div id="modalRegister" class="modal">
+    <div class="modal-content">
+      <h4>If you are an External Delegate:</h4>
+      <p>
+        <b>Registration Fee: INR 500/-</b> per delegate inclusive of pre-conference training, ceremony access, and Teams
+        account.
+      </p>
+      <p><b>Step 1:</b> Fill out the "School Registration Form" under the Registration tab</p>
+      <p><b>Step 2:</b> Pay the Registration Fee using the Net-Banking details provided. Payment Details are provided
+        under the Registration tab.</p>
+      <p><b>Step 3:</b> Await authentication from School. Allocation details will be sent once authentication is
+        complete</p>
+      <br>
+      <h4>If you are an Oakridge Delegate:</h4>
+      <p>
+        <b>Registration Fee: INR 500/-</b> per delegate inclusive of pre-conference training, ceremony access, and Teams
+        account.
+      </p>
+      <p><b>Step 1:</b> Fill out the "Oakridge Registration Form" under the Registration tab</p>
+      <p><b>Step 2:</b> Pay the Registration Fee using the net banking details provided or by making a payment at the
+        Accounts Department. Further details are provided under the Registration tab.</p>
+      <p><b>Step 3:</b> Await authentication from the School. Allocation details will be sent once authentication is
+        complete</p>
+    </div>
+  </div>
+  <div id="modalPayment" class="modal">
+    <div class="modal-content">
+      <h4>Payment Details</h4>
+      <p>Account Name: Orange Educational Society</p>
+      <p>Account no : 915010062389280</p>
+      <p>Bank : AXIS BANK</p>
+      <p>Branch : Sarjapura road, Bangalore- 560102</p>
+      <p>IFSC CODE: UTIB0001888,</p>
+      <p>SWIFT CODE : AXISINBB194</p>
+      <p>A/C Type: Savings Account</p>
+    </div>
+  </div>
 
 
-<!-- Dropdown Structure- ENABLE ONCE ALL OF THE SUBPAGES ARE READY -->
+  <!-- Dropdown Structure- ENABLE ONCE ALL OF THE SUBPAGES ARE READY -->
 
-<ul id='dropdown1' class='dropdown-content'>
-  <li class="black darken-3"><a href="Committees\ECOSOC\index.html" class="white-text">ECOSOC</a></li>
-  <li class="black darken-3"><a href="Committees\HRC\index.html" class="white-text">UNHRC</a></li>
-  <li class="black darken-3"><a href="Committees\SC\index.html" class="white-text">UNSC</a></li>
-  <li class="black darken-3"><a href="Committees\WHO\index.html" class="white-text">WHO</a></li>
-</ul>
-<ul id='dropdown2' class='dropdown-content'>
-  <li class="black darken-3"><a href="Conference/index.html" class="white-text">About</a></li>
-  <li class="black darken-3"><a href="Secretariat/index.html" class="white-text">Secretariat</a></li>
-  <li class="black darken-3"><a href="https://drive.google.com/file/d/1lIAxUWGqobZazhPNCon3TRwskdTrzT5t/view?usp=sharing" class="white-text">Schedule</a></li>
+  <ul id='dropdown1' class='dropdown-content'>
+    <li class="black darken-3"><a href="Committees\ECOSOC\index.html" class="white-text">ECOSOC</a></li>
+    <li class="black darken-3"><a href="Committees\HRC\index.html" class="white-text">UNHRC</a></li>
+    <li class="black darken-3"><a href="Committees\SC\index.html" class="white-text">UNSC</a></li>
+    <li class="black darken-3"><a href="Committees\WHO\index.html" class="white-text">WHO</a></li>
+  </ul>
+  <ul id='dropdown2' class='dropdown-content'>
+    <li class="black darken-3"><a href="Conference/index.html" class="white-text">About</a></li>
+    <li class="black darken-3"><a href="Secretariat/index.html" class="white-text">Secretariat</a></li>
+    <li class="black darken-3"><a
+        href="https://drive.google.com/file/d/1lIAxUWGqobZazhPNCon3TRwskdTrzT5t/view?usp=sharing"
+        class="white-text">Schedule</a></li>
 
-</ul>
+  </ul>
 
-<ul id='dropdown3' class='dropdown-content'>
-  <li class="black darken-3"><a href="#modalRegister" class="white-text">How to Register?</a></li>
-  <li class="black darken-3"><a href="#modalPayment" class="white-text">Payment Details</a></li>
-  <li class="black darken-3"><a href="https://forms.gle/27Fu5WTCUFcNA7vJ6" class="white-text">Oakridge Registration</a></li>
-  <li class="black darken-3"><a href="https://forms.gle/p5wY21u6qs1LjgFt8" class="white-text">External Registration</a></li>
+  <ul id='dropdown3' class='dropdown-content'>
+    <li class="black darken-3"><a href="#modalRegister" class="white-text">How to Register?</a></li>
+    <li class="black darken-3"><a href="#modalPayment" class="white-text">Payment Details</a></li>
+    <li class="black darken-3"><a href="https://forms.gle/27Fu5WTCUFcNA7vJ6" class="white-text">Oakridge
+        Registration</a></li>
+    <li class="black darken-3"><a href="https://forms.gle/p5wY21u6qs1LjgFt8" class="white-text">External
+        Registration</a></li>
 
-</ul>
+  </ul>
 
-<ul class="side-nav" id="mobile-demo">
-  <li><a href="index.html">Home</a></li>
-  <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Committees<i class="material-icons right">arrow_drop_down</i></a></li>
-  <li><a href="Conference/index.html">Conference</a></li>
-  <li><a href="#modalFAQ">FAQs</a></li>
-
-  <li><a class="dropdown-button" href="#!" data-activates="dropdown4">Registration<i class="material-icons right">arrow_drop_down</i></a></li>
-
-</ul>
-
-</ul>
-
-<ul id='dropdown3' class='dropdown-content'>
-  <li class="black darken-3"><a href="#modalRegister" class="white-text">How to Register?</a></li>
-  <li class="black darken-3"><a href="#modalPayment" class="white-text">Payment Details</a></li>
-  <li class="black darken-3"><a href="https://forms.gle/27Fu5WTCUFcNA7vJ6" class="white-text">Oakridge Registration</a></li>
-  <li class="black darken-3"><a href="https://forms.gle/p5wY21u6qs1LjgFt8" class="white-text">External Registration</a></li>
-
-</ul>
-
-<ul class="side-nav" id="mobile-demo">
+  <ul class="side-nav" id="mobile-demo">
     <li><a href="index.html">Home</a></li>
-    <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Committees<i class="material-icons right">arrow_drop_down</i></a></li>
+    <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Committees<i
+          class="material-icons right">arrow_drop_down</i></a></li>
+    <li><a href="Conference/index.html">Conference</a></li>
+    <li><a href="#modalFAQ">FAQs</a></li>
+
+    <li><a class="dropdown-button" href="#!" data-activates="dropdown4">Registration<i
+          class="material-icons right">arrow_drop_down</i></a></li>
+
+  </ul>
+
+  </ul>
+
+  <ul id='dropdown3' class='dropdown-content'>
+    <li class="black darken-3"><a href="#modalRegister" class="white-text">How to Register?</a></li>
+    <li class="black darken-3"><a href="#modalPayment" class="white-text">Payment Details</a></li>
+    <li class="black darken-3"><a href="https://forms.gle/27Fu5WTCUFcNA7vJ6" class="white-text">Oakridge
+        Registration</a></li>
+    <li class="black darken-3"><a href="https://forms.gle/p5wY21u6qs1LjgFt8" class="white-text">External
+        Registration</a></li>
+
+  </ul>
+
+  <ul class="side-nav" id="mobile-demo">
+    <li><a href="index.html">Home</a></li>
+    <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Committees<i
+          class="material-icons right">arrow_drop_down</i></a></li>
     <li><a href="Conference/index.html">Conference</a></li>
     <li><a href="#modalFAQ">FAQs</a></li>
     <!--  <li><a class="dropdown-button" href="#!" data-activates="dropdown4">Registration<i class="material-icons right">arrow_drop_down</i></a></li> -->
-</ul>
+  </ul>
   <script>
-      $(".button-collapse").sideNav();
+    $(".button-collapse").sideNav();
   </script>
 
 
 
-      <div class="navbar-fixed" style="font-family: 'Montserrat'; font-weight: bold;">
-          <nav>
-              <div class="nav-wrapper white darken-3">
-                  <a href="index.html" class="brand-logo bold"><img src ="Images/logo-new.jpg" class="circle" style="height: 65px;"></a>
-                  <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons white">menu</i></a>
-                  <ul class="right hide-on-med-and-down">
-                      <li><a id="homeBtn" href="index.html" class="black-text">Home</a></li>
-                      <li><a id="committeesBtn" class="dropdown-button black-text" href="#!" data-activates="dropdown1">Committees<i class="material-icons right">arrow_drop_down</i></a></li>
-                      <li><a id="committeesBtn" class="dropdown-button black-text" href="#!" data-activates="dropdown2">Conference<i class="material-icons right">arrow_drop_down</i></a></li>
-                      <li><a id="registrationBtn" class="dropdown-button black-text" href="#!" data-activates="dropdown3">Registration<i class="material-icons right">arrow_drop_down</i></a></li>
-                      <li><a href="#modalFAQ" class = "black-text">FAQs</a></li>
-                  </ul>
-              </div>
-          </nav>
+  <div class="navbar-fixed" style="font-family: 'Montserrat'; font-weight: bold;">
+    <nav>
+      <div class="nav-wrapper white darken-3">
+        <a href="index.html" class="brand-logo bold"><img src="Images/logo-new.jpg" class="circle"
+            style="height: 65px;"></a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons white">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a id="homeBtn" href="index.html" class="black-text">Home</a></li>
+          <li><a id="committeesBtn" class="dropdown-button black-text" href="#!" data-activates="dropdown1">Committees<i
+                class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a id="committeesBtn" class="dropdown-button black-text" href="#!" data-activates="dropdown2">Conference<i
+                class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a id="registrationBtn" class="dropdown-button black-text" href="#!"
+              data-activates="dropdown3">Registration<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a href="#modalFAQ" class="black-text">FAQs</a></li>
+        </ul>
       </div>
+    </nav>
+  </div>
 
 
   <div id="index-banner" class="parallax-container">
@@ -204,97 +253,153 @@
     </div>
   </div>
 
- <div class="container">
-     <div class=row>
-         <div class="col s12" height="600px">
-             <div class="divider"></div>
-                 <center><h3 class="black-text">Secretariat</h3></center>
-                 <div class="carousel">
-                     <div>
-                   <a class="carousel-item"><img src="Images/SEC/Aarush.jpeg">
-                       <h6 class="black-text"><center>Aarush Mehrotra<br>Secretary General</center></h6></a>
-
-                   <a class="carousel-item " ><img src="Images/SEC/Sadhika.jpg">
-                       <h6 class="black-text"><center>Sadhika Allampally<br>Director General</center></h6></a>
-
-                   <a class="carousel-item " ><img src="Images/SEC/Nidhi.jpeg">
-                   <h6 class="black-text"><center>Nidhi Mayurika<br>USG of Conference Management</center></h6></a>
-
-                   <a class="carousel-item " ><img src="Images/SEC/Ananya.jpeg">
-                   <h6 class="black-text"><center>Ananya Chordia<br>USG of Conference Management</center></h6></a>
-
-                   <a class="carousel-item " ><img src="Images/SEC/Ram.jpeg">
-                   <h6 class="black-text"><center>Ram Velamuri<br>Head of International Press</center></h6></a>
-
-                   <a class="carousel-item " ><img src="Images/SEC/Namrata.jpeg">
-                   <h6 class="black-text"><center>Namrata Venkatesh<br>Head of International Press</center></h6></a>
-
-                   <a class="carousel-item " ><img src="Images/SEC/Kavya.jpeg">
-                   <h6 class="black-text"><center>Kavya Kannan<br>USG of Logistics</center></h6></a>
-
-                   <a class="carousel-item " ><img src="Images/SEC/Abhishek.jpeg">
-                   <h6 class="black-text"><center>Abhishek Pendyala<br>USG of Logistics</center></h6></a>
-
-                   <a class="carousel-item " ><img src="Images/SEC/Tanvi.jpeg">
-                   <h6 class="black-text"><center>Tanvi Gorthi<br>Organizing Committee</center></h6></a>
-				   
-                   <a class="carousel-item " ><img src="Images/SEC/Sehrish.jpeg">
-                   <h6 class="black-text"><center>Sehrish Ahmed<br>Organizing Committee</center></h6></a>
-
-                   <a class="carousel-item " ><img src="Images/SEC/Asmita.jpeg">
-                   <h6 class="black-text"><center>Asmita Kiran<br>Organizing Committee</center></h6></a>
-                
-                   <a class="carousel-item " ><img src="Images/SEC/Vaishnavi.jpeg">
-                    <h6 class="black-text"><center>Vaishnavi Vasishta<br>Organizing Committee</center></h6></a>
-                    
-                </div>
-                   <ul>
-                       <br /><br />
-                   </ul>
-         </div>
- </div>
-
-
   <div class="container">
-    <div class="row"></div>
-    <div class="row">
-      <div class="col s12">
-        <h3 style="text-align: center;">Bangalore Junior MUN</h3>
-        <h5 style="font-weight: lighter; text-align: center">Bangalore JMUN, a conference hosted by Oakridge International School, is the only Junior Model United Nations Conference in Bangalore. Since the conference began in 2016, Bangalore JMUN has come a long way in providing an enriching experience
-          to middle school students with a passion for debate and public speaking. This conference is an amazing opportunity for sixth to eighth graders to take their communication and leadership skills to the next level by collaborating with fellow students
-          to solve 21st century global issues. The dedicated and experienced Executive Board and Secretariat at the conference, who strive to provide the best learning experience for the delegates, make it the best Junior Model United Nations Conference
-          in Bangalore!
-        </h5>
-        <h3 style="font-weight: ; text-align: center;">Oakridge International School</h3>
-        <h5 style="font-weight: lighter; text-align: center">Oakridge International School, starting out not more than a decade ago, has become the largest chain of IB schools in India. The teaching methodology, the integration of technology and the myriad of opportunities provided to students have made
-          Oakridge one of the best international schools in the country. The vision to nurture the uniqueness in every child has made it an excellent centre of education. From a variety of fields, unique experiences such as this are provided to students,
-          making them get a holistic educational experience.
-          </h>
-          <h3 style="font-weight: ; text-align: center;">Model United Nations</h3>
-          <h5 style="font-weight: lighter; text-align: center;">Model United Nations is a platform for students to understand how the United Nations works through the lens of a global leader. Students represent countries, participate in UN committees and collectively formulate solutions to global problems,
-            that have the potential to help humanity. This experience is unique as not only do students develop public speaking, negotiating, leadership and communication skills, but they also interact with like minded people and form friendships that
-            go a long way in their lives.
-          </h5>
+    <div class=row>
+      <div class="col s12" height="600px">
+        <div class="divider"></div>
+        <center>
+          <h3 class="black-text">Secretariat</h3>
+        </center>
+        <div class="carousel">
+          <div>
+            <a class="carousel-item"><img src="Images/SEC/Aarush.jpeg">
+              <h6 class="black-text">
+                <center>Aarush Mehrotra<br>Secretary General</center>
+              </h6>
+            </a>
+
+            <a class="carousel-item "><img src="Images/SEC/Sadhika.jpg">
+              <h6 class="black-text">
+                <center>Sadhika Allampally<br>Director General</center>
+              </h6>
+            </a>
+
+            <a class="carousel-item "><img src="Images/SEC/Nidhi.jpeg">
+              <h6 class="black-text">
+                <center>Nidhi Mayurika<br>USG of Conference Management</center>
+              </h6>
+            </a>
+
+            <a class="carousel-item "><img src="Images/SEC/Ananya.jpeg">
+              <h6 class="black-text">
+                <center>Ananya Chordia<br>USG of Conference Management</center>
+              </h6>
+            </a>
+
+            <a class="carousel-item "><img src="Images/SEC/Ram.jpeg">
+              <h6 class="black-text">
+                <center>Ram Velamuri<br>Head of International Press</center>
+              </h6>
+            </a>
+
+            <a class="carousel-item "><img src="Images/SEC/Namrata.jpeg">
+              <h6 class="black-text">
+                <center>Namrata Venkatesh<br>Head of International Press</center>
+              </h6>
+            </a>
+
+            <a class="carousel-item "><img src="Images/SEC/Kavya.jpeg">
+              <h6 class="black-text">
+                <center>Kavya Kannan<br>USG of Logistics</center>
+              </h6>
+            </a>
+
+            <a class="carousel-item "><img src="Images/SEC/Abhishek.jpeg">
+              <h6 class="black-text">
+                <center>Abhishek Pendyala<br>USG of Logistics</center>
+              </h6>
+            </a>
+
+            <a class="carousel-item "><img src="Images/SEC/Tanvi.jpeg">
+              <h6 class="black-text">
+                <center>Tanvi Gorthi<br>Organizing Committee</center>
+              </h6>
+            </a>
+
+            <a class="carousel-item "><img src="Images/SEC/Sehrish.jpeg">
+              <h6 class="black-text">
+                <center>Sehrish Ahmed<br>Organizing Committee</center>
+              </h6>
+            </a>
+
+            <a class="carousel-item "><img src="Images/SEC/Asmita.jpeg">
+              <h6 class="black-text">
+                <center>Asmita Kiran<br>Organizing Committee</center>
+              </h6>
+            </a>
+
+            <a class="carousel-item "><img src="Images/SEC/Vaishnavi.jpeg">
+              <h6 class="black-text">
+                <center>Vaishnavi Vasishta<br>Organizing Committee</center>
+              </h6>
+            </a>
+
+          </div>
+          <ul>
+            <br /><br />
+          </ul>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="divider"></div>
-  <div class="divider"></div>
-  <div class="divider"></div>
-  <div class="container">
-    <div class="row">
-      <div class="col s12">
-        <h3 style="text-align: center;">What is UN4MUN?</h3>
-        <h5 style="font-weight: lighter; text-align: center;">UN4MUN was created by the UN Department for Public Information as a set of guidelines for conferences to better emulate the proceedings and structure of the United Nations. This year, Bangalore JMUN 2020 has adopted these new Rules of Procedure
-          to better facilitate the flow of debate and enable students to engage with a more realistic simulation of the United Nations. Rest assured, delegates will get the opportunity to learn about the UN4MUN Rules of Procedure at this year's training
-          session!
-          </ph5>
-      </div>
-    </div>
-  </div>
 
 
-  <!--
+      <div class="container">
+        <div class="row"></div>
+        <div class="row">
+          <div class="col s12">
+            <h3 style="text-align: center;">Bangalore Junior MUN</h3>
+            <h5 style="font-weight: lighter; text-align: center">Bangalore JMUN, a conference hosted by Oakridge
+              International School, is the only Junior Model United Nations Conference in Bangalore. Since the
+              conference began in 2016, Bangalore JMUN has come a long way in providing an enriching experience
+              to middle school students with a passion for debate and public speaking. This conference is an amazing
+              opportunity for sixth to eighth graders to take their communication and leadership skills to the next
+              level by collaborating with fellow students
+              to solve 21st century global issues. The dedicated and experienced Executive Board and Secretariat at the
+              conference, who strive to provide the best learning experience for the delegates, make it the best Junior
+              Model United Nations Conference
+              in Bangalore!
+            </h5>
+            <h3 style="font-weight: ; text-align: center;">Oakridge International School</h3>
+            <h5 style="font-weight: lighter; text-align: center">Oakridge International School, starting out not more
+              than a decade ago, has become the largest chain of IB schools in India. The teaching methodology, the
+              integration of technology and the myriad of opportunities provided to students have made
+              Oakridge one of the best international schools in the country. The vision to nurture the uniqueness in
+              every child has made it an excellent centre of education. From a variety of fields, unique experiences
+              such as this are provided to students,
+              making them get a holistic educational experience.
+              </h>
+              <h3 style="font-weight: ; text-align: center;">Model United Nations</h3>
+              <h5 style="font-weight: lighter; text-align: center;">Model United Nations is a platform for students to
+                understand how the United Nations works through the lens of a global leader. Students represent
+                countries, participate in UN committees and collectively formulate solutions to global problems,
+                that have the potential to help humanity. This experience is unique as not only do students develop
+                public speaking, negotiating, leadership and communication skills, but they also interact with like
+                minded people and form friendships that
+                go a long way in their lives.
+              </h5>
+          </div>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="divider"></div>
+      <div class="divider"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <h3 style="text-align: center;">What is UN4MUN?</h3>
+            <h5 style="font-weight: lighter; text-align: center;">UN4MUN was created by the UN Department for Public
+              Information as a set of guidelines for conferences to better emulate the proceedings and structure of the
+              United Nations. This year, Bangalore JMUN 2020 has adopted these new Rules of Procedure
+              to better facilitate the flow of debate and enable students to engage with a more realistic simulation of
+              the United Nations. Rest assured, delegates will get the opportunity to learn about the UN4MUN Rules of
+              Procedure at this year's training
+              session!
+              </ph5>
+          </div>
+        </div>
+      </div>
+
+
+      <!--
       <div class="container">
     <div class="section grey lighten-2">
       <div class="row">
@@ -326,7 +431,7 @@
     </div>
   </div>
       </div> -->
-  <!-- <div class="container">
+      <!-- <div class="container">
     <div class="section grey lighten-2">
       <div class="row">
         <div class="col s12 m6">
@@ -353,44 +458,52 @@
       </div>
 -->
 
-  </div>
+    </div>
   </div>
 
   <footer class="page-footer black">
-      <div class="container">
-          <div class="row">
-              <div class="col s12">
-                  <h5 class="white-text">Contact Details</h5>
-                  <p class="grey-text text-lighten-4">Send any queries over to <a href="mailto:bangalorejmun@oakridge.in" target="_blank"> bangalorejmun@oakridge.in</a> </p>
-                  <!--<p class="grey-text text-lighten-4">Teacher Advisor: <a href="tel:8971857769" target="_blank">+91 8971857769 (Ms. Debjani)</a>  </p>
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h5 class="white-text">Contact Details</h5>
+          <p class="grey-text text-lighten-4">Send any queries over to <a href="mailto:bangalorejmun@oakridge.in"
+              target="_blank"> bangalorejmun@oakridge.in</a> </p>
+          <!--<p class="grey-text text-lighten-4">Teacher Advisor: <a href="tel:8971857769" target="_blank">+91 8971857769 (Ms. Debjani)</a>  </p>
                       <p class="grey-text text-lighten-4">Secretary General: <a href="tel:9108274028" target="_blank">+91 9108274028 (Abhinav)</a>  </p>        </div> -->
-              </div>
-          </div>
-          <!-- <div class="row">
+        </div>
+      </div>
+      <!-- <div class="row">
               <div class="col s12">
                   <p class="grey-text text-lighten-4"><a href="http://www.oakridge.in/">Oakridge Website</a></p>
               </div>
           </div> -->
-          <div class="row">
-              <div class="footer-copyright">
-                  <div class="col s7">
-                      <a class="grey-text text-lighten-4" href=""><i class="material-icons">copyright</i>2019 Bangalore Junior MUN</a>
-                  </div>
-                  <div class="col s5">
-                      Developed by <a href="https://github.com/Nexus987" target="_blank">Nexus</a>, <a href="https://github.com/gaurangbharti1" target="_blank">GBHacker23</a> and <a href="https://github.com/BK-Modding/" target="_blank">BK-Modding</a>
-                  </div>
-                  <div class="col s5">
-                      Renovated for 2019 by <a href="https://github.com/muhsin7" target="_blank">Muhsin7</a>, <a href="https://github.com/Teminix" target="_blank">Teminix</a> and <a href="https://github.com/Chanmanstanflan" target="_blank">Chanmanstanflan</a>
-                  </div>
-				  <div class="col s5">
-                      Renovated for 2020 by <a href="https://github.com/iAarush" target="_blank">iAarush</a>, <a href="https://github.com/PrasidhV" target="_blank">PrasidhV</a> and <a href="https://github.com/Shubaan7" target="_blank">Shubaan007</a> 
-                    </div>
-              </div>
+      <div class="row">
+        <div class="footer-copyright">
+          <div class="col s7">
+            <a class="grey-text text-lighten-4" href=""><i class="material-icons">copyright</i>2019 Bangalore Junior
+              MUN</a>
           </div>
+          <div class="col s5">
+            Developed by <a href="https://github.com/Nexus987" target="_blank">Nexus</a>, <a
+              href="https://github.com/gaurangbharti1" target="_blank">GBHacker23</a> and <a
+              href="https://github.com/BK-Modding/" target="_blank">BK-Modding</a>
+          </div>
+          <div class="col s5">
+            Renovated for 2019 by <a href="https://github.com/muhsin7" target="_blank">Muhsin7</a>, <a
+              href="https://github.com/Teminix" target="_blank">Teminix</a> and <a
+              href="https://github.com/Chanmanstanflan" target="_blank">Chanmanstanflan</a>
+          </div>
+          <div class="col s5">
+            Renovated for 2020 by <a href="https://github.com/iAarush" target="_blank">iAarush</a>, <a
+              href="https://github.com/PrasidhV" target="_blank">PrasidhV</a> and <a href="https://github.com/Shubaan7"
+              target="_blank">Shubaan007</a>
+          </div>
+        </div>
       </div>
+    </div>
   </footer>
   <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
       // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
       $('.modal').modal();
       $('.slider').slider();
