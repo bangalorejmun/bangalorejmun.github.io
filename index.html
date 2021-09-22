@@ -276,42 +276,44 @@
 
     </ul>
 
-    <ul class="side-nav" id="mobile-demo">
-        <li><a href="index.html">Home</a></li>
-        <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Committees<i
-                    class="material-icons right">arrow_drop_down</i></a></li>
-        <li><a href="error.html">Conference</a></li>
-        <li><a href="#modalFAQ">FAQs</a></li>
+    <ul id='committeesDropSide' class='dropdown-content'>
+        <li class=""><a href="error.html" class="">UNICEF</a></li>
+        <li class=""><a href="error.html" class="">UNEP</a></li>
+        <li class=""><a href="error.html" class="">WHO</a></li>
+        <li class=""><a href="error.html" class="">ECOSOC</a></li>
+        <li class=""><a href="error.html" class="">UNSC</a></li>
 
-        <li><a class="dropdown-button" href="#!" data-activates="dropdown4">Registration<i
-                    class="material-icons right">arrow_drop_down</i></a></li>
+    </ul>
+    <ul id='conferenceDropSide' class='dropdown-content'>
+        <li class=""><a href="Conference/index.html" class="">About</a></li>
+        <li class=""><a href="error.html" class="">Secretariat</a></li>
+        <li class=""><a href="error.html" class="">Schedule</a></li>
 
     </ul>
 
-    </ul>
-
-    <ul id='dropdown3' class='dropdown-content'>
-        <li class="black darken-3"><a href="#modalRegister" class="white-text">How to Register?</a></li>
-        <li class="black darken-3"><a href="#modalPayment" class="white-text">Payment Details</a></li>
-        <li class="black darken-3"><a href="https://forms.gle/z7szXZeB4wAYAv6f9" class="white-text">Oakridge
+    <ul id='registrationDropSide' class='dropdown-content'>
+        <li class=""><a href="#modalRegister" class="">How to Register?</a></li>
+        <li class=""><a href="#modalPayment" class="">Payment Details</a></li>
+        <li class=""><a href="https://forms.gle/z7szXZeB4wAYAv6f9" class="">Oakridge
                 Registration</a></li>
-        <li class="black darken-3"><a href="https://forms.gle/wobS3uA1eYkp9vsm6" class="white-text">External
+        <li class=""><a href="https://forms.gle/wobS3uA1eYkp9vsm6" class="">External
                 Registration</a></li>
 
     </ul>
 
     <ul class="side-nav" id="mobile-demo">
-        <li><a href="index.html">Home</a></li>
-        <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Committees<i
+        <li><a id="homeBtnSide" href="index.html" class="btn-flat">Home</a></li>
+        <li><a id="committeesBtnSide" class="dropdown-button btn-flat" href="#!"
+                data-activates="committeesDropSide">Committees<i class="material-icons right">arrow_drop_down</i></a>
+        </li>
+        <li><a id="conferenceBtnSide" class="dropdown-button btn-flat" href="#!"
+                data-activates="conferenceDropSide">Conference<i class="material-icons right">arrow_drop_down</i></a>
+        </li>
+        <li><a id="registrationBtnSide" class="dropdown-button btn-flat" href="#!"
+                data-activates="registrationDropSide">Registration<i
                     class="material-icons right">arrow_drop_down</i></a></li>
-        <li><a href="error.html">Conference</a></li>
-        <li><a href="#modalFAQ">FAQs</a></li>
-        <!--  <li><a class="dropdown-button" href="#!" data-activates="dropdown4">Registration<i class="material-icons right">arrow_drop_down</i></a></li> -->
+        <li><a href="#modalFAQ" class="btn-flat">FAQs</a></li>
     </ul>
-    <script>
-        $(".button-collapse").sideNav();
-    </script>
-
 
     <!-- Header Image- Re-enable after Ananya sends you the 2020 background! -->
     <div id="index-banner" class="parallax-container" style="background: url('assets/site_imgs/homepage_header.png') no-repeat center center fixed;
@@ -325,7 +327,7 @@
                     <a href="index.html" class="brand-logo bold"><img src="assets/site_imgs/logo.jpg" class="circle"
                             style="height: 65px;"></a>
                     <a href="#" data-activates="mobile-demo" class="button-collapse"><i
-                            class="material-icons white">menu</i></a>
+                            class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down">
                         <li><a id="homeBtn" href="index.html" class="white-text">Home</a></li>
                         <li><a id="committeesBtn" class="dropdown-button white-text" href="#!"
@@ -361,6 +363,10 @@
             </div> -->
         </div>
     </div>
+
+    <script>
+        $(".button-collapse").sideNav();
+    </script>
 
     <!--
 <div class="section">
@@ -762,56 +768,29 @@
         $(document).ready(function () {
             $('.parallax').parallax();
             $(".dropdown-button").dropdown({
-                coverTrigger: false
+                belowOrigin: true
             });
             $('.modal').modal();
         });
 
-        function TransparentNav() {
-            document.getElementById("nav").classList.add("transparent");
+        // TODO: Check if you can delete this safely
+        document.getElementById("nav").classList.add("transparent");
 
-            document.getElementById("nav-wrapper").classList.remove("white");
-            document.getElementById("nav-wrapper").classList.add("white-text");
-            document.getElementById("nav-wrapper").classList.remove("black-text");
+        document.getElementById("nav-wrapper").classList.remove("white");
+        document.getElementById("nav-wrapper").classList.add("white-text");
+        document.getElementById("nav-wrapper").classList.remove("black-text");
 
-            document.getElementById("homeBtn").classList.remove("black-text");
-            document.getElementById("homeBtn").classList.add("white-text");
+        document.getElementById("homeBtn").classList.remove("black-text");
+        document.getElementById("homeBtn").classList.add("white-text");
 
-            document.getElementById("committeesBtn").classList.remove("black-text");
-            document.getElementById("committeesBtn").classList.add("white-text");
+        document.getElementById("committeesBtn").classList.remove("black-text");
+        document.getElementById("committeesBtn").classList.add("white-text");
 
-            document.getElementById("conferenceBtn").classList.remove("black-text");
-            document.getElementById("conferenceBtn").classList.add("white-text");
+        document.getElementById("conferenceBtn").classList.remove("black-text");
+        document.getElementById("conferenceBtn").classList.add("white-text");
 
-            document.getElementById("registrationBtn").classList.remove("black-text");
-            document.getElementById("registrationBtn").classList.add("white-text");
-        }
-
-        function WhiteNav() {
-            document.getElementById("nav").classList.remove("transparent");
-
-            document.getElementById("nav-wrapper").classList.add("white");
-            document.getElementById("nav-wrapper").classList.add("black-text");
-            document.getElementById("nav-wrapper").classList.remove("white-text");
-
-            document.getElementById("homeBtn").classList.remove("white-text");
-            document.getElementById("homeBtn").classList.add("black-text");
-
-            document.getElementById("committeesBtn").classList.remove("white-text");
-            document.getElementById("committeesBtn").classList.add("black-text");
-
-            document.getElementById("conferenceBtn").classList.remove("white-text");
-            document.getElementById("conferenceBtn").classList.add("black-text");
-
-            document.getElementById("registrationBtn").classList.remove("white-text");
-            document.getElementById("registrationBtn").classList.add("black-text");
-        }
-
-        var options = [
-            { selector: '.parallax-container', offset: 200, downScrollCallback: TransparentNav, upScrollCallback: TransparentNav },
-            { selector: '.content', offset: 200, downScrollCallback: WhiteNav, upScrollCallback: TransparentNav },
-        ];
-        Materialize.scrollFireEnhanced(options);
+        document.getElementById("registrationBtn").classList.remove("black-text");
+        document.getElementById("registrationBtn").classList.add("white-text");
 
         function getTimeRemaining(endtime) {
             var t = Date.parse(endtime) - Date.parse(new Date());
