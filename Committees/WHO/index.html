@@ -64,9 +64,7 @@
 <body>
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-
-
+    <script type="text/javascript" src="js/materialize.js"></script>
 
     <!-- Modal Structure -->
     <div id="modalSchedule" class="modal">
@@ -76,6 +74,7 @@
         </div>
     </div>
 
+    <!-- Test comment -->
     <!-- FAQ Modal -->
     <div id="modalFAQ" class="modal">
         <div class="modal-content">
@@ -154,27 +153,24 @@
         </div>
     </div>
 
-
-    <!-- Dropdown Structure -->
-
     <!-- Dropdown Structure- ENABLE ONCE ALL OF THE SUBPAGES ARE READY -->
 
-    <ul id='dropdown1' class='dropdown-content'>
-        <li class="black darken-3"><a href="Committees\UNICEF\index.html" class="white-text">UNICEF</a></li>
-        <li class="black darken-3"><a href="Committees\UNEP\index.html" class="white-text">UNEP</a></li>
-        <li class="black darken-3"><a href="Committees\WHO\index.html" class="white-text">WHO</a></li>
-        <li class="black darken-3"><a href="Committees\ECOSOC\index.html" class="white-text">ECOSOC</a></li>
-        <li class="black darken-3"><a href="Committees\UNSC\index.html" class="white-text">UNSC</a></li>
+    <ul id='committeesDrop' class='dropdown-content'>
+        <li class="black darken-3"><a href="error.html" class="white-text">UNICEF</a></li>
+        <li class="black darken-3"><a href="error.html" class="white-text">UNEP</a></li>
+        <li class="black darken-3"><a href="error.html" class="white-text">WHO</a></li>
+        <li class="black darken-3"><a href="error.html" class="white-text">ECOSOC</a></li>
+        <li class="black darken-3"><a href="error.html" class="white-text">UNSC</a></li>
 
     </ul>
-    <ul id='dropdown2' class='dropdown-content'>
-        <li class="black darken-3"><a href="Conference/index.html" class="white-text">About</a></li>
-        <li class="black darken-3"><a href="Secretariat/index.html" class="white-text">Secretariat</a></li>
+    <ul id='conferenceDrop' class='dropdown-content'>
+        <li class="black darken-3"><a href="Conference/" class="white-text">About</a></li>
+        <li class="black darken-3"><a href="Secretariat/" class="white-text">Secretariat</a></li>
         <li class="black darken-3"><a href="error.html" class="white-text">Schedule</a></li>
 
     </ul>
 
-    <ul id='dropdown3' class='dropdown-content'>
+    <ul id='registrationDrop' class='dropdown-content'>
         <li class="black darken-3"><a href="#modalRegister" class="white-text">How to Register?</a></li>
         <li class="black darken-3"><a href="#modalPayment" class="white-text">Payment Details</a></li>
         <li class="black darken-3"><a href="https://forms.gle/z7szXZeB4wAYAv6f9" class="white-text">Oakridge
@@ -184,73 +180,80 @@
 
     </ul>
 
-    <ul class="side-nav" id="mobile-demo">
-        <li><a href="index.html">Home</a></li>
-        <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Committees<i
-                    class="material-icons right">arrow_drop_down</i></a></li>
-        <li><a href="Conference/index.html">Conference</a></li>
-        <li><a href="#modalFAQ">FAQs</a></li>
+    <ul id='committeesDropSide' class='dropdown-content'>
+        <li class=""><a href="error.html" class="">UNICEF</a></li>
+        <li class=""><a href="error.html" class="">UNEP</a></li>
+        <li class=""><a href="error.html" class="">WHO</a></li>
+        <li class=""><a href="error.html" class="">ECOSOC</a></li>
+        <li class=""><a href="error.html" class="">UNSC</a></li>
 
-        <li><a class="dropdown-button" href="#!" data-activates="dropdown4">Registration<i
-                    class="material-icons right">arrow_drop_down</i></a></li>
+    </ul>
+    <ul id='conferenceDropSide' class='dropdown-content'>
+        <li class=""><a href="Conference/" class="">About</a></li>
+        <li class=""><a href="Secretariat/" class="">Secretariat</a></li>
+        <li class=""><a href="error.html" class="">Schedule</a></li>
 
     </ul>
 
-    </ul>
-
-    <ul id='dropdown3' class='dropdown-content'>
-        <li class="black darken-3"><a href="#modalRegister" class="white-text">How to Register?</a></li>
-        <li class="black darken-3"><a href="#modalPayment" class="white-text">Payment Details</a></li>
-        <li class="black darken-3"><a href="https://forms.gle/z7szXZeB4wAYAv6f9" class="white-text">Oakridge
+    <ul id='registrationDropSide' class='dropdown-content'>
+        <li class=""><a href="#modalRegister" class="">How to Register?</a></li>
+        <li class=""><a href="#modalPayment" class="">Payment Details</a></li>
+        <li class=""><a href="https://forms.gle/z7szXZeB4wAYAv6f9" class="">Oakridge
                 Registration</a></li>
-        <li class="black darken-3"><a href="https://forms.gle/wobS3uA1eYkp9vsm6" class="white-text">External
+        <li class=""><a href="https://forms.gle/wobS3uA1eYkp9vsm6" class="">External
                 Registration</a></li>
 
     </ul>
 
     <ul class="side-nav" id="mobile-demo">
-        <li><a href="index.html">Home</a></li>
-        <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Committees<i
+        <li><a id="homeBtnSide" href="" class="btn-flat">Home</a></li>
+        <li><a id="committeesBtnSide" class="dropdown-button btn-flat" href="#!"
+                data-activates="committeesDropSide">Committees<i class="material-icons right">arrow_drop_down</i></a>
+        </li>
+        <li><a id="conferenceBtnSide" class="dropdown-button btn-flat" href="#!"
+                data-activates="conferenceDropSide">Conference<i class="material-icons right">arrow_drop_down</i></a>
+        </li>
+        <li><a id="registrationBtnSide" class="dropdown-button btn-flat" href="#!"
+                data-activates="registrationDropSide">Registration<i
                     class="material-icons right">arrow_drop_down</i></a></li>
-        <li><a href="Conference/index.html">Conference</a></li>
-        <li><a href="#modalFAQ">FAQs</a></li>
-        <!--  <li><a class="dropdown-button" href="#!" data-activates="dropdown4">Registration<i class="material-icons right">arrow_drop_down</i></a></li> -->
+        <li><a href="#modalFAQ" class="btn-flat">FAQs</a></li>
     </ul>
-    <script>
-        $(".button-collapse").sideNav();
-    </script>
-
 
     <!-- Header Image- Re-enable after Ananya sends you the 2020 background! -->
     <div id="index-banner" class="parallax-container" style="background: url('assets/site_imgs/who_header.jpg') no-repeat center center fixed;
-                 -webkit-background-size: cover;
-                 -moz-background-size: cover;
-                 -o-background-size: cover;
-                 background-size: cover;">
+               -webkit-background-size: cover;
+               -moz-background-size: cover;
+               -o-background-size: cover;
+               background-size: cover;">
         <div class="navbar-fixed" style="font-family: 'Montserrat'; font-weight: bold;">
             <nav id="nav" class="transparent">
                 <div id="nav-wrapper" class="nav-wrapper white-text">
-                    <a href="index.html" class="brand-logo bold"><img src="assets/site_imgs/logo.jpg" class="circle"
+                    <a href="" class="brand-logo bold"><img src="assets/site_imgs/logo.jpg" class="circle"
                             style="height: 65px;"></a>
                     <a href="#" data-activates="mobile-demo" class="button-collapse"><i
-                            class="material-icons white">menu</i></a>
+                            class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down">
-                        <li><a id="homeBtn" href="index.html" class="white-text">Home</a></li>
+                        <li><a id="homeBtn" href="" class="white-text">Home</a></li>
                         <li><a id="committeesBtn" class="dropdown-button white-text" href="#!"
-                                data-activates="dropdown1">Committees<i
+                                data-activates="committeesDrop">Committees<i
                                     class="material-icons right">arrow_drop_down</i></a></li>
                         <li><a id="conferenceBtn" class="dropdown-button white-text" href="#!"
-                                data-activates="dropdown2">Conference<i
+                                data-activates="conferenceDrop">Conference<i
                                     class="material-icons right">arrow_drop_down</i></a></li>
                         <li><a id="registrationBtn" class="dropdown-button white-text" href="#!"
-                                data-activates="dropdown3">Registration<i
-                                    class="material-icons right">arrow_drop_down</i></a></li>
+                                data-activates="registrationDrop">Registration<i
+                                    class="material-icons right">arrow_drop_down</i></a>
+                        </li>
                         <li><a href="#modalFAQ" class="white-text">FAQs</a></li>
                     </ul>
                 </div>
             </nav>
         </div>
     </div>
+
+    <script>
+        $(".button-collapse").sideNav();
+    </script>
 
     <!-- Content: -->
     <div class="section white">
@@ -368,7 +371,7 @@
                                         </div>
                                         <div class="col s4" style="padding-right: 32px;">
                                             <a class="waves-effect waves-light btn-floating btn-large blue-grey darken-3"
-                                                href="error.html">
+                                                href="https://www.instagram.com/bangalorejmun">
                                                 <img src="assets/site_imgs/icon_instagram.png" height="42" width="42"
                                                     style="text-align: center;
                                                 text-align: center; position: relative; top: 50%; -ms-transform: translateY(-50%); -webkit-transform: translateY(-50%); transform: translateY(-50%);" />
