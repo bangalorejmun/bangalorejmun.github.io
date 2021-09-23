@@ -7,6 +7,12 @@
   </p>
 </p>
 
+## Sites:
+- [Current Site (2021)](https://bangalorejmun.in)
+- [2020 Site Archive](https://bangalorejmun.in/Archives/2020)
+- [2019 Site Archive](https://bangalorejmun.in/Archives/2019)
+- [2018 Site Archive](https://bangalorejmun.in/Archives/2018)
+
 ## Supported Browsers:
 Tested on:
 
