@@ -45,7 +45,7 @@
         }
 
         .parallax-container {
-            height: 850px;
+            height: 650px;
         }
 
         a[def] {
@@ -64,9 +64,7 @@
 <body>
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-
-
+    <script type="text/javascript" src="js/materialize.js"></script>
 
     <!-- Modal Structure -->
     <div id="modalSchedule" class="modal">
@@ -154,97 +152,88 @@
         </div>
     </div>
 
-
-    <!-- Dropdown Structure -->
-
-    <!-- Dropdown Structure- ENABLE ONCE ALL OF THE SUBPAGES ARE READY -->
-
-    <ul id='dropdown1' class='dropdown-content'>
-        <li class="black darken-3"><a href="Committees\UNICEF\index.html" class="white-text">UNICEF</a></li>
-        <li class="black darken-3"><a href="Committees\UNEP\index.html" class="white-text">UNEP</a></li>
-        <li class="black darken-3"><a href="Committees\WHO\index.html" class="white-text">WHO</a></li>
-        <li class="black darken-3"><a href="Committees\ECOSOC\index.html" class="white-text">ECOSOC</a></li>
-        <li class="black darken-3"><a href="Committees\UNSC\index.html" class="white-text">UNSC</a></li>
-
+    <ul id='committeesDrop' class='dropdown-content'>
+        <li class="black darken-3"><a href="Committees/UNICEF/" class="white-text">UNICEF</a></li>
+        <li class="black darken-3"><a href="Committees/UNEP/" class="white-text">UNEP</a></li>
+        <li class="black darken-3"><a href="Committees/WHO/" class="white-text">WHO</a></li>
+        <li class="black darken-3"><a href="Committees/ECOSOC/" class="white-text">ECOSOC</a></li>
+        <li class="black darken-3"><a href="Committees/UNSC/" class="white-text">UNSC</a></li>
     </ul>
-    <ul id='dropdown2' class='dropdown-content'>
-        <li class="black darken-3"><a href="Conference/index.html" class="white-text">About</a></li>
-        <li class="black darken-3"><a href="Secretariat/index.html" class="white-text">Secretariat</a></li>
+    <ul id='conferenceDrop' class='dropdown-content'>
+        <li class="black darken-3"><a href="Conference/" class="white-text">About</a></li>
+        <li class="black darken-3"><a href="Secretariat/" class="white-text">Secretariat</a></li>
         <li class="black darken-3"><a href="error.html" class="white-text">Schedule</a></li>
 
     </ul>
-
-    <ul id='dropdown3' class='dropdown-content'>
+    <ul id='registrationDrop' class='dropdown-content'>
         <li class="black darken-3"><a href="#modalRegister" class="white-text">How to Register?</a></li>
         <li class="black darken-3"><a href="#modalPayment" class="white-text">Payment Details</a></li>
         <li class="black darken-3"><a href="https://forms.gle/z7szXZeB4wAYAv6f9" class="white-text">Oakridge
                 Registration</a></li>
         <li class="black darken-3"><a href="https://forms.gle/wobS3uA1eYkp9vsm6" class="white-text">External
                 Registration</a></li>
+    </ul>
 
+    <ul id='committeesDropSide' class='dropdown-content'>
+        <li class=""><a href="Committees/UNICEF/" class="">UNICEF</a></li>
+        <li class=""><a href="Committees/UNEP/" class="">UNEP</a></li>
+        <li class=""><a href="Committees/WHO/" class="">WHO</a></li>
+        <li class=""><a href="Committees/ECOSOC/" class="">ECOSOC</a></li>
+        <li class=""><a href="Committees/UNSC/" class="">UNSC</a></li>
+    </ul>
+    <ul id='conferenceDropSide' class='dropdown-content'>
+        <li class=""><a href="Conference/" class="">About</a></li>
+        <li class=""><a href="Secretariat/" class="">Secretariat</a></li>
+        <li class=""><a href="error.html" class="">Schedule</a></li>
+
+    </ul>
+    <ul id='registrationDropSide' class='dropdown-content'>
+        <li class=""><a href="#modalRegister" class="">How to Register?</a></li>
+        <li class=""><a href="#modalPayment" class="">Payment Details</a></li>
+        <li class=""><a href="https://forms.gle/z7szXZeB4wAYAv6f9" class="">Oakridge
+                Registration</a></li>
+        <li class=""><a href="https://forms.gle/wobS3uA1eYkp9vsm6" class="">External
+                Registration</a></li>
     </ul>
 
     <ul class="side-nav" id="mobile-demo">
-        <li><a href="index.html">Home</a></li>
-        <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Committees<i
+        <li><a id="homeBtnSide" href="" class="btn-flat">Home</a></li>
+        <li><a id="committeesBtnSide" class="dropdown-button btn-flat" href="#!"
+                data-activates="committeesDropSide">Committees<i class="material-icons right">arrow_drop_down</i></a>
+        </li>
+        <li><a id="conferenceBtnSide" class="dropdown-button btn-flat" href="#!"
+                data-activates="conferenceDropSide">Conference<i class="material-icons right">arrow_drop_down</i></a>
+        </li>
+        <li><a id="registrationBtnSide" class="dropdown-button btn-flat" href="#!"
+                data-activates="registrationDropSide">Registration<i
                     class="material-icons right">arrow_drop_down</i></a></li>
-        <li><a href="Conference/index.html">Conference</a></li>
-        <li><a href="#modalFAQ">FAQs</a></li>
-
-        <li><a class="dropdown-button" href="#!" data-activates="dropdown4">Registration<i
-                    class="material-icons right">arrow_drop_down</i></a></li>
-
+        <li><a href="#modalFAQ" class="btn-flat">FAQs</a></li>
     </ul>
 
-    </ul>
-
-    <ul id='dropdown3' class='dropdown-content'>
-        <li class="black darken-3"><a href="#modalRegister" class="white-text">How to Register?</a></li>
-        <li class="black darken-3"><a href="#modalPayment" class="white-text">Payment Details</a></li>
-        <li class="black darken-3"><a href="https://forms.gle/z7szXZeB4wAYAv6f9" class="white-text">Oakridge
-                Registration</a></li>
-        <li class="black darken-3"><a href="https://forms.gle/wobS3uA1eYkp9vsm6" class="white-text">External
-                Registration</a></li>
-
-    </ul>
-
-    <ul class="side-nav" id="mobile-demo">
-        <li><a href="index.html">Home</a></li>
-        <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Committees<i
-                    class="material-icons right">arrow_drop_down</i></a></li>
-        <li><a href="Conference/index.html">Conference</a></li>
-        <li><a href="#modalFAQ">FAQs</a></li>
-        <!--  <li><a class="dropdown-button" href="#!" data-activates="dropdown4">Registration<i class="material-icons right">arrow_drop_down</i></a></li> -->
-    </ul>
-    <script>
-        $(".button-collapse").sideNav();
-    </script>
-
-
-    <!-- Header Image- Re-enable after Ananya sends you the 2020 background! -->
     <div id="index-banner" class="parallax-container" style="background: url('assets/site_imgs/who_header.jpg') no-repeat center center fixed;
-                 -webkit-background-size: cover;
-                 -moz-background-size: cover;
-                 -o-background-size: cover;
-                 background-size: cover;">
+               -webkit-background-size: cover;
+               -moz-background-size: cover;
+               -o-background-size: cover;
+               background-size: cover;">
         <div class="navbar-fixed" style="font-family: 'Montserrat'; font-weight: bold;">
             <nav id="nav" class="transparent">
                 <div id="nav-wrapper" class="nav-wrapper white-text">
-                    <a href="index.html" class="brand-logo bold"><img src="assets/site_imgs/logo.jpg" class="circle"
+                    <a href="" class="brand-logo bold"><img src="assets/site_imgs/logo.jpg" class="circle"
                             style="height: 65px;"></a>
                     <a href="#" data-activates="mobile-demo" class="button-collapse"><i
-                            class="material-icons white">menu</i></a>
+                            class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down">
-                        <li><a id="homeBtn" href="index.html" class="white-text">Home</a></li>
+                        <li><a id="homeBtn" href="" class="white-text">Home</a></li>
                         <li><a id="committeesBtn" class="dropdown-button white-text" href="#!"
-                                data-activates="dropdown1">Committees<i
+                                data-activates="committeesDrop">Committees<i
                                     class="material-icons right">arrow_drop_down</i></a></li>
                         <li><a id="conferenceBtn" class="dropdown-button white-text" href="#!"
-                                data-activates="dropdown2">Conference<i
+                                data-activates="conferenceDrop">Conference<i
                                     class="material-icons right">arrow_drop_down</i></a></li>
                         <li><a id="registrationBtn" class="dropdown-button white-text" href="#!"
-                                data-activates="dropdown3">Registration<i
-                                    class="material-icons right">arrow_drop_down</i></a></li>
+                                data-activates="registrationDrop">Registration<i
+                                    class="material-icons right">arrow_drop_down</i></a>
+                        </li>
                         <li><a href="#modalFAQ" class="white-text">FAQs</a></li>
                     </ul>
                 </div>
@@ -252,96 +241,115 @@
         </div>
     </div>
 
+    <script>
+        $(".button-collapse").sideNav();
+    </script>
+
     <!-- Content: -->
-    <div class="section white">
-        <div class="row">
-            <div class="col s6">
-                <div align="justify" class="card white z-depth-5">
-                    <div class="card-content black-text">
-                        <span class="card-title flow-text">
-                            <h4 style="font-weight: lighter;">Agenda: Developing Equitable Vaccine Distribution
-                                Methods.</h4>
-                        </span>
-                        <br>
-                    </div>
-                    <div class="card-action">
-                        </p>
-                        <h5 style="font-weight: normal;">The World Health Organization is a specialized agency of the
-                            United Nations. With 194 member states, the WHO’s primary role is to direct and coordinate
-                            international health within the United Nations system and lead partners in global health
-                            responses. The COVID-19 pandemic has put a strain on medical facilities across the globe and
-                            has put a spotlight on the role of the WHO on a global level. </h5>
-                        <h5> This year, we will be discussing the agenda: "Developing Equitable Vaccine Distribution
-                            Methods."</h5>
 
-                        <!-- REMOVE THIS COMMENT WHEN THE BACKGROUND GUIDE IS AVAILABLE!!! <b class="big">Background guide for UNSC is available <a href="https://docs.google.com/document/d/1kic0xJ0WdvtHc57dLludsTj3fS8tbWdplWfoE2ZcMIg/edit?usp=sharing" target="_blank">Here</a></b>
-                        -->
-                        <a class="btn-flat blue darken-4 white-text" href="error.html" target="_blank">Background
-                            Guide</a>
-                        <!--<a class="btn-flat indigo darken-3 white-text" href="https://docs.google.com/spreadsheets/d/1IwsSmtPnYpGsmQqrPkX9zy4XIsVj7FP3eiG63sjAl24/edit?usp=sharing">Country Allocations</a>-->
-                        <!--<a class="btn-flat indigo darken-3 white-text" href="https://drive.google.com/drive/folders/0Bw0gqJdqCw_UTklPa1dyMWpHX2c?usp=sharing">Training material</a>-->
-                    </div>
-                </div>
-            </div>
-            <!--EB Names and Pictures -->
-            <div class="col s6">
-                <div class="card white z-depth-5">
-                    <div class="center col s2 offset-s2 flow-text ">
-                        <img src="assets/eb_memebers/Simran.jpg" alt="" class="circle responsive-img">Chair
-                        <br>Simran Kaur
-                    </div>
-
-                    <div class="center col s2 offset-s2 flow-text ">
-                        <img src="assets/eb_memebers/Simran.jpg" alt="" class="circle responsive-img">Vice-Chair
-                        <br>Rakshita
-                    </div>
-                    <!--Enable when Jahnavi sends her picture! -->
-                    <div class="center col s2 offset-s2 flow-text ">
-                        <img src="assets/eb_memebers/Simran.jpg" alt="" class="circle responsive-img">Moderator
-                        <br>Jahnavi Thejo Prakash
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="col s6">
-                <div align="justify" class="card white z-depth-5">
-                    <div class="card-content black-text">
-                        <span class="card-title flow-text">
-                            <h4 style="font-weight: lighter;">Meet your EB</h4>
-                        </span>
-                        <br>
-                    </div>
-                    <div class="card-action">
-                        </p>
-                        <h5 style="font-weight: lighter;">Saanika Gupta, Co-Chair</h5>
-                        <p>Saanika Gupta is a student of MYP5 at Oakridge International School, Bangalore. She has been
-                            a participating delegate at the Bangalore JMUN for three years. She has also served as the
-                            Rapporteur for WHO at the Bangalore JMUN 2019 and is excited to be co-chairing WHO for the
-                            upcoming conference. Apart from MUN, she engages with NGOs to contribute her bit towards the
-                            environment and community. Her interests lie in playing the guitar and writing. She is an
-                            avid traveller and enjoys exploring new cultures and cuisines.</p>
-                        <p>She looks forward to making every delegate’s experience at the JMUN, their best one yet! </p>
-                        <h5 style="font-weight: lighter;">Athmika Krishnan, Co-Chair</h5>
-                        <p>With over 4 years of MUN experience, Athmika enjoys keeping up with international affairs and
-                            believes that cooperation is the first step towards progress. She is an avid reader and
-                            spends her free time passionately researching topics of interest, from the science of yogurt
-                            to humanitarian crises.</p>
-                        <h5 style="font-weight: lighter;">Jahnavi Thejo Prakash, Moderator</h5>
-                        <p>Jahnavi Thejo Prakash is a student at Oakridge International School and the moderator of this
-                            committee. She is a die-hard fan of Harry Potter, plays piano, and sings in her free time.
-                            However, she is more passionate about debates, especially MUNs. She has been an avid
-                            participant in MUNs across two years and has learnt a lot from it. This year, she has been
-                            provided with the opportunity to take part in the Bangalore 2020 JMUN. She hopes that she
-                            will provide an enjoyable and fruitful experience for every delegate! She looks forward to
-                            working with you!</p>
-                    </div>
-                </div>
+    <div class="section">
+        <h1 style="text-align: center; padding-left: 10%; padding-right: 10%;">
+            World Health Organization (WHO)
+        </h1>
+        <div class="container">
+            <h5 style="text-align: center;">
+                Agenda: Developing Equitable Vaccine Distribution Methods.
+            </h5>
+            <div class="container center-align" style="margin-bottom: 16px;">
+                <p style="text-align: center;">
+                    The World Health Organization is a specialized agency of the United Nations. With 194 member states,
+                    the WHO’s primary role is to direct and coordinate international health within the United Nations
+                    system and lead partners in global health responses. The COVID-19 pandemic has put a strain on
+                    medical facilities across the globe and has put a spotlight on the role of the WHO on a global
+                    level.
+                </p>
+                <a class="btn blue-grey darken-1 white-text disabled" href="error.html" target="_blank">
+                    Background Guide
+                </a>
             </div>
         </div>
     </div>
+
+    <div style="padding-left: 10%; padding-right: 10%;">
+        <div class="divider"></div>
     </div>
+
+    <div class="container">
+        <div class="section">
+            <h3 style="text-align: center;">
+                Meet Your EB
+            </h3>
+            <div class="container">
+                <div class="row" style="margin-top: 4px; margin-bottom: 15px;">
+                    <div class="col s4 center">
+                        <img src="assets/eb_memebers/Simran.jpg" alt="" class="circle responsive-img"
+                            style="max-height: 150px;" />
+                    </div>
+                    <div class="col s8">
+                        <div style="min-height: 150px" class="valign-wrapper">
+                            <p>
+                                <span style="font-size: 24px;">
+                                    Simran Kaur
+                                </span>
+                                <span class="blue-grey-text darken-4" style="font-size: 20px;">
+                                    (Chair)
+                                </span> <br>
+                                Simran is an enthusiastic debater, who has had MUN experience for the past 6 years. She
+                                has 2 years of experience in the EB and is very excited to chair WHO. Other than MUNs,
+                                Simran is passionate about sports, sustainability, biology, and chemistry. She is
+                                looking forward to listening to all of the delegates and their thoughts in committee.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="row" style="margin-top: 15px; margin-bottom: 15px;">
+                    <div class="col s8">
+                        <div style="min-height: 150px" class="valign-wrapper">
+                            <p style="text-align: end;">
+                                <span style="font-size: 24px;">
+                                    Rakshita V.
+                                </span>
+                                <span class="blue-grey-text darken-4" style="font-size: 20px;">
+                                    (Vice-Chair)
+                                </span> <br>
+                                Rakshita has been a delegate in JMUN itself for the past 3 years and is very passionate
+                                about all things health-related. She is an avid reader, a big musicophile, and loves to
+                                write in her free time.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col s4 center">
+                        <img src="assets/eb_memebers/Rakshita.jpg" alt="" class="circle responsive-img"
+                            style="max-height: 150px;" />
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="row" style="margin-top: 15px; margin-bottom: 6px;">
+                    <div class="col s4 center">
+                        <img src="assets/eb_memebers/Kashvi.jpg" alt="" class="circle responsive-img"
+                            style="max-height: 150px;" />
+                    </div>
+                    <div class="col s8">
+                        <div style="min-height: 150px" class="valign-wrapper">
+                            <p>
+                                <span style="font-size: 24px;">
+                                    Kashvi Srinivasan
+                                </span>
+                                <span class="blue-grey-text darken-4" style="font-size: 20px;">
+                                    (Moderator)
+                                </span> <br>
+                                ꧁꧂
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
 
     <footer class="page-footer black">
         <div class="container">
@@ -368,7 +376,7 @@
                                         </div>
                                         <div class="col s4" style="padding-right: 32px;">
                                             <a class="waves-effect waves-light btn-floating btn-large blue-grey darken-3"
-                                                href="error.html">
+                                                href="https://www.instagram.com/bangalorejmun">
                                                 <img src="assets/site_imgs/icon_instagram.png" height="42" width="42"
                                                     style="text-align: center;
                                                 text-align: center; position: relative; top: 50%; -ms-transform: translateY(-50%); -webkit-transform: translateY(-50%); transform: translateY(-50%);" />
@@ -398,14 +406,16 @@
                     </div>
                 </div>
                 <div class="col s6">
-                    <div style="margin-top: 72px;">
+                    <div style="margin-top: 90px;">
                         <div style="margin-left: 6.25vw;">
                             <p style="display: flex; align-items:flex-start;">
                             <h5 class="white-text" style="font-size: 22px;">Made by:&#8195;</h5>
-                            <a href="https://github.com/bangalorejmun/bangalorejmun.github.io/graphs/contributors">
-                                <img src="https://contrib.rocks/image?repo=bangalorejmun/bangalorejmun.github.io&max=8"
-                                    height="48px" style="overflow:hidden;" />
-                            </a>
+                            <div style="width: 40vw; overflow: hidden;"><a
+                                    href="https://github.com/bangalorejmun/bangalorejmun.github.io/graphs/contributors">
+                                    <img src="https://contrib.rocks/image?repo=bangalorejmun/bangalorejmun.github.io&max=8"
+                                        height="48px" style="overflow:hidden; " />
+                                </a>
+                            </div>
                             </p>
                         </div>
                     </div>
@@ -416,17 +426,11 @@
 
     <script>
         $(document).ready(function () {
-            // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
             $('.modal').modal();
-        });
-        $(document).ready(function () {
             $(".dropdown-button").dropdown({
-                coverTrigger: false
+                belowOrigin: true
             });
-        });
-        $(document).ready(function () {
             $('.parallax').parallax();
-
         });
     </script>
 </body>
