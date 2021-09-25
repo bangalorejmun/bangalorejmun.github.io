@@ -83,12 +83,11 @@
     </style>
 
     <div class="fixed-action-btn direction-top active" style="bottom: 45px; right: 24px;">
-        <a id="noticeicon" id="mail" class="btn btn-floating btn-large cyan waves-effect waves-light pulse"
-            onmouseover="this.classList.add('pulse')" onmouseout="this.classList.remove('pulse')" href="#modalNOTICE">
-            <i class="material-icons">notifications</i>
+        <a id="noticeicon" id="mail" class="btn btn-floating btn-large cyan waves-effect waves-light pulse" style="overflow: visible;"
+            onmouseover="this.classList.add('pulse')" onmouseout="this.classList.remove('pulse')" onclick="removeNotifBadge()" href="#modalNOTICE">
+            <i class="material-icons">notifications</i> <div id="notifBadge" style="width: 20px; height: 20px; padding: 0; border-radius: 10px; background-color: #5b92e5; display: flex; justify-content: center; align-items: center; position: relative; bottom: 62px; right: -32px;"><p style="font-size: 12px; line-height: 18px; padding: 0; margin: 0;">1</p></div>
         </a>
     </div>
-
 </head>
 
 <body>
@@ -796,6 +795,9 @@
         var deadline = 'October 8 2021 09:00:00 GMT+0530';
         initializeClock('clockdiv', deadline);
 
+        function removeNotifBadge() {
+            if (jQuery.isReady) {$("#notifBadge").remove();}
+        }
     </script>
 </body>
 
