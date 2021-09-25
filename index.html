@@ -97,32 +97,8 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.js"></script>
 
-    <!-- Modal Structure -->
-    <div id="modalSchedule" class="modal">
-        <div class="modal-content">
-            <h2>Schedule</h2>
 
-        </div>
-    </div>
-
-
-    <!-- NOTICE FORMAT:
-
-        <div class="row">
-            <div class="col s12 m6">
-              <div class="card blue-grey darken-1">
-                <div class="card-content white-text">
-                  <span class="card-title">{notice heading}</span>
-                  {notice content}
-                </div>
-              </div>
-              <div style="text-align:right;">
-                    {date published}
-              </div>
-            </div>
-          </div>
-
- -->
+    <!-- Notice Board Modal -->
     <div id="modalNOTICE" class="modal">
         <div class="modal-content">
             <center>
@@ -142,23 +118,25 @@
                         </div>
                     </div>
                 </div>
+                <!-- Uncomment when under maintainance
                 <div class="col s12 m6">
                     <div class="card blue-grey darken-1">
                         <div class="card-content white-text">
                             <span class="card-title">Sorry for the Inconvenience!</span>
                             <p>Some of the links are currently not working. We'll fix them as soon as possible.</p>
                             <div style="text-align:right; font-size: 75%;">
-                                23/09/2021
+                                xx/xx/2021
                             </div>
                         </div>
                     </div>
                 </div>
+                -->
             </div>
 
         </div>
     </div>
-    <!-- Test comment -->
-    <!-- FAQ Modal -->
+
+    <!-- Other Modals -->
     <div id="modalFAQ" class="modal">
         <div class="modal-content">
             <h3>JMUN FAQs</h3>
@@ -196,7 +174,6 @@
         </div>
     </div>
 
-    <!-- Registration and Payment Modals below -->
     <div id="modalRegister" class="modal">
         <div class="modal-content">
             <h4>If you are an External Delegate:</h4>
@@ -236,6 +213,13 @@
         </div>
     </div>
 
+    <div id="ScheduleUnavailable" class="modal">
+        <div class="modal-content">
+            <h4>Sorry for the Inconvenience!</h4>
+            <p>The Schedule for JMUN 2021 hasn't been released yet. I will be released approximatly 3 days before the
+                event.</p>
+        </div>
+    </div>
 
     <div id="modalPPT" class="modal" width="960" height="569">
         <div class="modal-content">
@@ -249,6 +233,7 @@
         </center>
     </div>
 
+    <!-- SideNav, Navbar & Parallax -->
     <ul id='committeesDrop' class='dropdown-content'>
         <li class="black darken-3"><a href="Committees/UNICEF/" class="white-text">UNICEF</a></li>
         <li class="black darken-3"><a href="Committees/UNEP/" class="white-text">UNEP</a></li>
@@ -259,8 +244,7 @@
     <ul id='conferenceDrop' class='dropdown-content'>
         <li class="black darken-3"><a href="Conference/" class="white-text">About</a></li>
         <li class="black darken-3"><a href="Secretariat/" class="white-text">Secretariat</a></li>
-        <li class="black darken-3"><a href="error.html" class="white-text">Schedule</a></li>
-
+        <li class="black darken-3"><a href="#ScheduleUnavailable" class="white-text">Schedule</a></li>
     </ul>
     <ul id='registrationDrop' class='dropdown-content'>
         <li class="black darken-3"><a href="#modalRegister" class="white-text">How to Register?</a></li>
@@ -281,8 +265,7 @@
     <ul id='conferenceDropSide' class='dropdown-content'>
         <li class=""><a href="Conference/" class="">About</a></li>
         <li class=""><a href="Secretariat/" class="">Secretariat</a></li>
-        <li class=""><a href="error.html" class="">Schedule</a></li>
-
+        <li class=""><a href="#ScheduleUnavailable" class="">Schedule</a></li>
     </ul>
     <ul id='registrationDropSide' class='dropdown-content'>
         <li class=""><a href="#modalRegister" class="">How to Register?</a></li>
@@ -360,23 +343,21 @@
         $(".button-collapse").sideNav();
     </script>
 
-    <!--
-<div class="section">
-    <div class="row">
-        <div class="col s4 offset-s2">
-            <div class="video-container">
-                <iframe  width="560" height="315" src="https://www.youtube.com/embed/Nsc5OxnHy9s?rel=0" frameborder="0" allowfullscreen></iframe>
+    <!-- Site Content -->
+    <!-- <div class="section">
+        <div class="row">
+            <div class="col s4 offset-s2">
+                <div class="video-container">
+                    <iframe  width="560" height="315" src="https://www.youtube.com/embed/Nsc5OxnHy9s?rel=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col s4 offset">
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/b8FilqDGXUE?rel=0" frameborder="0" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
-        <div class="col s4 offset">
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/b8FilqDGXUE?rel=0" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </div>
-    </div>
-</div>
--->
-
+    </div> -->
     <br /><br />
     <h1 style="text-align: center;">Conference starts in:</h1>
     <div class="container">
@@ -401,57 +382,44 @@
                     </div>
                 </div>
             </div>
-
             <div style="height: 12px;"> </div>
-
             <center>
-
                 <i>Registrations are now <a href="#Register">open</a>.</i>
-
             </center>
-
             <!-- uncomment once registration closes
                 <center>
               <i>Registrations are now closed.</i>
               <a href="https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting_YTVhMmIzMjAtNTU5Mi00MTVmLTkyODktMjMxMjkwYzc0ZTQz%40thread.v2%2F0%3Fcontext%3D%257B%2522Tid%2522%3A%25221d3d1782-204d-450a-8d6c-5d379a89372b%2522%2C%2522Oid%2522%3A%252235f7bd4e-ff91-46cb-8ed8-d6b287795cee%2522%2C%2522IsBroadcas&type=meetup-join&deeplinkId=ffcdd5e7-f63b-4406-998a-525671ac3f60&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true">Cosing ceremony</a>
-                
-            </center>
-        -->
-
+                </center>
+            -->
         </div>
         <br /><br />
+        <!-- TODO: Delete Me
+        **POSITION PAPER DUE DATE**
+            <div class="section content">
+                <div class="row">
+                    <div class="col s12">
+                        <p class="flow-text" align='center' style="font-family: Arial;">Redefining MUN</p>
+                        <p style="font-family: Segoe UI;" class="flow-text">
 
+                            <b>Position Papers are due on the 25th. More details in Background Guides and FAQ.<br><br>
+                            More information availabe under the "Registration" tab.</b><br><br>
+                            <b>Training Session Presentation Available <a href="https://docs.google.com/presentation/d/1HXlHzzP0IgXsoQMcQtTM1Oz6WEyH5d__qsQM4hCPuiI/edit#slide=id.p">Href</a>
+                            </b><br><br>
+                            As the first Junior Model UN conference, Bangalore JMUN has striven to redefine Model United Nations in Bangalore. For the past three years, we have continuously improved the quality of our debate, expanded the scope of our committees, and offered delegates
+                            a more holistic conference experience.
+                            <br>
+                            <br> This year, Bangalore Junior Model United Nations has committed to providing a seamless conference-to-audience connection through our Facebook Page livestreams, improved conference experience, and a more engaging experience
+                            for all delegates.
+                            <br>
+                            <br>
 
-        <!--
-**POSITION PAPER DUE DATE**
-        <div class="section content">
-            <div class="row">
-                <div class="col s12">
-                    <p class="flow-text" align='center' style="font-family: Arial;">Redefining MUN</p>
-                    <p style="font-family: Segoe UI;" class="flow-text">
-
-                        <b>Position Papers are due on the 25th. More details in Background Guides and FAQ.<br><br>
-                        More information availabe under the "Registration" tab.</b><br><br>
-                        <b>Training Session Presentation Available <a href="https://docs.google.com/presentation/d/1HXlHzzP0IgXsoQMcQtTM1Oz6WEyH5d__qsQM4hCPuiI/edit#slide=id.p">Href</a>
-                        </b><br><br>
-                        As the first Junior Model UN conference, Bangalore JMUN has striven to redefine Model United Nations in Bangalore. For the past three years, we have continuously improved the quality of our debate, expanded the scope of our committees, and offered delegates
-                        a more holistic conference experience.
-                        <br>
-                        <br> This year, Bangalore Junior Model United Nations has committed to providing a seamless conference-to-audience connection through our Facebook Page livestreams, improved conference experience, and a more engaging experience
-                        for all delegates.
-                        <br>
-                        <br>
-
-                    </p>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
--->
-
-        <!-- **LETTER FROM SEC GEN**-->
-
+        -->
         <div class="divider"></div>
         <div class="container">
             <div class="section">
@@ -495,23 +463,19 @@
                 </div>
             </div>
         </div>
-
         <!-- Uncomment once allocations are released
-
-<div class="divider"></div>
-<div class="container">
-    <div class="row">
-      <br /><br />
-      <center>
-        <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRr3PouVorwTRziviPWaPF_g2s41_6cKTtB0gNMxkVkIAMbqfEMAK7WWoJ77QSEO63GydPh27MChirb/pubhtml?gid=0&single=true"><div class="btn btn-large waves-light waves-effect">
-          Allocations are out now- Find out which country you represent!
-        </div></a>
-      </center>
-      <br />
-    </div>
-  </div>
-
--->
+        <div class="divider"></div>
+        <div class="container">
+            <div class="row">
+            <br /><br />
+            <center>
+                <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRr3PouVorwTRziviPWaPF_g2s41_6cKTtB0gNMxkVkIAMbqfEMAK7WWoJ77QSEO63GydPh27MChirb/pubhtml?gid=0&single=true"><div class="btn btn-large waves-light waves-effect">
+                Allocations are out now- Find out which country you represent!
+                </div></a>
+            </center>
+            <br />
+            </div>
+        </div> -->
         <div class="divider"></div>
         <div class="container">
             <div class="row">
@@ -538,16 +502,14 @@
                         <embed src="assets/misc_jmun/newsletter.pdf" type="application/pdf" width="500px"
                             height="700px" />
                         <!-- <script src="/js/pdfobject.js"></script>
-        <script>PDFObject.embed("/pdf/sample-3pp.pdf", "#example1");</script> -->
+                        <script>PDFObject.embed("/pdf/sample-3pp.pdf", "#example1");</script> -->
                     </div>
                 </center>
                 <!-- <center><iframe src="http://docs.google.com/gview?url=https://bangalorejmun.com/newsletter.pdf&embedded=true" style="height: 900px; width: 500px;" frameborder="0"></iframe></center> -->
                 <!-- https://drive.google.com/file/d/0B_v0mvO7UabvWEpnWmhVdFUyLUJoN0ZDOHVSSzB4RlN3NWtZ/view?usp=sharing -->
             </div>
         </div>
-
-        <div id="Register"> </div>
-
+        <div id="Register"> </div> <!-- For Anchor to "Register Now!" -->
         <div class="divider"></div>
         <div class="container">
             <div class="row">
@@ -562,11 +524,10 @@
                 <br />
             </div>
         </div>
-
         <div class="divider"></div>
         <div class="container">
             <div class="row">
-                <h1 style="text-align: center;">Register now!</h1>
+                <h1 style="text-align: center;">Register Now!</h1>
             </div>
             <!--Registration form links-->
             <div class="row">
@@ -582,9 +543,7 @@
                 </center>
             </div>
         </div>
-
         <div class="divider"></div>
-        <!--2020 Committees-->
         <div class="container">
             <div class="section">
                 <div class="row">
@@ -598,7 +557,7 @@
                                     <div class="row"></div>
                                     <div class="row"><span class="flow-text">Strengthening the Convention on the Rights
                                             of the Child (CRC).</span></div>
-                                    <div class="row"><a href="error.html"
+                                    <div class="row"><a href="Committees/UNICEF/"
                                             class="waves-effect waves-teal btn-large blue darken-1">Learn More</a></div>
                                 </div>
                             </li>
@@ -609,7 +568,7 @@
                                     <div class="row"></div>
                                     <div class="row"><span class="flow-text">Regulating the Management of Plastic
                                             Waste.</span></div>
-                                    <div class="row"><a href="error.html"
+                                    <div class="row"><a href="Committees/UNEP/"
                                             class="waves-effect waves-teal btn-large blue darken-1">Learn More</a></div>
                                 </div>
                             </li>
@@ -621,7 +580,7 @@
                                     <div class="row"></div>
                                     <div class="row"><span class="flow-text">Developing Equitable Vaccine Distribution
                                             Methods.</span></div>
-                                    <div class="row"><a href="error.html"
+                                    <div class="row"><a href="Committees/WHO/"
                                             class="waves-effect waves-teal btn-large blue darken-1">Learn More</a></div>
                                 </div>
                             </li>
@@ -632,7 +591,7 @@
                                     <div class="row"></div>
                                     <div class="row"><span class="flow-text">Recovery Policies to Combat Wealth
                                             Inequality.</span></div>
-                                    <div class="row"><a href="error.html"
+                                    <div class="row"><a href="Committees/ECOSOC/"
                                             class="waves-effect waves-teal btn-large blue darken-1">Learn More</a></div>
                                 </div>
                             </li>
@@ -643,29 +602,22 @@
                                     <div class="row"></div>
                                     <div class="row"><span class="flow-text">The Role of Militarization and Foreign
                                             Intervention in Curbing Weaponized Terrorism.</span></div>
-                                    <div class="row"><a href="error.html"
+                                    <div class="row"><a href="Committees/UNSC/"
                                             class="waves-effect waves-teal btn-large blue darken-1">Learn More</a></div>
                                 </div>
                             </li>
-
+                        </ul>
                     </div>
-                    </li>
-                    </ul>
                 </div>
-
             </div>
         </div>
     </div>
-
     <div class="divider"></div>
     <div class="divider"></div>
-
-
     <div class="parallax-container" style="height: 500px; overflow: hidden;">
         <div class="parallax"><img src="assets/site_imgs/school_photo.jpg" alt="Oakridge International School Campus">
         </div>
     </div>
-
     <div class="container">
         <div class="section">
             <div class="row" style="margin-bottom: 0;">
@@ -685,6 +637,7 @@
         </div>
     </div>
 
+    <!-- Site Footer -->
     <footer class="page-footer black">
         <div class="container">
             <div class="row" style="margin-bottom: 0;">
@@ -762,6 +715,7 @@
         </div>
     </footer>
 
+    <!-- Init & Other JS -->
     <script>
         $(document).ready(function () {
             $('.parallax').parallax();

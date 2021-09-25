@@ -66,16 +66,7 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.js"></script>
 
-  <!-- Modal Structure -->
-  <div id="modalSchedule" class="modal">
-    <div class="modal-content">
-      <h2>Schedule</h2>
-
-    </div>
-  </div>
-
-  <!-- Test comment -->
-  <!-- FAQ Modal -->
+  <!-- Modals -->
   <div id="modalFAQ" class="modal">
     <div class="modal-content">
       <h3>JMUN FAQs</h3>
@@ -113,7 +104,6 @@
     </div>
   </div>
 
-  <!-- Registration and Payment Modals below -->
   <div id="modalRegister" class="modal">
     <div class="modal-content">
       <h4>If you are an External Delegate:</h4>
@@ -153,6 +143,15 @@
     </div>
   </div>
 
+  <div id="ScheduleUnavailable" class="modal">
+    <div class="modal-content">
+      <h4>Sorry for the Inconvenience!</h4>
+      <p>The Schedule for JMUN 2021 hasn't been released yet. I will be released approximatly 3 days before the event.
+      </p>
+    </div>
+  </div>
+
+  <!-- SideNav, Navbar & Parallax -->
   <ul id='committeesDrop' class='dropdown-content'>
     <li class="black darken-3"><a href="Committees/UNICEF/" class="white-text">UNICEF</a></li>
     <li class="black darken-3"><a href="Committees/UNEP/" class="white-text">UNEP</a></li>
@@ -164,8 +163,7 @@
   <ul id='conferenceDrop' class='dropdown-content'>
     <li class="black darken-3"><a href="Conference/" class="white-text">About</a></li>
     <li class="black darken-3"><a href="Secretariat/" class="white-text">Secretariat</a></li>
-    <li class="black darken-3"><a href="error.html" class="white-text">Schedule</a></li>
-
+    <li class="black darken-3"><a href="#ScheduleUnavailable" class="white-text">Schedule</a></li>
   </ul>
   <ul id='registrationDrop' class='dropdown-content'>
     <li class="black darken-3"><a href="#modalRegister" class="white-text">How to Register?</a></li>
@@ -186,8 +184,7 @@
   <ul id='conferenceDropSide' class='dropdown-content'>
     <li class=""><a href="Conference/" class="">About</a></li>
     <li class=""><a href="Secretariat/" class="">Secretariat</a></li>
-    <li class=""><a href="error.html" class="">Schedule</a></li>
-
+    <li class=""><a href="#ScheduleUnavailable" class="">Schedule</a></li>
   </ul>
   <ul id='registrationDropSide' class='dropdown-content'>
     <li class=""><a href="#modalRegister" class="">How to Register?</a></li>
@@ -242,6 +239,7 @@
     $(".button-collapse").sideNav();
   </script>
 
+  <!-- Site Content -->
   <div class="container">
     <div class=row>
       <div class="col s12" height="600px">
@@ -474,6 +472,7 @@
     </div>
   </div>
 
+  <!-- Site Footer -->
   <footer class="page-footer black">
     <div class="container">
       <div class="row" style="margin-bottom: 0;">
@@ -547,6 +546,7 @@
     </div>
   </footer>
 
+  <!-- Init & Other JS -->
   <script>
     $(document).ready(function () {
       // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
