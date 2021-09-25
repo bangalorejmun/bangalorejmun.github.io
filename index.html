@@ -23,6 +23,17 @@
         gtag('config', 'UA-106611677-1');
     </script>
     <style type="text/css">
+        /* Color Theme:
+            Primary:    #4DC3CF (Blue - Teal)
+            Secondary:  #A0DAE5 (Light Blue)
+            Secondary:  #E3E1DC (Light Grey)
+            Secondary:  #8F8B86 (Dark Grey)
+            Secondary:  #003255 (Dark Blue)
+            Secondary:  #FDC02D (Yellow)
+            Secondary:  #F28650 (Orange)
+            Secondary:  #722C8A (Purple)
+            Secondary:  #EA3056 (Red)
+        */
         body {
             display: flex;
             min-height: 100vh;
@@ -30,7 +41,7 @@
         }
 
         #nav-wrapper {
-            background-color: rgb(0, 0, 1)
+            background-color: #4DC3CF
         }
 
         main {
@@ -56,7 +67,7 @@
         #clockdiv div>span {
             padding: 15px;
             border-radius: 3px;
-            background: #5b92e5;
+            background: #4DC3CF;
             display: inline-block;
         }
 
@@ -82,10 +93,16 @@
         }
     </style>
 
+    <!-- Notifications FAB -->
     <div class="fixed-action-btn direction-top active" style="bottom: 45px; right: 24px;">
-        <a id="noticeicon" id="mail" class="btn btn-floating btn-large cyan waves-effect waves-light pulse" style="overflow: visible;"
-            onmouseover="this.classList.add('pulse')" onmouseout="this.classList.remove('pulse')" onclick="removeNotifBadge()" href="#modalNOTICE">
-            <i class="material-icons">notifications</i> <div id="notifBadge" style="width: 20px; height: 20px; padding: 0; border-radius: 10px; background-color: #5b92e5; display: flex; justify-content: center; align-items: center; position: relative; bottom: 62px; right: -32px;"><p style="font-size: 12px; line-height: 18px; padding: 0; margin: 0;">1</p></div>
+        <a id="noticeicon" id="mail" class="btn btn-floating btn-large waves-effect waves-light pulse"
+            style="overflow: visible; background-color: #722C8A;" onmouseover="this.classList.add('pulse')"
+            onmouseout="this.classList.remove('pulse')" onclick="removeNotifBadge()" href="#modalNOTICE">
+            <i class="material-icons">notifications</i>
+            <div id="notifBadge"
+                style="width: 20px; height: 20px; padding: 0; border-radius: 10px; background-color: #EA3056; display: flex; justify-content: center; align-items: center; position: relative; bottom: 62px; right: -32px;">
+                <p style="font-size: 12px; line-height: 18px; padding: 0; margin: 0;">1</p>
+            </div>
         </a>
     </div>
 </head>
@@ -107,7 +124,7 @@
             <div style="height: 12px;"></div>
             <div class="row">
                 <div class="col s12 m6">
-                    <div class="card blue-grey darken-1">
+                    <div class="card darken-1" style="background-color: #003255;">
                         <div class="card-content white-text">
                             <span class="card-title">Registrations Open!</span>
                             <p>Refistrations are now open for External and Oakridge delegates!</p>
@@ -119,7 +136,7 @@
                 </div>
                 <!-- Uncomment when under maintainance
                 <div class="col s12 m6">
-                    <div class="card blue-grey darken-1">
+                    <div class="card darken-1" style="background-color: #003255;">
                         <div class="card-content white-text">
                             <span class="card-title">Sorry for the Inconvenience!</span>
                             <p>Some of the links are currently not working. We'll fix them as soon as possible.</p>
@@ -234,23 +251,28 @@
 
     <!-- SideNav, Navbar & Parallax -->
     <ul id='committeesDrop' class='dropdown-content'>
-        <li class="black darken-3"><a href="Committees/UNICEF/" class="white-text">UNICEF</a></li>
-        <li class="black darken-3"><a href="Committees/UNEP/" class="white-text">UNEP</a></li>
-        <li class="black darken-3"><a href="Committees/WHO/" class="white-text">WHO</a></li>
-        <li class="black darken-3"><a href="Committees/ECOSOC/" class="white-text">ECOSOC</a></li>
-        <li class="black darken-3"><a href="Committees/UNSC/" class="white-text">UNSC</a></li>
+        <li class="" style="background-color: #4DC3CF;"><a href="Committees/UNICEF/" class="white-text">UNICEF</a></li>
+        <li class="" style="background-color: #4DC3CF;"><a href="Committees/UNEP/" class="white-text">UNEP</a></li>
+        <li class="" style="background-color: #4DC3CF;"><a href="Committees/WHO/" class="white-text">WHO</a></li>
+        <li class="" style="background-color: #4DC3CF;"><a href="Committees/ECOSOC/" class="white-text">ECOSOC</a></li>
+        <li class="" style="background-color: #4DC3CF;"><a href="Committees/UNSC/" class="white-text">UNSC</a></li>
     </ul>
     <ul id='conferenceDrop' class='dropdown-content'>
-        <li class="black darken-3"><a href="Conference/" class="white-text">About</a></li>
-        <li class="black darken-3"><a href="Secretariat/" class="white-text">Secretariat</a></li>
-        <li class="black darken-3"><a href="#ScheduleUnavailable" class="white-text">Schedule</a></li>
+        <li class="" style="background-color: #4DC3CF;"><a href="Conference/" class="white-text">About</a></li>
+        <li class="" style="background-color: #4DC3CF;"><a href="Secretariat/" class="white-text">Secretariat</a></li>
+        <li class="" style="background-color: #4DC3CF;"><a href="#ScheduleUnavailable" class="white-text">Schedule</a>
+        </li>
     </ul>
     <ul id='registrationDrop' class='dropdown-content'>
-        <li class="black darken-3"><a href="#modalRegister" class="white-text">How to Register?</a></li>
-        <li class="black darken-3"><a href="#modalPayment" class="white-text">Payment Details</a></li>
-        <li class="black darken-3"><a href="https://forms.gle/z7szXZeB4wAYAv6f9" class="white-text">Oakridge
+        <li class="" style="background-color: #4DC3CF;"><a href="#modalRegister" class="white-text">How to Register?</a>
+        </li>
+        <li class="" style="background-color: #4DC3CF;"><a href="#modalPayment" class="white-text">Payment Details</a>
+        </li>
+        <li class="" style="background-color: #4DC3CF;"><a href="https://forms.gle/z7szXZeB4wAYAv6f9"
+                class="white-text">Oakridge
                 Registration</a></li>
-        <li class="black darken-3"><a href="https://forms.gle/wobS3uA1eYkp9vsm6" class="white-text">External
+        <li class="" style="background-color: #4DC3CF;"><a href="https://forms.gle/wobS3uA1eYkp9vsm6"
+                class="white-text">External
                 Registration</a></li>
     </ul>
 
@@ -364,19 +386,19 @@
             <div class="col s12 center-align">
                 <div id="clockdiv">
                     <div>
-                        <span class="days light-blue darken-4">00</span>
+                        <span class="days" style="background-color: #003255;">00</span>
                         <div class="smalltext">Days</div>
                     </div>
                     <div>
-                        <span class="hours light-blue darken-4">00</span>
+                        <span class="hours" style="background-color: #003255;">00</span>
                         <div class="smalltext">Hours</div>
                     </div>
                     <div>
-                        <span class="minutes light-blue darken-4">00</span>
+                        <span class="minutes" style="background-color: #003255;">00</span>
                         <div class="smalltext">Minutes</div>
                     </div>
                     <div>
-                        <span class="seconds light-blue darken-4">00</span>
+                        <span class="seconds" style="background-color: #003255;">00</span>
                         <div class="smalltext">Seconds</div>
                     </div>
                 </div>
@@ -482,7 +504,7 @@
                 <center>
                     <a href="https://drive.google.com/file/d/1lCGsQwhgZxr7ntLKB5tOgNFY5xyhGSrQ/view?usp=sharing"
                         target="_blank">
-                        <div class="btn btn-large waves-light waves-effect">
+                        <div class="btn btn-large waves-effect waves-deep-purple" style="background-color: #722C8A;">
                             View the recording used in the 2020 delegate training!
                         </div>
                     </a>
@@ -515,7 +537,7 @@
                 <br /><br />
                 <center>
                     <a href="#modalPPT">
-                        <div class="btn btn-large waves-light waves-effect">
+                        <div class="btn btn-large waves-effect waves-deep-purple" style="background-color: #722C8A;">
                             View the PPT used in the 2020 delegate training!
                         </div>
                     </a>
@@ -532,11 +554,13 @@
             <div class="row">
                 <center>
                     <a id="bigbtn1" class="btn-large pulse" onmouseout="this.classList.remove('pulse')"
-                        href="https://forms.gle/z7szXZeB4wAYAv6f9" style="text-align: center;">Oakridge Students
+                        href="https://forms.gle/z7szXZeB4wAYAv6f9"
+                        style="text-align: center; background-color: #722C8A;">Oakridge Students
                         Registration</a>
                     <br /><br />
                     <a id="bigbtn2" onmouseout="this.classList.remove('pulse')" class="btn-large pulse"
-                        href="https://forms.gle/wobS3uA1eYkp9vsm6" style="text-align: center;">External School
+                        href="https://forms.gle/wobS3uA1eYkp9vsm6"
+                        style="text-align: center; background-color: #722C8A;">External School
                         Delegation Registration</a>
                     <br />
                 </center>
@@ -557,7 +581,8 @@
                                     <div class="row"><span class="flow-text">Strengthening the Convention on the Rights
                                             of the Child (CRC).</span></div>
                                     <div class="row"><a href="Committees/UNICEF/"
-                                            class="waves-effect waves-teal btn-large blue darken-1">Learn More</a></div>
+                                            class="waves-effect waves-deep-purple btn-large"
+                                            style="background-color: #722C8A;">Learn More</a></div>
                                 </div>
                             </li>
                             <li>
@@ -568,7 +593,8 @@
                                     <div class="row"><span class="flow-text">Regulating the Management of Plastic
                                             Waste.</span></div>
                                     <div class="row"><a href="Committees/UNEP/"
-                                            class="waves-effect waves-teal btn-large blue darken-1">Learn More</a></div>
+                                            class="waves-effect waves-deep-purple btn-large"
+                                            style="background-color: #722C8A;">Learn More</a></div>
                                 </div>
                             </li>
                             <li>
@@ -580,7 +606,8 @@
                                     <div class="row"><span class="flow-text">Developing Equitable Vaccine Distribution
                                             Methods.</span></div>
                                     <div class="row"><a href="Committees/WHO/"
-                                            class="waves-effect waves-teal btn-large blue darken-1">Learn More</a></div>
+                                            class="waves-effect waves-deep-purple btn-large"
+                                            style="background-color: #722C8A;">Learn More</a></div>
                                 </div>
                             </li>
                             <li>
@@ -591,7 +618,8 @@
                                     <div class="row"><span class="flow-text">Recovery Policies to Combat Wealth
                                             Inequality.</span></div>
                                     <div class="row"><a href="Committees/ECOSOC/"
-                                            class="waves-effect waves-teal btn-large blue darken-1">Learn More</a></div>
+                                            class="waves-effect waves-deep-purple btn-large"
+                                            style="background-color: #722C8A;">Learn More</a></div>
                                 </div>
                             </li>
                             <li>
@@ -602,7 +630,8 @@
                                     <div class="row"><span class="flow-text">The Role of Militarization and Foreign
                                             Intervention in Curbing Weaponized Terrorism.</span></div>
                                     <div class="row"><a href="Committees/UNSC/"
-                                            class="waves-effect waves-teal btn-large blue darken-1">Learn More</a></div>
+                                            class="waves-effect waves-deep-purple btn-large"
+                                            style="background-color: #722C8A;">Learn More</a></div>
                                 </div>
                             </li>
                         </ul>
@@ -637,7 +666,7 @@
     </div>
 
     <!-- Site Footer -->
-    <footer class="page-footer black">
+    <footer class="page-footer" style="background-color: #003255;">
         <div class="container">
             <div class="row" style="margin-bottom: 0;">
                 <div class="col s6">
@@ -653,8 +682,8 @@
                                 <div class="col s6">
                                     <div class="row" style="margin-bottom: 0;">
                                         <div class="col s4" style="padding-right: 32px;">
-                                            <a class="waves-effect waves-light btn-floating btn-large blue-grey darken-3"
-                                                href="http://www.oakridge.in/">
+                                            <a class="waves-effect waves-deep-purple btn-floating btn-large z-depth-5"
+                                                style="background-color: #003255;" href="http://www.oakridge.in/">
                                                 <img src="assets/site_imgs/icon_oakridge.png" height="46" width="46"
                                                     alt="Oakridge Logo"
                                                     style="text-align: center;
@@ -662,7 +691,8 @@
                                             </a>
                                         </div>
                                         <div class="col s4" style="padding-right: 32px;">
-                                            <a class="waves-effect waves-light btn-floating btn-large blue-grey darken-3"
+                                            <a class="waves-effect waves-deep-purple btn-floating btn-large z-depth-5"
+                                                style="background-color: #003255;"
                                                 href="https://www.instagram.com/bangalorejmun">
                                                 <img src="assets/site_imgs/icon_instagram.png" height="42" width="42"
                                                     alt="Instagram Logo"
@@ -671,7 +701,8 @@
                                             </a>
                                         </div>
                                         <div class="col s4" style="padding-right: 32px;">
-                                            <a class="waves-effect waves-light btn-floating btn-large blue-grey darken-3"
+                                            <a class="waves-effect waves-deep-purple btn-floating btn-large z-depth-5"
+                                                style="background-color: #003255;"
                                                 href="https://github.com/bangalorejmun/bangalorejmun.github.io/">
                                                 <img src="assets/site_imgs/icon_github.png" height="46" width="46"
                                                     alt="Github Logo"
@@ -683,7 +714,7 @@
                                 </div>
                                 <div class="col s6"></div>
                             </div>
-                            <div class=" footer-copyright black">
+                            <div class=" footer-copyright" style="background-color: #003255;">
                                 <a class="grey-text text-lighten-4">
                                     <div class="valign-wrapper"><i class="material-icons">copyright</i>
                                         <p>&#8201;2021
@@ -796,7 +827,7 @@
         initializeClock('clockdiv', deadline);
 
         function removeNotifBadge() {
-            if (jQuery.isReady) {$("#notifBadge").remove();}
+            if (jQuery.isReady) { $("#notifBadge").remove(); }
         }
     </script>
 </body>
