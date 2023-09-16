@@ -8,7 +8,8 @@
 </p>
 
 ## Sites:
-- [Current Site (2022)](https://bangalorejmun.in)
+- [Current Site (2023)](https://bangalorejmun.in)
+- [2022 Site Archive](https://bangalorejmun.in/Archives/2022)
 - [2021 Site Archive](https://bangalorejmun.in/Archives/2021)
 - [2020 Site Archive](https://bangalorejmun.in/Archives/2020)
 - [2019 Site Archive](https://bangalorejmun.in/Archives/2019)
@@ -21,7 +22,7 @@ Tested on:
 - Edge
 
 ## Contributing
-You can bugs in the issues tab. Please provide information about how you encountered the issue. If you have the ability, feel free to create a pull request to fix the bug. Alternativly you can contact us at: <a href="mailto:bangalorejmun@oakridge.in" target="_blank">bangalorejmun@oakridge.in</a>. 
+You can bugs in the issues tab. Please provide information about how you encountered the issue. If you have the ability, feel free to create a pull request to fix the bug. Alternatively you can contact us at: <a href="mailto:bangalorejmun@oakridge.in" target="_blank">bangalorejmun@oakridge.in</a>. 
 
 ## Copyright and license
-Code copyright 2022 Bangalore JMUN. Code released under the MIT license.
+Code copyright 2023 Bangalore JMUN. Code released under the MIT license.
