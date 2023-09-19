@@ -2,3 +2,11 @@
 b.big {
   font-size:20px;
 }
+.transparent {
+  height: 64px!important;
+}
+.circle {
+  margin-left:10px;
+  margin-top:5px;
+  height: 54px!important;
+}
