@@ -9,6 +9,11 @@ b.big {
   margin-top:5px;
   /* height: 54px!important; */
 }
+@media only screen and (min-width: 745px) {
+  .ppt-md {
+    width: 740px !important;
+  }
+}
 .sec-item {
   text-align: center;
 }
