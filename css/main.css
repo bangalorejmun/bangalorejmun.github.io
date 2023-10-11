@@ -9,3 +9,23 @@ b.big {
   margin-top:5px;
   /* height: 54px!important; */
 }
+@media only screen and (min-width: 745px) {
+  .ppt-md {
+    width: 740px !important;
+  }
+}
+.sec-item {
+  text-align: center;
+}
+.secretariat-item {
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-around;
+  width: 80vw;
+}
+#secretariat-container {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  justify-content: space-around;
+}
